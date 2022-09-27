@@ -1,0 +1,3550 @@
+<script>
+    const test = [{
+        0: "Dehqonchilikda asosiy ishlab chiqarish vositasi nima?",
+        1: "Yer-tuproq",
+        2: "O‘simlik",
+        3: "Suv",
+        4: "O‘g‘itla"
+    }, {
+        0: "Dehqonchilikning asosiy vazifasi nima?",
+        1: "Yelardan oqilona foydalanib tuproq unumdorligini oshirishdan iborat",
+        2: "Ekinlardan yuqori hosil olish",
+        3: "Ekinlardan sifatli hosil olish",
+        4: "Almashlab ekishni joriy etish"
+    }, {
+        0: "O‘zbekistonda kishi boshiga qancha sug‘oriladigan er to‘g‘ri keladi?",
+        1: "0,15 ga",
+        2: "0,22",
+        3: "0,26",
+        4: "0,29 ga"
+    }, {
+        0: "O‘zbekistonda sug‘oriladigan erlarning maydoni qancha",
+        1: "4 280 000 ga",
+        2: "4 000 000 ga",
+        3: "22 000 000 ga",
+        4: "3500 000 ga"
+    }, {
+        0: "Yerning asosiy xususiyati nima?",
+        1: "Uning eskirmasligi",
+        2: "O‘ning yomonlashuvi",
+        3: "Uning unumdorligi",
+        4: "Suvni singdira olishi"
+    }, {
+        0: "Yer dehqonchilikda.......",
+        1: "asosiy ishlab chiqarish vositasidir",
+        2: "unumdorlikka ega bo‘lgan muhit",
+        3: "o‘zida suvni ushlab tura oladigan jism",
+        4: "ekin ekish uchun yaroqli bo‘lgan joy"
+    }, {
+        0: "Qishloq xo‘jaligining ratsional asoslari kitobining muallifi kim?",
+        1: "A.Teer",
+        2: "A.T.Bolotov",
+        3: "I.M.Komov",
+        4: "M.G.Pavlov"
+    }, {
+        0: "Qishloq xo‘jaligining ratsional asoslari kitobining birinchi qismi nimaga bag‘ilangan?",
+        1: "Dehqonchilikning umumiy masalalariga",
+        2: "O‘simlikni ta’riflashga",
+        3: "Yerni ishlash masalalariga",
+        4: "Almashlab ekishga"
+    }, {
+        0: "“Yer qatlamlari haqida” asarining muallifi kim?",
+        1: "M.V.Lomonosov",
+        2: "A.T.Bolotov",
+        3: "I.M.Komov",
+        4: "Yu.Libix"
+    }, {
+        0: "Qishloq xo‘jaligining ratsional asoslari kitobining ikkinchi qismi nimaga bag‘ilangan?",
+        1: "O‘simliklarni tariflashga-O‘simlikshunoslikka",
+        2: "Tuproq sharoitlarini yaxshilashga",
+        3: "Almashlab ekishga",
+        4: "Tuproqqa ishlov berish va begona otlarga qarshi kurashga"
+    }, {
+        0: "O‘simlikning yashashi uchun kerak bo‘lgan yer omillariga nimalar kiradi?",
+        1: "Havo, suv, oziq elementlari",
+        2: "Issiqlik, havo, suv, tuproq",
+        3: "Issiqlik, havo, suv, oziq elementlari",
+        4: "Issiqlik, havo, suv"
+    }, {
+        0: "O‘simliklar suvga bo‘lgan talabiga ko‘ra qaysilarga bo‘linadi?",
+        1: "Kserofitlar, mezofitlar, gigrofitlar, gidrofitlar",
+        2: "Mezofitlar, gigrofitlar, gidrofitlar",
+        3: "Kserofitlar, mezofitlar",
+        4: "Kserofitlar, mezofitlar, gigrofitlar"
+    }, {
+        0: "O‘simlikning yashashi uchun kerak bo‘lgan kosmik faktorlarga nimalar kiradi?",
+        1: "Yorug‘lik, issiqlik",
+        2: "Kislorod, karbonat angidrid, azot",
+        3: "Suv, azot, fosfor, kaliy",
+        4: "Tuproq va oziq elementlari"
+    }, {
+        0: "O‘simlik yerga tushayotgan quyosh energiyasining necha foizidan foydalanadi?",
+        1: "2-5 %",
+        2: "5-15 %",
+        3: "10-20 %",
+        4: "15-25 %"
+    }, {
+        0: "Fotosintez jarayonida qanday moddalar hosil bo‘ladi.",
+        1: "Glyukoza va",
+        2: "Kraxmal va suv",
+        3: "Sellyuloza",
+        4: "Polisaxaridlar"
+    }, {
+        0: "O‘simliklar fotosintez jarayonida hosil bo‘lgan organik moddalarning necha foizini havodan va suvdagi  dan oladi?",
+        1: "93,5 %",
+        2: "58-75 %",
+        3: "40-50 %",
+        4: "78 %"
+    }, {
+        0: "Fotosintez mahsuldorligini qanday oshirish mumkin?",
+        1: "Ko‘chat qalinligini optimallashtirish orqali",
+        2: "Qo‘sh qatorlab ekish orqali",
+        3: "Egatlar yo‘nalishini janubga qaratish orqali",
+        4: "Pushtaga ekish orqali"
+    }, {
+        0: "Minimum qonunini kim bayon etgan?",
+        1: "Yu. Libix",
+        2: "S.R. Vilyams",
+        3: "K.A.Timiryazev",
+        4: "E.Mitcherl"
+    }, {
+        0: "“Minimum” qonunini ko‘rsating.",
+        1: "Ekinlar hosildorligi minimumda turgan omilni ko‘paytirishga to‘g‘ri proporsional",
+        2: "Ekinlar hosildorligi minimumda turgan omilni ko‘paytirishga teskari proporsional",
+        3: "Hosildorlik minimumda turgan omilga bog‘liq emas",
+        4: "Hosildorlik asosan yorug‘lik va issiqlikka"
+    }, {
+        0: "Hayot faktorlarining birgalikda ta’sir etish qonuni mohiyati nima?",
+        1: "Boshqa hayot faktorlari optimal bo‘lganda o‘simlik minimumda turgan faktordan unumli foydalanadi",
+        2: "Er faktorlari optimal bo‘lganda minimumda turgan omilning ahamiyati yo‘q",
+        3: "Kosmik faktorlar etarli bo‘lsa minimumda turgan omildan unumli foydalanadi",
+        4: "Er faktorlari optimal, bo‘lsa minimumda turgan omildan unumli foydalanadi",
+    }, {
+        0: "O‘simlik hayot faktorlarining teng ahamiyatliligi va almashtirib bo‘lmaslik qonunini kim bayon etgan?",
+        1: "S.R. Vilyams",
+        2: "Yu. Libix",
+        3: "E.Mitcherlix",
+        4: "K.A.Timiryazev",
+    }, {
+        0: "Tuproqdan olingan moddalarni qaytarish qonunini kim bayon qilgan?",
+        1: "Yu. Libix",
+        2: "K.A. Timiryazev",
+        3: "A. Mayer",
+        4: "S.R. Vilyams",
+    }, {
+        0: "Tuproq unumdorligi deb nimaga aytiladi?",
+        1: "Tuproqning o‘simlikni suv va oziq moddalar bilan ta’minlash xususiyati tushuniladi",
+        2: "Potensial unumdorligiga aytiladi",
+        3: "Tabiiy unumdorligiga aytiladi",
+        4: "Samarali unumdorligiga"
+    }, {
+        0: "Samarali unumdorlik nima?",
+        1: "O‘simliklar o‘zlashtira oladigan  oziq elementlari miqdori",
+        2: "Tuproqdagi barcha oziq elementlari miqdori",
+        3: "Tuproqdagi chirindi miqdori",
+        4: "Suvda yuvilib ketmaydigan oziq elementlari",
+    }, {
+        0: "Potensial unumdorlik nima?",
+        1: "Tuproqdagi oziq elementlarining umumiy miqdori",
+        2: "Tuproqdagi oson o‘zlashtiriladigan oziq elementlari miqdori",
+        3: "Suvda yuvilib ketmaydigan oziq elementlari miqdori",
+        4: "Tuproqdagi chirindi"
+    }, {
+        0: "Su’niy unumdorlik nima?",
+        1: "Inson tomonidan almashlab ekish, o‘g‘itlash va boshqa tadbirlarni o‘tkazish orqali yaratiladi",
+        2: "Mineral o‘g‘itlarni qo‘llash orqali yaratiladi",
+        3: "Organik o‘g‘itlarni qo‘llash orqali yaratiladi",
+        4: "Biogumus qo‘llash orqali yaratiladi"
+    }, {
+        0: "Madaniylashgan tuproq deb qanday tuproqqa aytiladi?",
+        1: "Zararli organizmlardan tozalangan, o‘simliklar o‘sishi va rivojlanishi uchun qulay sharoit yaratilgan tuproqlarga aytiladi",
+        2: "YAxshi tekislangan va sifatli haydalgan tuproqlarga aytiladi",
+        3: "Begona o‘tlardan toza bo‘lgan tuproqqa aytiladi",
+        4: "Unumdorligi yuqori bo‘lgan tuproqlarga aytiladi",
+    }, {
+        0: "Tuproq qaysi usullarda madaniylashtiriladi",
+        1: "Fizik, kimyoviy, biologik",
+        2: "Fizik, kimyoviy, mexanik",
+        3: "Fizik, biologik, fiziologik",
+        4: "kimyoviy, biologik, bakteriologik"
+    }, {
+        0: "Ishqoriy tuproqlarni madaniylashtirish uchun nima solinadi.",
+        1: "Gips",
+        2: "Ohak",
+        3: "Qum",
+        4: "O‘g‘it"
+    }, {
+        0: "Qaysi tuproqlarga ohak solish talab etiladi?",
+        1: "Kislotali tuproqlarga",
+        2: "Ishqoriy tuproqlarga",
+        3: "Sho‘rlangan tuproqlarga",
+        4: "Sho‘rtob tuproqlarga"
+    }, {
+        0: "Kislotali tuproqlarni madaniylashtirish uchun nima solinadi.",
+        1: "Ohak",
+        2: "O‘g‘it",
+        3: "Qum",
+        4: "Gips"
+    }, {
+        0: "Daladagi toshlarni, g‘isht va sopol bo‘laklarini yig‘ib-terib olish tuproqni madaniylashtirishning qaysi usuliga kiradi?",
+        1: "Fizik",
+        2: "Kimyoviy",
+        3: "Biologik",
+        4: "Oddiy"
+    }, {
+        0: "Tuproq strukturasi deb nimaga aytiladi?",
+        1: "Shakli va o‘lchami jihatidan turlicha bo‘lgan agregatlar yig‘indisiga aytiladi",
+        2: "Tuproqning zichligiga aytiladi",
+        3: "Tuproqning zich yoki yumshoq tuzilishiga aytiladi",
+        4: "Tuproqning g‘ovaksimon bo‘lishiga aytiladi"
+    }, {
+        0: "Tuproq sturkturasining mustahkamligi nima?",
+        1: "Tuproq agregatlariga suv ta’sir etganda mayda zarrachalarga parchalanib ketmasligi",
+        2: "Q/x mashinalarining ishchi organlariga ko‘rsatadigan qarshiligi",
+        3: "Tuproqning qovushqoqligi va plastikligi",
+        4: "Tuproqning mexanik ta’sirlar natijasida ezilib ketmasligi",
+    }, {
+        0: "Tuproq strukturasining nima ahamiyati bor?",
+        1: "Strukturali tuproqlarda suv, havo, oziq va issiqlik rejimlari qulay bo‘ladi",
+        2: "Strukturali tuproqda qatqaloq bo‘lmaydi",
+        3: "Strukturali tuproqning qatqalog‘ini yo‘qotish oson",
+        4: "Strukturali tuproqda organik va mineral moddalar ko‘p bo‘ladi",
+    }, {
+        0: "Tuproq strukturasi qaysi omillar ta’sirida buziladi?",
+        1: "Mexanik, fiziko-kimyoviy, biologik",
+        2: "Suv ta’siri va traktor agregatlarini bosishi natijasida",
+        3: "Bostirib sug‘orilganda",
+        4: "Biologik va kimyoviy",
+    }, {
+        0: "Tuproq strukturasini biologik omil ta’sirida buzilishi qanday yuz beradi?",
+        1: "Turoq chirindisini bakteriyalar tomonidan parchalanishi natijasida",
+        2: "Turoq chirindisini chuvalchanglar tomonidan parchalanishi natijasida",
+        3: "Tuproqni hayvonlar tomonidan tepkilanishi natijasida",
+        4: "Tuproq strukrasini ildizdan ajralib chiqqan moddalar ta’sirida parchalanishi"
+    }, {
+        0: "Tuproq strukturasini tiklash uchun nima qilish kerak?",
+        1: "Organik o‘g‘itlar solish va almashlab  ekish orqali tuproqni chirindiga boyitish kerak",
+        2: "Tuproqqa iloji boricha kamroq ishlov berish kerak",
+        3: "Tuproqqa namlik optimal  bo‘lganda ishlov berish kerak",
+        4: "Mineral o‘g‘itlarni ilmiy asosda solish lozim"
+    }, {
+        0: "Qanday o‘lchamli kesakchalar eng yaxshi hisoblanadi?",
+        1: "1,0-3,0 mm",
+        2: "0,25-1,0 mm",
+        3: "4,0-6,0 mm",
+        4: "0,10-25 mm"
+    }, {
+        0: "Haydalma qatlam tuzilishi deb nimaga aytiladi?",
+        1: "Tuproq qattiq fazasi va g‘ovakliklar egallagan hajmlarining nisbatiga",
+        2: "Kapillyar g‘ovaklikning umumiy hajmi nisbatiga",
+        3: "Kapillyar va nokapillyar g‘ovakliklarning o‘zaro nisbatiga",
+        4: "Qattiq fazaning miqdoriga"
+    }, {
+        0: "Tuproq qanday fazalardan tashkil topgan?",
+        1: "Qattiq, suyuq va gaz",
+        2: "Qattiq, g‘ovak va suyuq",
+        3: "Qattiq, g‘ovak va gaz",
+        4: "Qattiq, chirindi va suv"
+    }, {
+        0: "Tuproqning hajmiy massasi nima?",
+        1: "Strukturasi buzilmagan absolyut quruq tuproq og‘irligining uning hajmiga nisbati.",
+        2: "10 kg tuproqning hajmi",
+        3: "100   tuproqning og‘irligi grammda",
+        4: "1000   tuproq og‘irligini 100   suv og‘irligiga nisbati"
+    }, {
+        0: "Kesakchalar orasidagi va ichidagi o‘lchami 2 mm dan kichik g‘ovaklar nima deyiladi?",
+        1: "Kapillyar g‘ovaklar deyiladi",
+        2: "Nokapillyar g‘ovaklar deyiladi",
+        3: "Yirik g‘ovaklar deyiladi",
+        4: "Umumiy g‘ovaklar deyiladi"
+    }, {
+        0: "Kesakchalar orasidagi va ichidagi o‘lchami 2 mm dan katta g‘ovaklar nima deyiladi?.",
+        1: "Nokapillyar g‘ovaklar deyiladi",
+        2: "Kapillyar g‘ovaklar deyiladi",
+        3: "Umumiy g‘ovaklar deyiladi",
+        4: "Havo o‘tkazuvchi g‘ovaklar deyiladi"
+    }, {
+        0: "Tuproqning suv o‘tkazuvchanligi deb nimaga aytiladi?",
+        1: "Og‘irlik va kapilyar kuchlari ta’sirida suvni yuqoridan pastki qatlamlarga o‘tkazishi",
+        2: "Kapillyar kuchlari ta’sirida suvni yuqoridan pastki qatlamlarga o‘tkazishi",
+        3: "Yirik g‘ovaklardan suvni yuqoridan pastki qatlamlarga o‘tkazishi",
+        4: "Qumloq tuproqlarning suvni yuqoridan pastki qatlamlarga o‘tkazishi"
+    }, {
+        0: "CHigit unib chiqishi uchun o‘z og‘irligiga nisbatan qancha suv shimadi?",
+        1: "60 %",
+        2: "35 %",
+        3: "40 %",
+        4: "50 %"
+    }, {
+        0: "Qaysi tuproqlar suvni tez o‘tkazadi?",
+        1: "Qum",
+        2: "Qumoq",
+        3: "Soz",
+        4: "Og‘ir soz"
+    }, {
+        0: "Tuproqning suv ko‘tarish qobiliyati deb nimaga aytiladi?",
+        1: "Tuproqdagi kapillyar g‘ovaklar orqali suvning pastdan yuqoriga ko‘tarilishi",
+        2: "Tuproqdagi nokapillyar g‘ovaklar orqali suvni ko‘tarilishi",
+        3: "Suvni umumiy g‘ovaklardan ko‘tarilishi",
+        4: "Tuproqning zichlashishi tufayli suvni yuqoriga ko‘tarilishi"
+    }, {
+        0: "Tuproqning suv ko‘tarish tezligi nimalarga bog‘liq?",
+        1: "tuproqning mexanik tarkibiga, strukturasiga va tuzilishiga",
+        2: "tuproqning mexanik tarkibi va tuzilishiga",
+        3: "tuproqning  strukturasi va tuzilishiga",
+        4: "tuproqning zichligiga va strukturasi"
+    }, {
+        0: "Tuproqning suv o‘tkazuvchanlik tezligi nimalarga bog‘liq?",
+        1: "tuproqning mexanik tarkibiga, strukturasiga va tuzilishiga",
+        2: "tuproqning  strukturasi va tuzilishiga",
+        3: "tuproqning mexanik tarkibi va tuzilishiga",
+        4: "tuproqning zichligiga"
+    }, {
+        0: "Strukturasiz tuproqlar suvni qanday ko‘taradi?",
+        1: "Sekin lekin katta balandlikka",
+        2: "Tez va katta balandlikka",
+        3: "Sekin va kichik balandlikka",
+        4: "Tez va o‘rtacha balandlikka"
+    }, {
+        0: "Strukturali tuproqlar suvni qanday ko‘taradi?",
+        1: "Tez lekin kichik balandlikka",
+        2: "Tez va katta balandlikka",
+        3: "Tez va kichik balandlikka",
+        4: "Sekin va o‘rtacha balandlikka"
+    }, {
+        0: "Tuproqning ma’lum miqdorda o‘ziga suv singdirishi va ushlab turish qobiliyati nima deyiladi?",
+        1: "Tuproqning nam sig‘imi deyiladi",
+        2: "Tuproqning gigroskopikligi deyiladi",
+        3: "Tuproqning plastikligi deyiladi",
+        4: "Tuproqning suv ko‘tarish xususiyati deyiladi",
+    }, {
+        0: "Dehqonchilik nuqtai nazaridan qaysi nam sig‘imi ahamiyatli?",
+        1: "Kapillyar nam sig‘imi",
+        2: "To‘liq nam sig‘imi",
+        3: "Gigroskopik nam sig‘imi",
+        4: "Gigroskopik va to‘liq nam sig‘imi"
+
+    }, {
+        0: "Tuproq namligini aniqlashning qaysi usullari ko‘p qo‘llaniladi?",
+        1: "Termostatda quritish va qo‘l bilan chamalab aniqlash usul",
+        2: "Infraqizil nurlar yordamida quritish usuli",
+        3: "Kabaev usuli",
+        4: "Spirtda quritish usuli"
+    }, {
+        0: "G‘o‘zaning transpiratsiya koeffitsienti qancha?",
+        1: "280-640",
+        2: "150-750",
+        3: "640-700",
+        4: "100-200"
+    }, {
+        0: "O‘simliklar kapillyar suvni o‘zlashtira oladimi?",
+        1: "Asosan kapillyar suvni o‘zlashtiradi",
+        2: "Qisman o‘zlashtiradi",
+        3: "Umuman o‘zlashtirmaydi",
+        4: "Graviatatsion suvni o‘zlashtiradi"
+    }, {
+        0: "Bug‘doy suvni qaysi davrda eng ko‘p talab qiladi?",
+        1: "Naychalash va boshoq chiqarish fazalarida",
+        2: "Tuplanish fazasida",
+        3: "Pishish fazasida",
+        4: "Donning mum pishiqligi  davrida"
+
+    }, {
+        0: "Tuproqda maksimal dala nam sig‘imiga nisbatan qancha namlik bo‘lsa makkajo‘xori uchun optimal hisoblanadi?",
+        1: "60-70 %",
+        2: "40-55 %",
+        3: "71-80 %",
+        4: "48-58 %"
+    }, {
+        0: "Tuproq havosida kislorodning miqdori qancha bo‘ladi?",
+        1: "19-21 %",
+        2: "15-18 %",
+        3: "21-23 %",
+        4: "23-25 %"
+    }, {
+        0: "Tuproq havosida   ning miqdori qancha bo‘ladi?",
+        1: "0,3-1,0 %",
+        2: "5-6 %",
+        3: "7-8 %",
+        4: "78 %"
+    }, {
+        0: "Havo rejimini yaxshilash uchun qaysi tadbirlarni o‘tkazish kerak?",
+        1: "Shudgorlash, chizellash, boronalash, kultivatsiyalash kabi agrotexnik tadbirlarni",
+        2: "Organik o‘g‘itlardan foydalanish kerak",
+        3: "Tuproq donadorligini yaxshilash uchun organik va mineral o‘g‘itlar solish kerak",
+        4: "SHudgorlash, molalash, chizellash, boronalash, kultivatsiya va sug‘orish kerak"
+    }, {
+        0: "Tuproqning issiqlik rejimi nima?",
+        1: "Tuproq haroratini sutka va yil mobaynida o‘zgarib turishi",
+        2: "Vegetatsiya mobaynida ma’lum hajmdagi tuproqqa yutilgan issiqlik energiyasi",
+        3: "Ertalab soat   va kech   dagi tuproq harorati orasidagi farqi",
+        4: "Tuproq haroratini   dan yuqori bo‘lgan kunlar yig‘indisi"
+    }, {
+        0: "Tuproqning issiqlik rejimi nima?",
+        1: "Tuproq haroratini sutka va yil mobaynida o‘zgarib turishi",
+        2: "Vegetatsiya mobaynida ma’lum hajmdagi tuproqqa yutilgan issiqlik energiyasi",
+        3: "Ertalab soat   va kech   dagi tuproq harorati orasidagi farqi",
+        4: "Tuproq haroratini   dan yuqori bo‘lgan kunlar yig‘indisi"
+    }, {
+        0: "Tuproqning hajmiy issiqlik sig‘imi nima?",
+        1: "1   tuproqni   qizdirish uchun kerak bo‘lgan issiqlik miqdori",
+        2: "1000   tuproqni   qizdirish uchun kerak bo‘lgan issiqlik miqdori",
+        3: "100   tuproqni   qizdirish uchun kerak bo‘lgan suv miqdor",
+        4: "10   tuproqni   qizdirish uchun kerak bo‘lgan issiqlik miqdori"
+    }, {
+        0: "1   tuproqni   qizdirish uchun kerak bo‘lgan issiqlik miqdori.",
+        1: "tuproqning hajmiy issiqlik sig‘imi deyiladi",
+        2: "tuproqning og‘irlik issiqlik sig‘imi deyiladi",
+        3: "tuproqning umumiy issiqlik sig‘imi deyiladi",
+        4: "tuproqning jo‘‘ziy issiqlik sig‘imi deyiladi"
+    }, {
+        0: "Tuproqning og‘irlik issiqlik sig‘imi nima?",
+        1: "1 g tuproqni   qizdirish uchun kerak bo‘lgan issiqlik miqdori",
+        2: "100 g tuproqni   qizdirish uchun kerak bo‘lgan issiqlik miqdori",
+        3: "1 kg tuproqni   qizdirish uchun kerak bo‘lgan issiqlik miqdori",
+        4: "100 g tuproqni   qizdirish uchun kerak bo‘lgan issiqlik miqdori"
+    }, {
+        0: "1 g tuproqni   qizdirish uchun kerak bo‘lgan issiqlik miqdori...",
+        1: "tuproqning og‘irlik issiqlik sig‘imi deyiladi",
+        2: "tuproqning hajmiy issiqlik sig‘imi deyiladi",
+        3: "tuproqning jo‘ziy issiqlik sig‘imi deyiladi",
+        4: "tuproqning umumiy issiqlik sig‘imi deyiladi"
+    }, {
+        0: "Begona o‘tlar deganda nima tushunasiz?",
+        1: "Inson tomonidan ekilmaydigan, ammo ekinlar orasida o‘sib ularga zarar keltiradigan o‘simliklarni",
+        2: "Ariqlar, zovurlar yoqasida o‘sadigan o‘tlarni",
+        3: "Tashlandiq erlarda o‘sadigan o‘simliklarni",
+        4: "Ayrim madaniy ekinlar orasida uchraydigan boshqa madaniy o‘simliklarni",
+
+    }, {
+        0: "Begona o‘tlarni chopiq qilish uchun necha ishchi kuni sarflanadi?",
+        1: "25",
+        2: "15",
+        3: "20",
+        4: "10"
+    }, {
+        0: "Zaharli begona o‘tlarni ko‘rsating",
+        1: "Bangidevona, kakra, kampirchopon, ayiqtovon",
+        2: "Olabuta, ayiqtovon, g‘umay",
+        3: "G‘ichmalos, ituzum, kakr",
+        4: "Yantoq, tuyaqorin, olabuta"
+    }, {
+        0: "Yovvoyi gultojixo‘roz qanchagacha urug‘ berishi mumkin?",
+        1: "500000 dona",
+        2: "200000 dona",
+        3: "100000 dona",
+        4: "45000 dona"
+    }, {
+        0: "Olabutaning qaysi rangdagi urug‘lari ikkinchi yili unib chiqadi?",
+        1: "Jigar rangli, mayda",
+        2: "Qora rangli, yaltiroq",
+        3: "Oq rangli",
+        4: "Qoramtir"
+    }, {
+        0: "Yovvoyi gultojixo‘roz begona o‘tlarning qaysi guruhiga kiradi?",
+        1: "Bir yillik kechki bahorgilarga",
+        2: "Bir yillik erta bahorgilarga",
+        3: "Kuzgi bir yilliklarga",
+        4: "Qishlovchi bir yilliklarga"
+    }, {
+        0: "Erta bahorgi begona o‘tlarni ko‘rsating?",
+        1: "Yovvoyi suli, olabuta",
+        2: "Kurmak, olabuta",
+        3: "Semizo‘t, kurmak",
+        4: "Yantoq, olabuta"
+    }, {
+        0: "Kech bahorgi begona o‘tlarni ko‘rsating?",
+        1: "Itqunoq, ituzum, semizo‘t.",
+        2: "Kurmak, ituzum, olabuta",
+        3: "Olabuta, jag‘jag‘",
+        4: "Dag‘alkanop, g‘umay"
+    }, {
+        0: "Qishlovchi begoni o‘tlarni ko‘rsating?",
+        1: "Dala tlaspisi, jag‘jag‘.",
+        2: "Qoramiq, yaltirbosh, zupturum",
+        3: "Kurmak, yarutka",
+        4: "Ajiriq, g‘umay, salomalaykum"
+
+    }, {
+        0: "Kuzgi begona o‘tlarni ko‘rsating?",
+        1: "Yaltirbosh, supurgi, qoramiq",
+        2: "Yaltirbosh, qoramiq, g‘umay.",
+        3: "YAntoq, tuyaqorin.",
+        4: "Tuyaqorin, qamish, ajriq."
+    }, {
+        0: "Bir yillik begona o‘tlarni ko‘rsating?",
+        1: "Kurmak, olabuta, ituzum.",
+        2: "Ajriq, olabuta, kurmak",
+        3: "G‘umay, qamish, kurmak",
+        4: "Yantoq, g‘umay, kurmak"
+    }, {
+        0: "Kurmak bir yillik begona o‘tlarning qaysi guruhiga kiradi?",
+        1: "Kechki bahorgi",
+        2: "Erta bahorgi",
+        3: "Efemer",
+        4: "Kuzgi"
+    }, {
+        0: "Yulduzo‘t bir yillik begona o‘tlarning qaysi guruhiga kiradi?",
+        1: "Efemer",
+        2: "Erta bahorgi",
+        3: "Qishlovchi",
+        4: "Kechki bahorgi"
+    }, {
+        0: "Semizo‘t bir yillik begona o‘tlarning qaysi guruhiga kiradi?",
+        1: "Kechki bahorgi",
+        2: "Erta bahorgi",
+        3: "Qishlovchi",
+        4: "Kuzgi"
+    }, {
+        0: "Olabuta bir yillik begona o‘tlarning qaysi guruhiga kiradi?",
+        1: "Erta bahorgi",
+        2: "Kechki bahorgi",
+        3: "Qishlovchi",
+        4: "Efemer"
+    }, {
+        0: "Jag‘-jag‘ bir yillik begona o‘tlarning qaysi guruhiga kiradi?",
+        1: "Qishlovchi",
+        2: "Kuzgi",
+        3: "Kechki bahorgi",
+        4: "Erta bahorgi"
+    }, {
+        0: "Itqunoq bir yillik begona o‘tlarning qaysi guruhiga kiradi?",
+        1: "Kechki bahorgi",
+        2: "Qishlovchi",
+        3: "Erta bahorgi",
+        4: "Kuzgi"
+    }, {
+        0: "Ikki yillik begona o‘tlarni ko‘rsating?",
+        1: "Qashqarbeda, oqkarrak",
+        2: "Yantoq, qamish",
+        3: "Olabuta, kurmak",
+        4: "Ituzum, ajriq."
+    }, {
+        0: "Ko‘p yillik begona o‘tlarni ko‘rsating?",
+        1: "Ajriq, g‘umay, kakra.",
+        2: "Ajriq, g‘umay, olabuta",
+        3: "G‘umay, yantoq, kurmak",
+        4: "ituzum, g‘umay, ajriq."
+    }, {
+        0: "O‘q ilidizli ko‘p yillik begona o‘tlarni ko‘rsating?",
+        1: "Otquloq, oqquray, qoqio‘t",
+        2: "Yantoq, kakra, qo‘ypechak",
+        3: "Kakra, ajriq, otquloq.",
+        4: "Ayiqtovon, qizilmiya, salomalaykum"
+    }, {
+        0: "Ildizpoyali begona o‘tlarni ko‘rsating?",
+        1: "Ajriq, g‘umay, qamish, salomalaykum",
+        2: "Ermon, kurmak, kakra, ajriq",
+        3: "Yantoq, kakra, qizilmiya, qo‘ypechak",
+        4: "G‘umay, ajriq, qo‘ypechak"
+    }, {
+        0: "Ildizbachkili ko‘p yillik begona o‘tlarni ko‘rsating?",
+        1: "Yantoq, kakra, qizilmiya",
+        2: "Qoqio‘t, oqquray, sachratqi",
+        3: "Kurmak, ituzum, itqunoq",
+        4: "Olabuta, dag‘alkanop, g‘umay"
+    }, {
+        0: "Kakra qanday ko‘payadi",
+        1: "Ildizbachkisidan va urug‘idan",
+        2: "Faqat urug‘idan",
+        3: "Poyasining bo‘laklaridan va urug‘idan",
+        4: "Urug‘idan va gajaklaridan"
+    }, {
+        0: "Popuk ildizli ko‘p yillik begona o‘tlarni ko‘rsating?",
+        1: "Zupturum, bargizub",
+        2: "Zupturum, shumg‘iya",
+        3: "Bargizub, g‘umay",
+        4: "G‘umay, ajriq"
+    }, {
+        0: "Bangidevonaning tarkibida qanaqa zaharli modda bor?",
+        1: "Daturin va antropin alkalloidlari",
+        2: "Sianid",
+        3: "Glikozid",
+        4: "Konvulvulin"
+    }, {
+        0: "Erbag‘irlab o‘suvchi begona o‘tlarni ko‘rsating?",
+        1: "Ayiqtovon, tugmabosh, quyono‘t",
+        2: "Ajriq, yulduzo‘t, qo‘ypechak",
+        3: "Qo‘ypechak, g‘umay, ajriq",
+        4: "Qo‘ypechak, qirqbo‘g‘in"
+    }, {
+        0: "Qaysi o‘simlikning urug‘lari juda zaharli",
+        1: "Ayiqtovon",
+        2: "Yulduzo‘t",
+        3: "Qo‘ypechak",
+        4: "Qaysi o‘simlikning urug‘lari juda zaharli"
+    }, {
+        0: "Ildiz parazitlariga qaysi begona o‘tlar kiradi?",
+        1: "Kungaboqar shumg‘iyasi, misr shumg‘iyasi",
+        2: "Zarpechak, devpechak",
+        3: "Qo‘ypechak, zarpechak",
+        4: "Misr shumg‘iyasi, zarpechak"
+    }, {
+        0: "Poya parazitlariga qaysi begona o‘tlar kiradi?",
+        1: "Devpechak, zarpechak",
+        2: "Ajriq, devpechak",
+        3: "Shumg‘iya va zarpechaklar",
+        4: "Qo‘ypechak, zarpechak"
+    }, {
+        0: "Begona o‘tlar soni qaysi usulda hisobga olinadi?",
+        1: "Chamalash va aniq hisobga olish.",
+        2: "Tarozida tortish usuli",
+        3: "CHamalash, tarozida tortish usuli",
+        4: "Termostatda quritish usuli"
+    }, {
+        0: "O‘simlik qoplamida 25-50 % foiz begona o‘t uchrasa ifloslanish balli qancha bo‘ladi?",
+        1: "3 ball",
+        2: "4 ball",
+        3: "2 ball",
+        4: "5 ball"
+    }, {
+        0: "O‘simlik qoplamida 5 % foizgacha begona o‘t uchrasa ifloslanish balli qancha bo‘ladi?",
+        1: "1 ball",
+        2: "2 ball",
+        3: "3 ball",
+        4: "4 ball"
+    }, {
+        0: "O‘simlik qoplamida 60 % foiz begona o‘t uchrasa ifloslanish balli qancha bo‘ladi?",
+        1: "4 ball",
+        2: "2 ball",
+        3: "1 ball",
+        4: "3 ball"
+    }, {
+        0: "O‘simlik qoplamida 6-25 % foiz begona o‘t uchrasa ifloslanish balli qancha bo‘ladi?",
+        1: "2 ball",
+        2: "3 ball",
+        3: "4 ball",
+        4: "1 ball"
+    }, {
+        0: "Begona o‘tlarga qarshi uyg‘unlashgan kurash choralarini ko‘rsating?",
+        1: "Oldini oluvchi, qiruvchi, maxsus",
+        2: "Agrotexnik mexanik, kimyoviy",
+        3: "Agrotexnik, kimyoviy, fizik",
+        4: "Shudgorlash, kultivatsiya qilish"
+    }, {
+        0: "Begona o‘tlarga qarshi agrotexnik kurash choralariga nimalar kiradi?",
+        1: "Shudgorlash, ekin ekishdan oldin va keyin erni ishlash, qator oralariga ishlov berish, chopiq",
+        2: "Almashlab ekish, chopiq qilish, gerbitsid sepish",
+        3: "Begona o‘tlarni urug‘i pishmasdan gerbitsidlar yordamida yo‘qotish",
+        4: "Ajriq va g‘umay ildizpoyalarini taroqlab olish, vegetatsiya davrida gerbitsid sepish"
+    }, {
+        0: "Biologik kurash choralariga nimalar kiradi?",
+        1: "Almashlab ekish va begona o‘tlarni kasallantiruvchi organizmlardan foydalanish",
+        2: "Uch yil beda ekish va chuqur haydash",
+        3: "Yerni qatlamlab haydash, hashoratlardan foydalanish",
+        4: "Gerbitsid yordamida begona o‘tlarni yo‘qotish"
+    }, {
+        0: "Bir yillik begona o‘tlarga qarshi qaysi gerbitsidlar qo‘llaniladi?",
+        1: "Treflan, triflureks, stomp",
+        2: "Eptam, fyuzilad, raundap",
+        3: "Fosulen, zellek, stomp",
+        4: "Kotoran, fosulen, treflan"
+    }, {
+        0: "Ko‘p yillik begona o‘tlarga qarshi qaysi gerbitsidlar qo‘llaniladi?",
+        1: "Raundap, ximglifos, zellek super",
+        2: "Kotoran, simazin, atrazin",
+        3: "Stomp, kotoran, prometrin",
+        4: "Pivot, treflan, stomp"
+    }, {
+        0: "Treflanning qo‘llash me’yori qancha?",
+        1: "4-6 l/ga",
+        2: "7-10 l/ga",
+        3: "12-14 l/ga",
+        4: "14-16 l/ga"
+    }, {
+        0: "Triflureksning qo‘llash me’yori qancha?",
+        1: "2-4 l/ga",
+        2: "5-6 l/ga",
+        3: "7-8 l/ga",
+        4: "9-11 l/ga"
+    }, {
+        0: "Raundap qachon qo‘llaniladi?",
+        1: "20. IX dan 5. X gacha vegetatsiyasini tugatmagan ko‘p yillik begona o‘tlarga sepiladi",
+        2: "Ekish bilan birga",
+        3: "G‘o‘zani birinchi sug‘orishdan keyin",
+        4: "G‘o‘zani ikkinchi sug‘orishdan keyin"
+    }, {
+        0: "Treflan gerbitsidi qaysi muddatda qo‘llaniladi?",
+        1: "Ekishdan oldin boronalab tuproqqa aralashtiriladi",
+        2: "Ekish bilan birga",
+        3: "Shudgorlashdan oldin",
+        4: "Ekishdan keyin yoppasiga"
+    }, {
+        0: "Triflureks gerbitsidi qaysi begona o‘tlarni yaxshi o‘ldiradi?",
+        1: "Bir yilliklarni",
+        2: "Ko‘p yilliklarni",
+        3: "Ikki yillik va ko‘p yilliklarni",
+        4: "Har qanday begona o‘tni"
+    }, {
+        0: "Bug‘doy, arpa, suli kabi g‘alla ekinlarida qaysi gerbitsidlardan foydalanish mumkin?",
+        1: "Granstar, 2,4D ning aminli tuzlari, 2,4D ning efirlari",
+        2: "Prometrin, treflan",
+        3: "Stomp, kotoran, 2,4D ning efirlari",
+        4: "Fosulen, stomp, toluin."
+    }, {
+        0: "Begona o‘tlar sonini aniq hisobga olishda qanday ishlar bajariladi?",
+        1: "0,25  , 0,5   yoki 1  li ramkalar dalaning 10-15 joyiga qo‘yilib ichidagi begona o‘tlar soni sanaladi.",
+        2: "Begona o‘tlar sonini bir gektar maydonda hisoblab chiqiladi",
+        3: "Dalaning 10 ta joyida 10   dan maydoncha olinib begona o‘tlar soni hisoblanadi",
+        4: "Dalaning boshidan, o‘rtasidan, oxiridan 10   joyda begona o‘tlar sanaladi"
+    }, {
+        0: "Tuproqni ishlashda qanday texnologik jarayonlar bajariladi?",
+        1: "Tuproq qatlamini ag‘darish, yumshatish, aralashtirish, zichlash, tekislash, begona o‘tlarning ildizini qirqish, egat yoki juyak olish",
+        2: "Tuproq qatlamini aralashtirish, tuproqning issiqlik va suv rejimini boshqarish",
+        3: "Ekinlarni ekish va begona o‘tlarni yo‘qotish.",
+        4: "Havo va oziqa rejimlarini yaxshilash"
+    }, {
+        0: "Plug ag‘dargichlari qanday shaklda bo‘ladi?",
+        1: "Vintsimon, yarim vintsimon, silindirsimon, va madaniy",
+        2: "Yarim silindirsimon, yarim vintsimon va kombinar",
+        3: "Har xil shaklda bo‘lishi mumkin",
+        4: "Faqat yarim vintsimon"
+    }, {
+        0: "Vintsimon ag‘dargichning kamchiligi",
+        1: "Yomon uvoqlaydi",
+        2: "Yomon ag‘daradi",
+        3: "Kesaklar ko‘chadi",
+        4: "Palaxsalar hosil bo‘ladi"
+    }, {
+        0: "Slindrsimon ag‘dargichning kamchiligi",
+        1: "Yomon ag‘daradi",
+        2: "Yomon uvoqlaydi",
+        3: "Palaxsalar",
+        4: "Kesaklar ko‘chadi"
+    }, {
+        0: "Haydash sifatini belgilovchi omillar",
+        1: "Plug konstruksiyasi, sozlanganligi, tuproq namligi,traktor tezligi, dala holati",
+        2: "Plugning sozlanganligi, tuproq namligi,traktor tezligi, dala holati",
+        3: "Plug konstruksiyasi, tuproq namligi, dala holati",
+        4: "Tuproq namligi,traktor tezligi, dala holati"
+    }, {
+        0: " Haydashda chala joylar necha foyizdan oshmasligi kerak?",
+        1: "0,2 ,% dan",
+        2: "0,5 % dan",
+        3: "1 % dan",
+        4: "2 % dan"
+    }, {
+        0: "Haydashda ko‘milmay qolgan o‘simliklar qoldig‘i necha foyizdan oshmasligi kerak?",
+        1: "10 % dan",
+        2: "20 % dan",
+        3: "30 %dan",
+        4: "40 % dan"
+    }, {
+        0: "Qanday ag‘dargichlar tuproqni yaxshi uvoqlaydi va ag‘daradi?",
+        1: "Madaniy",
+        2: "Yarim vintsimon",
+        3: "Vintsimon.",
+        4: "Silindirsimon"
+    }, {
+        0: "Madaniy plug nechanchi yili yaratilgan?",
+        1: "1870 yili",
+        2: "1917 yili.",
+        3: "1900 yili",
+        4: "1890 yili"
+    }, {
+        0: "Madaniy otvalli plugni kim ixtiro qilgan?",
+        1: "Rudolf Sakk",
+        2: "T.Maltsev",
+        3: "Sorokin",
+        4: "Kondrayuk"
+    }, {
+        0: "Qaysi plug ikki yarusli hisoblanadi?",
+        1: "PYA-3-35",
+        2: "P-5-35M",
+        3: "P-3-35",
+        4: "PN-4-35"
+    }, {
+        0: "Ikki yarusli PYA-3-35 plugning chimqirqari kengligi necha santimetrga teng?",
+        1: "24-27 sm",
+        2: "27-30 sm",
+        3: "20 sm",
+        4: "30 sm"
+    }, {
+        0: "Tuproq namligi necha foiz bo‘lganda yer yaxshi uvoqlanadi?",
+        1: "40-60 %",
+        2: "60-70 %",
+        3: "20-30 %",
+        4: "30-40 %"
+    }, {
+        0: "Tuproq namligi me’yordan ortiqcha bo‘lganda yer haydalsa...",
+        1: "palaxsalar hosil bo‘ladi.",
+        2: "tuproq kesakli bo‘ladi",
+        3: "sifatli haydaladi",
+        4: "Haydash sifatiga ta’sir qilmaydi"
+    }, {
+        0: "Tuproq namligi me’yordan kam bo‘lganda yer haydalsa...",
+        1: "tuproq kesakli bo‘ladi",
+        2: "Haydash sifatiga ta’sir qilmaydi",
+        3: "palaxsalar hosil bo‘ladi",
+        4: "sifatli haydaladi"
+    }, {
+        0: "Bedapoyani ishlash usuli?",
+        1: "Haydashdan 5-7 kun oldin 5-6 sm chuqurlikda beda ildizlari kesiladi.",
+        2: "5-7 kun oldin 15-16 sm chuqurlikda beda ildizlari kesiladi.",
+        3: "Madaniy plugda haydaladi",
+        4: "Ploskorez plugda xaydaladi"
+    }, {
+        0: "Ang‘iz deb nimaga aytiladi?",
+        1: "Yoppasiga ekilgan g‘alla yoki boshqa bir yillik ekinlar hosili yig‘ishtirib olingan dala ang‘iz deyiladi.",
+        2: "Tabiiy pichanzorlar ang‘iz deyiladi.",
+        3: "Qator oralari ishlanadigan ekinlardan bo‘shagan dala ang‘iz deyiladi.",
+        4: "Sabzavot ekinlaridan bo‘shagan dala ang‘iz deyiladi."
+    }, {
+        0: "Yer haydash tezligi soatiga necha km bo‘lishi kerak?",
+        1: "7,0-7,5",
+        2: "3,5-4,0",
+        3: "4,0-4,5",
+        4: "3,0-3,5"
+    }, {
+        0: "Ang‘izni ishlash tizimi qanday bo‘ladi?",
+        1: "Lushchilniklar bilan 10-12 sm chuqurlikda yuza yumshatish va shudgorlash.",
+        2: "Somonni yig‘ishtirib olish va ikki yarusli plugda haydash.",
+        3: "Somonni yig‘ishtirib olish, oddiy plugda haydash.",
+        4: "Somonni yig‘ishtirib olish, chisel-kultivatorlardan foydalanish."
+    }, {
+        0: "Ang‘izni ishlash tizimi qanday bo‘ladi?",
+        1: "Lushchilniklar bilan 10-12 sm chuqurlikda yuza yumshatish va shudgorlash.",
+        2: "Somonni yig‘ishtirib olish va ikki yarusli plugda haydash.",
+        3: "Somonni yig‘ishtirib olish, oddiy plugda haydash.",
+        4: "Somonni yig‘ishtirib olish, chisel-kultivatorlardan foydalanish."
+    }, {
+        0: "Toza shudgorning qanday turlari bor?",
+        1: "Ertagi, o‘rtagi va kechki",
+        2: "Faqat ertagi",
+        3: "Faqat o‘rtagi",
+        4: "Faqat kechki"
+    }, {
+        0: "Band shudgor deb nimaga aytiladi?",
+        1: "Toza shudgorga chopiq talab ekin ekilgan yer band shudgor deyiladi",
+        2: "SHudgorga har qanday ekin ekilsa band shudgor deyiladi",
+        3: "Dalaga ekilgan ekin band shudgor deyiladi",
+        4: "Faqat dukkakli ekin ekilsa band shudgor deyiladi"
+    }, {
+        0: "Chizel-kultivatorlar tuproqni qanday chuqurlikda yumshatadi?",
+        1: "20-25 sm",
+        2: "40 sm",
+        3: "30 sm",
+        4: "45 sm"
+    }, {
+        0: "Dalaga mola nima uchun bosiladi?",
+        1: "Namlikni pastdan yuqoriga ko‘tarilishi uchun.",
+        2: "Turli ekinlar ekilgandan keyin zarur",
+        3: "Turli ekinlarni ekishdan oldin zarur",
+        4: "Beda, sebarga, kunjut kabi mayda urug‘li ekinlarga oziqa etkazish uchun"
+    }, {
+        0: "Tuproqqa yuza ishlov berishga qaysi usullar kiradi?",
+        1: "Boronalash, yuza yumshatish, g‘altak bosish, kultivatsiya qilish",
+        2: "Boronalash, molalash",
+        3: "Kultivatsiya qilish",
+        4: "Lushchilnik bilan yumshatish"
+    }, {
+        0: "Kuzgi shudgorni boronalash qanday tartibda boshlanadi?",
+        1: "Birinchi marta shudgor haydalishiga ko‘ndalang, ikkinchi marta bo‘ylamasiga qarab boronalanadi.",
+        2: "Shudgor haydalishiga ko‘ndalang ikki marta",
+        3: "Shudgor haydalishining bo‘ylamasiga ikki marta",
+        4: "Birinchi marta shudgor haydalishiga bo‘ylamasiga ikkinchi marta ko‘ndalangiga qarab boronalanadi"
+    }, {
+        0: "Ekinni ekish me’yori nimaga bog‘liq?",
+        1: "Urug‘ning katta-kichikligiga, ekish sxemasiga, tozalagiga va unuvchanligiga",
+        2: "Ob-havoga va oziq rejimiga",
+        3: "Suv va issiqlik rejimiga",
+        4: "Biologik xususiyatiga."
+    }, {
+        0: "CHigit necha sm chuqurlikda ekiladi?",
+        1: "4-5 sm",
+        2: "6-7 sm",
+        3: "5-8 sm",
+        4: "4-9 sm"
+    }, {
+        0: "Bug‘doy necha sm chuqurlikda ekiladi.",
+        1: "3-5 sm",
+        2: "5-10 sm",
+        3: "7-10 sm",
+        4: "1-2 sm"
+    }, {
+        0: "Makkajo‘xori necha sm chuqurlikda ekiladi.",
+        1: "5-6 sm",
+        2: "6-10 sm",
+        3: "3-4 sm",
+        4: "7-12 sm"
+    }, {
+        0: "Beda necha sm chuqurlikda ekiladi.",
+        1: "0,5-1,5 sm",
+        2: "3-5 sm",
+        3: "2-3 sm",
+        4: "4-5 sm"
+    }, {
+        0: "Hozirgi davrda chigit qaysi usulda ekilmoqda",
+        1: "Keng qatorli seruyalab",
+        2: "Pushtaga ekilmoqda",
+        3: "Pushtaga va tekis erga",
+        4: "Tor qatorlab seruyali,"
+    }, {
+        0: "Toshkent va Farg‘ona viloyatlarida chigit ekishning qulay muddati qachon?",
+        1: "5-15 aprel",
+        2: "5-25 aprel",
+        3: "20-30 aprel",
+        4: "15-20 aprel"
+    }, {
+        0: "Surxondaryo va Qashqadaryo  viloyatlarida chigit ekishning qulay muddati qachon?",
+        1: "25 mart-10 aprel",
+        2: "1-30 mart",
+        3: "10-20 mart",
+        4: "5-25 mart"
+    }, {
+        0: "Xorazm viloyatida chigit ekishning qulay muddati qachon?",
+        1: "10-25 aprel",
+        2: "1-30 aprel",
+        3: "20-30 aprel",
+        4: "1-15 aprel"
+    }, {
+        0: "Almashlab ekish deb nimaga aytiladi?",
+        1: "Ekinlarni yillar va dalalar bo‘yicha, ilmiy asosda navbatlab ekishga aytiladi",
+        2: "Bir o‘simlikni o‘rniga boshqa o‘simlik ekilishiga aytiladi",
+        3: "Tuproq unumdorligini yaxshilash va xosildorlikni oshiruvchi tadbirlar tushuniladi",
+        4: "Tuproqni fizik xususiyatlarini yaxshilash tushuniladi"
+    }, {
+        0: "D.N.Priynishnikov almashlab ekishni taqozo etuvchi omillarni qaysi guruhlarga bzo‘lgan?",
+        1: "Kimyoviy, fizik, biologik, iqtisodiy.",
+        2: "Biologik, kimyoviy, agrotexnik.",
+        3: "Kimyoviy, biologik, iqtisodiy.",
+        4: "Kimyoviy, fizik, agrotexnik, iqtisodiy."
+    }, {
+        0: "O‘tmishdosh ekin deb nimaga aytiladi?",
+        1: "Ekilayotgan ekindan oldingi yili ekilgan ekin.",
+        2: "Ekilayotgan ekindan keyingi yili ekilgan ekin.",
+        3: "Asosiy ekin bilan yonma-yon ekilgan ekin.",
+        4: "Qoplam osti ekiladigan ekinlar."
+    }, {
+        0: "O‘tmishdosh ekin deb nimaga aytiladi?",
+        1: "Ekilayotgan ekindan oldingi yili ekilgan ekin.",
+        2: "Ekilayotgan ekindan keyingi yili ekilgan ekin.",
+        3: "Asosiy ekin bilan yonma-yon ekilgan ekin.",
+        4: "Qoplam osti ekiladigan ekinlar."
+    }, {
+        0: "Almashlab ekish rotatsiyasi deb nimaga aytiladi?",
+        1: "Almashlab ekishda qatnashayotgan ekinlarni dalalar bo‘yicha bir marta to‘liq aylanib ekilishiga ketgan vaqtga.",
+        2: "Almashlab ekishning bitta bo‘g‘inida ekinlarni bir marta to‘liq aylanib ekilishiga ketgan vaqtga.",
+        3: "Almashlab ekishda qatnashayotgan ekinlarni dalalar bo‘yicha ikki marta to‘liq aylanib ekilishiga ketgan vaqtga.",
+        4: "O‘tmishdosh ekinning dalalar bo‘yicha bir marta to‘liq aylanib ekilishiga ketgan vaqtga."
+    }, {
+        0: "Uch yillik beda o‘rtacha  qancha ildiz massasi to‘playdi?",
+        1: "20-25 tonna",
+        2: "5-8 tonna",
+        3: "3-10 tonna",
+        4: "30-50 tonna"
+    }, {
+        0: "Almashlab ekish klassifikatsiyasi qaysi javobda tug‘ri ko‘rsatilgan?",
+        1: "Dala, em-xashak va maxsus almashlab ekish.",
+        2: "Dala almashlab ekish",
+        3: "Em-xashak uchun almashlab ekish",
+        4: "Maxsus almashlab ekish"
+    }, {
+        0: "Bedaning ildizida qanaqa bakteriyalar yashaydi?",
+        1: "Tugunak bakteriyalar.",
+        2: "Urobakteriyalar",
+        3: "Serobakteriyalar",
+        4: "Jelezobakteriyalar"
+    }, {
+        0: "Toza shudgordan keyin bug‘doy hosili nima hisobiga oshadi?",
+        1: "Zararli organizmlar kamayishi hisobiga",
+        2: "Kasalliklar kamayishi hisobiga.",
+        3: "Zararkunandalar kamayishi hisobiga.",
+        4: "Begona o‘tlar kamayishi hisobiga"
+    }, {
+        0: "Band shudgor qaysi yerlarda yaxshi samara beradi?",
+        1: "Tog‘li va tog‘oldi yerlarda.",
+        2: "Tekis sahro mintaqasida",
+        3: "Shimol va g‘arbga qaragan qiyaliklarda",
+        4: "Shimolga qaragan qiyaliklarda"
+    }, {
+        0: "Oraliq ekin sifatida qanday ekinlar ekiladi?",
+        1: "Javdar, raps",
+        2: "Beda, sholi",
+        3: "G‘o‘za, kanop",
+        4: "Tamaki, karam, pomidor"
+    }, {
+        0: "Dehqonchilik tizimining tarixiy shakllarini ko‘rsating?",
+        1: "Ibtidoiy, ekstensiv, oraliq va intensiv dehqonchilik tizimlari",
+        2: "Ibtidoiy, ekstensiv dehqonchilik sistemalaridan iborat",
+        3: "Ekstensiv, intensiv dehqonchilik sistemalaridan iborat.",
+        4: "Oraliq, intensiv dehqonchilik sistemasidan iborat."
+    }, {
+        0: "Hozirgi davrda Respublikamizda dehqonchilikning qaysi tizimi keng ko‘lamda qo‘llanilayapti?",
+        1: "Don-qator orlari ishlanadigan ekinlar tizimi",
+        2: "O‘t-qator orlari ishlanadigan ekinlar tizimi",
+        3: "Don-shudgor tizimi",
+        4: "Don-shudgor-qator orlari ishlanadigan ekinlar tizimi"
+    }, {
+        0: "Lalmikor yerlarda asosan dehqonchilikning qaysi tizimi qo‘llanilayapti?",
+        1: "Don-shudgor, don-shudgor-qator orlari ishlanadigan ekinlar tizimi",
+        2: "O‘t-qator orlari ishlanadigan ekinlar tizimi",
+        3: "Bug‘doy-oqjo‘xori-yasmiq almashlab ekish.",
+        4: "Bug‘doy-xashaki lavlagi almashlab ekish"
+    }, {
+        0: "Ilmiy agronomiyaning asosiy uslublarini ko‘rsating.",
+        1: "Laboratoriya, vegetatsion, lizimetrik va dala tajribasi.",
+        2: "Laboratoriya, vegetatsion, va dala tajribasi.",
+        3: "Laboratoriya, vegetatsion, dala  va ishlab chiqarish tajribasi",
+        4: "Laboratriya,dala va ishlab chiqariish tajribalari"
+    }, {
+        0: "Ilmiy agronomiyaning asosiy usullarini ko‘rsating",
+        1: "Kuzatish va ekspriment",
+        2: "Sanash va o‘lchash",
+        3: "O‘lchash va taqqoslash",
+        4: "Taqqoslash va baho berish"
+    }, {
+        0: "Nazorat varianti deb qaysiga aytiladi?",
+        1: "Tajriba variantlari taqqoslanadigan variant",
+        2: "Barcha variantlar",
+        3: "Eng yaxshi variant",
+        4: "Eng yomon variant"
+    }, {
+        0: "Tajriba sxemasi deb nimaga aytiladi?",
+        1: "Tajriba va standart variantlari birgalikda  tajriba sxemasi deyiladi",
+        2: "Tajriba variantlariga",
+        3: "Standart variantiga",
+        4: "Etalon variantiga"
+    }, {
+        0: "Variantlar qanaqa bo‘lishi mumkin?",
+        1: "Sifat va miqdoriy ko‘rsatkichlari  bo‘yicha",
+        2: "Sifat ko‘rsatkichlari bo‘yicha",
+        3: "Miqdoriy ko‘rsatkichlari  bo‘yicha",
+        4: "Muddat va miqdoriy ko‘rsatkichlari bo‘yicha"
+    }, {
+        0: "Dala tajribasiga qo‘yiladigan asosiy talablar qaysilar?",
+        1: "Tipikligi, yagona farq tamoyili, maxsus maydonda o‘tkazish, hosilni hisobga olish va ishonchligi",
+        2: "Tipikligi, yagona farq tamoyili, unumdor maydonda o‘tkazish",
+        3: "Tipikligi, yagona farq tamoyili, hosilni hisobga olish va ishonchligi",
+        4: "Maxsus may-donda o‘tkazish hosilni hisobga olish va ishonchligi"
+    }, {
+        0: "Tajribada qanaqa xatoliklar uchraydi?",
+        1: "Tassodifiy, sistematik va qo‘pol xatoliklar",
+        2: "Tassodifiy, sistematik va ko‘rinmaydigan xatoliklar",
+        3: "Tassodifiy, sistematik va e’tiborga olinmaydigan xatoliklar",
+        4: "Tassodifiy  qo‘pol, kichik va katta xatoliklar"
+    }, {
+        0: "Dala tajribalari qaysi guruhlarga bo‘linadi?",
+        1: "Agrotexnik va nav sinash tajribalariga.",
+        2: "Tuproqqa ishlov berish, o‘g‘itlash, sug‘orish bo‘yicha tajribalarga",
+        3: "Almashlab ekish tuproqqa ishlov berish, bo‘yicha tajribalarga",
+        4: "Tuproqqa ishlov berish, sug‘orish bo‘yicha tajribalarga"
+    }, {
+        0: "Qisqa muddatli tajribalar necha yil davom etadi?",
+        1: "3-10 yil.",
+        2: "2-3 yil",
+        3: "2-15 yil",
+        4: "10-20 yil."
+    }, {
+        0: "Ko‘p yillik tajribalar necha yil davom etadi?",
+        1: "10-50 yil",
+        2: "20-30 yil",
+        3: "12-15 yil",
+        4: "10-20 yil."
+    }, {
+        0: "Uzoq muddatli tajribalar necha yil davom etadi?",
+        1: "50 yildan ortiq",
+        2: "20 yildan ortiq",
+        3: "30 yildan ortiq",
+        4: "40 yildan ortiq"
+    }, {
+        0: "Tajriba maydoni tuprog‘ining tipikligi nima?",
+        1: "Tajriba maydoni tuprog‘i tajriba natijasi tadbiq qilinadigan xo’jaliklarning tuprog’ bilan bir xil bo’lishi lozim",
+        2: "Tajriba maydoni tuprog‘i imkoni boricha tipik bo’z tuprog’lar bo’lishi",
+        3: "Tajriba maydoni tuprog‘ining unumdorligi dalaning hamma qismida bir xil bo’lishi",
+        4: "Tuproq unumdorligining yuqori bo’lishi."
+    }, {
+        0: "Tajriba maydoni tuprog‘ining bir xilligini oshirish uchun nima qilinadi?",
+        1: "Baravarlashtiruvchi ekin ekiladi",
+        2: "Maydonning unumsiz qismiga beda ekiladi",
+        3: "Tuproq unumdorligini oshrish uchun o‘g‘it soli",
+        4: "Tajriba maydoni tuprog‘ining bir xilligini oshirish uchun nima qilinadi?"
+    }, {
+        0: "Dala tajribasi uslubiyatining asosiy elenmentlariga nimalar kiradi?",
+        1: "Variantlar soni, bo‘laklar maydoni, shakli, yo‘nalishi, takroriylik va takrorlashlar, hosilni hisobga olish va tajribani tashkillashtirish",
+        2: "Variantlar soni, bo‘laklar maydoni, yo‘nalishi, hosilni hisobga olish",
+        3: "Variantlar soni, bo‘laklar maydoni, hosilni hisobga olish va tajribani tashkillashtirish",
+        4: "Variantlar soni, bo‘laklar shakli, takroriylik, takrorlashlar va tajribani tashkillashtirish"
+    }, {
+        0: "Himoya qatorlari va yo‘laklari nima uchun ajratiladi?",
+        1: "Qo‘shni variantdagi omillarning ta’sirini yo‘qotish uchun",
+        2: "Ko‘chat qalinligini ta’minlash uchun",
+        3: "Variantlar orasidagi omillarning birgalikdagi ta’sirini o‘rganish uchun",
+        4: "Shu joyda alohida ilmiy kuzatuvlar olib borish uchun"
+    }, {
+        0: "Tajriba variantlari qaysi usullarda joylashtiriladi?",
+        1: "Standart, sistematik va rendomizatsiya usullarida",
+        2: "Standart, lotin kvadrati, aralashtirish va rendomizatsiya usullarida",
+        3: "Sistematik va rendomizatsiya usullarida",
+        4: "Standart va rendomizatsiya usullarida"
+    }, {
+        0: "Variantlarni lotin kvadrati usulida joylashtirilganda 5 variantli tajribada nechta bo‘lak bo‘ladi?",
+        1: "25 ta",
+        2: "20 ta",
+        3: "15 ta",
+        4: "30 ta"
+    }, {
+        0: "Variantlarni lotin kvadrati usulida joylashtirilganda 7 variantli tajribada nechta bo‘lak bo‘ladi?",
+        1: "49 ta",
+        2: "28 ta",
+        3: "14 ta",
+        4: "7 ta"
+    }, {
+        0: "Variantlarni lotin kvadrati usulida joylashtirilganda 8 variantli tajribada nechta bo‘lak bo‘ladi?",
+        1: "64 ta",
+        2: "56 ta",
+        3: "32 ta",
+        4: "16 ta"
+    }, {
+        0: "Rindomizatsiya usulida varyantlar qanday joylashtiriladi?",
+        1: "Qur’a bo’yicha tasodifan",
+        2: "Tartib raqami bo’yicha ketma-ket",
+        3: "Har-bir takrorlashda standart usulida",
+        4: "Tajriba varyanti yoniga o’zining standarti joylashtiriladi"
+    }, {
+        0: "Variantlarni standart usulida joylashtirilganda",
+        1: "Har bir tajriba varianti yoniga standart joylashtiriladi",
+        2: "Har 5 ta tajriba variantidan keyin bitta standart joylashtiriladi",
+        3: "Har 3 ta tajriba variantidan keyin bitta standart joylashtiriladi",
+        4: "Har 4 ta tajriba variantidan keyin bitta standart joylashtiriladi"
+    }, {
+        0: "Dala tajribasini rejalashtirishning qanaqa bosqichlari bor",
+        1: "1) Rejalashtirish. 2) tajribada kuzatish hisobga olishlarni o‘tkazish. 3) natijalarga ishlov berish va umumlashtirish",
+        2: "1.Tajribani qo‘yish. 2. Kuzatish va hisobga olish. 3. Olingan natijalarga ishlov berish.",
+        3: "1.Rejalashtirish. 2.O‘tkazish. 3.Hisobga olish.",
+        4: "1.Tajribani qo‘yish va o‘tkazish. 2.Olingan natijalarga ishlov berish."
+    }, {
+        0: "Tajribada hosil qaysi usulda hisobga olinadi.",
+        1: "Asosan hisobga olish maydonidan yoppasiga, ba’zan tanlanma maydonchalardan",
+        2: "Tanlanma maydonchalardan",
+        3: "Himoya va hisobga olish qatorlaridan",
+        4: "Himoya qatorlari va tanlanma maydonchalardan"
+    }, {
+        0: "Dala tajribasining birlamchi hujjatlariga nimalar kiradi?",
+        1: "Kundalik daftar, ishchi daftar",
+        2: "Kundalik daftar, tajriba jurnali",
+        3: "Tajriba jurnali, hisobot",
+        4: "Kundalik daftar, hisobot"
+    }, {
+        0: "Kundalik daftarga qanday ma’lumotlar kiritiladi?",
+        1: "Dala tajribasida olib boriladigan kundalik kuzatishlar bo‘yicha ma’lumotlar",
+        2: "Umumlashtirilgan ma’lumotlar",
+        3: "Kuzatuvlar bo‘yicha yig‘ma jadvallar",
+        4: "Tahlillar bo‘yicha yig‘ma jadvallar"
+    }]
+
+    for (let i = test.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [test[i], test[j]] = [test[j], test[i]];
+    }
+</script>
+<script>
+    const test = [{
+        0: "Iqtisodiyot nazariyasi fanining predmeti nimadan iborat?",
+        1: "Iqtisodiy munosabatlarni va ijtimoiy xo’jaliklarni samarali yuritishning iqtisodiy qonun- qoidalarini o’rganish",
+        2: "Jamiyatdagi ijtimoiy munosabatlarni o’rganish",
+        3: "Jamiyatdagi siyosiy munosabatlarni o’rganish",
+        4: "Tabiiy hodisa va jarayonlarni o’rganish"
+    }, {
+        0: "Iqtisodiyot nazariyasi fan sifatida shakllangan:",
+        1: "XVII-XVIII asrlar orasida",
+        2: "kishilik jamiyati vujudga kelgandan boshlab",
+        3: "XIX asrda",
+        4: "A.Smitning “Xalqlar boyligi…” kitobi chop etilishi bilan"
+    }, {
+        0: "Pozitiv iqtisodiy nazariya:",
+        1: "iqtisodiy hodisalarni qanday bo’lsa shunday o’rganadi",
+        2: "bildirilgan fikrlarni tahlil qiladi",
+        3: "iqtisodiy rivojlanishdagi ijobiy tendensiyalarni o’rganadi",
+        4: "iqtisodiy hodisalarni qanday bo’lishi kerakligini ko’rsatadi"
+    }, {
+        0: "Hozirgi zamon iqtisodiyot nazariyasining qaysi oqimida iqtisodiy o’sishni ta’minlashning va tartibga solishning asosiy vositasi pul deb hisoblanadi?",
+        1: "monitarizm",
+        2: "keynschilar",
+        3: "institutsionalizm",
+        4: "liberalizm"
+    }, {
+        0: "Quyidagilardan qaysi biri umumiy iqtisodiy qonunlar jumlasiga kiradi?",
+        1: "Ehtiyojlarning yuksalish qonuni",
+        2: "Talab qonuni",
+        3: "Qiymat qonuni",
+        4: "Rejali rivojlanish qonuni"
+    }, {
+        0: "Iqtisodiy jarayonlarni ilmiy bilishning qaysi usuli dalillardan qonun - qoidalar ishlab chiqishni yoki amaliyotdan nazariya tomon borishni bildiradi?",
+        1: "Induksiya",
+        2: "Ilmiy abstraksiya",
+        3: "Statistik usul",
+        4: "Deduksiya"
+    }, {
+        0: "Quyidagilardan qaysi biri iqtisodiy resurslar tarkibini to’liq aks ettiradi?",
+        1: "Kapital, yer, mehnat va tadbirkorlik qobiliyati",
+        2: "Mehnat qurollari va mehnat predmetlari",
+        3: "Kapital, ishchi kuchi, tabiiy resurslar",
+        4: "Tabiiy va inson resurslari"
+    }, {
+        0: "Iqtisodiy resurslarning barcha turlariga xos xususiyat nimadan iborat?",
+        1: "Cheklanganligi yoki kamyobligi",
+        2: "Inson mehnatining natijasi ekanligi",
+        3: "Tabiatning in'omi ekanligi",
+        4: "Ishlab chiqarish jarayonida jismoniy eskirishi"
+    }, {
+        0: "Iqtisodiy qonunlar qanday xarakterga ega?",
+        1: "Ob'ektiv",
+        2: "Sub'ektiv",
+        3: "Ham ob'ektiv, ham sub'ektiv",
+        4: "Tabiiy xarakterga ega"
+    }, {
+        0: "Tadqiqotlar uslublari majmui  deganda nimani tushunasiz?",
+        1: "Ilmiy  bilishning qoidalari, shakllari va usullarini",
+        2: "Iqtisodiy jarayonlarni modellashtirishni",
+        3: "Makroiqtisodiy va mikroiqtisodiy tahlilni",
+        4: "Tahlilning iqtisodiy - matematik usullarini"
+    }, {
+        0: "Iqtisodiyot nazariyasining asoschilari kimlar?",
+        1: "D.Rikardo, A. Smit, F.Kene",
+        2: "U.Stafford, T.Men, U.Petti",
+        3: "P.Samuelson, K.R. Makkonell, S.L. Bryu",
+        4: "Karl Marks, T.Maltus, J.B.Sey"
+    }, {
+        0: "Iqtisodiy faoliyat turlaridan qaysi birining natijasi bo’lib moddiy-ashyoviy ko’rinishdagi ne’matlar chiqadi?",
+        1: "ishlab chiqarishda",
+        2: "xizmat ko’rsatishda",
+        3: "tadbirkorlik faoliyatida",
+        4: "iste’molda"
+    }, {
+        0: "Quyidagilarning qaysi biri ishlab chiqarishning moddiy omiliga kiradi?",
+        1: "Xom-ashyo va materiallar",
+        2: "Ishchi kuchi",
+        3: "Tadbirkorlik qobiliyati",
+        4: "Ishchining malaka mahorati"
+    }, {
+        0: "Ijtimoiy ishlab chiqarish nima?",
+        1: "Jamiyat miqyosida  amalga oshiriladigan ishlab chiqarish jarayoni",
+        2: "Ishlab chiqarish vositalarini ishlab chiqarish jarayoni",
+        3: "Iste'mol buyumlarini ishlab chiqarish jarayoni",
+        4: "Ishchi kuchini ishlab chiqarish jarayoni"
+    }, {
+        0: "Mehnat unumdorligi qanday aniqlanadi?",
+        1: "Mahsulot miqdorining uni ishlab chiqarishga ketgan ish vaqtiga nisbati bilan",
+        2: "Mahsulot miqdorining qilingan sarf-xarajatlarga nisbati bilan",
+        3: "Mahsulot miqdorini asosiy kapitalga taqqoslash yo’li bilan",
+        4: "Mahsulot miqdorini aylanma kapitalga taqqoslash yo’li bilan"
+    }, {
+        0: "Ishlab chiqarishning iqtisodiy samaradorligi qanday aniqlanadi?",
+        1: "Ishlab chiqarish natijalari sarf-xarajatlar bilan taqqoslanadi",
+        2: "Ishlab chiqarish natijalari jonli mehnat sarflari bilan taqqoslanadi",
+        3: "Ishlab chiqarish natijalari kapital sarflari bilan taqqoslanadi",
+        4: "Ishlab chiqarish natijalari aylanma mablag’lar qiymati bilan taqqoslanadi"
+    }, {
+        0: "Samaradorlik nima?",
+        1: "\"Natija\" va \"xarajatlar\" nisbati",
+        2: "Iqtisodiyotning o’sishi",
+        3: "Ishlab chiqarish xarajatlarining o’sishi",
+        4: "Iqtisodiy resurslarni tejash"
+    }, {
+        0: "Quyidagi keltirilgan qaysi iqtisodiy tushunchalar ishlab chiqarish imkoniyati egri chizig’ini ifodalaydi?",
+        1: "ishlab chiqarish resurslari cheklanganligi, murosali tanlov, muqobil qiymat",
+        2: "talab va taklif",
+        3: "ishlab chiqarish xarajatlarining o’sishi",
+        4: "iqtisodiy resurslarni tejash"
+    }, {
+        0: "Iqtisodiy munosabatlar tizimida mulkchilikning o’rni qanday?",
+        1: "Mulkchilik - ishlab chiqarish jarayonida ishlab chiqaruvchilar o’rtasidagi o’zaro munosabatlarning xarakterini belgilaydi",
+        2: "Mulk bu - boylik manbai",
+        3: "Mulkchilik - mulkka egalik munosabatini ifodalaydi",
+        4: "Iste'molchi talabini qondirish vazifasini bajaradi va taqsimotning xarakterini belgilaydi"
+    }, {
+        0: "Mulkiy munosabatlarning qaysi jihati to’liq mulkdorlik mavqeini ta'minlaydi?",
+        1: "Mulkni tasarruf qilish",
+        2: "Mulkka egalik qilish",
+        3: "Mulkdan foydalanish",
+        4: "Iqtisodiy faoliyat natijasini tasarruf qilish"
+    }, {
+        0: "Manfaatlar tizimi nima?",
+        1: "Shaxsiy, jamoa va davlat manfaati",
+        2: "Iste'molchining manfaati",
+        3: "Ishlab chiqaruvchining manfaati",
+        4: "Iqtisodiy manfaat"
+    }, {
+        0: "Quyidagilardan qaysi biri mulk sub'ekti tushunchasining mazmunini to’laroq xarakterlaydi?",
+        1: "Mulkiy munosabat ishtirokchilari",
+        2: "Mulkdan foydalanuvchilar",
+        3: "Mulk ob'ektini o’zlashtiruvchilar",
+        4: "Ishlab chiqaruvchilar"
+    }, {
+        0: "Bozor munosabatlariga o’tish davrida Respublika iqtisodiyotining negizini qanday mulk tashkil qiladi?",
+        1: "Xilma - xil mulk",
+        2: "Jamoa mulki",
+        3: "Aralash mulk",
+        4: "Xususiy va shaxsiy mulk"
+    }, {
+        0: "Mulkning qaysi ob'ekti bevosita shaxsiy iste'mol qilinishi mumkin?",
+        1: "Iste'mol tovarlari va xizmatlar",
+        2: "Tabiiy boyliklar",
+        3: "Ishchi kuchi",
+        4: "Ishlab chiqarish vositalari"
+    }, {
+        0: "Mulkning quyidagi shakllaridan qaysi biri alohida olingan mulk ob'ekti va uning natijalari turli mulkdorlar ishtiroki o’zlashtirilishini bildiradi?",
+        1: "Aralash",
+        2: "Xususiy va shaxsiy",
+        3: "Jamoa",
+        4: "Davlat"
+    }, {
+        0: "Quyidagilardan qaysi biri bozor infratuzilmasining bevosita tovarlarni ayirboshlash jarayoniga xizmat qiluvchi muassasalariga kiradi?",
+        1: "Birjalar, auksionlar, savdo uylari va agentliklari",
+        2: "Bank tipidagi muassasalar, sug’urta va moliya kompaniyalari, soliq idoralari",
+        3: "Ombor xo’jaligi, transport va aloqa tarmoqlari",
+        4: "Axborot xizmati va auditorlik idoralari, mehnat birjalari"
+    }, {
+        0: "Korxona, muassasa va kompaniyalar moliyaviy xo’jalik faoliyatini tekshirib, taftish qiluvchi va ular hisobotini ekspertizadan o’tkazuvchi muassasalar qanday nom bilan ataladi?",
+        1: "Auditorlik firmalari",
+        2: "Sug’urta kompaniyalar",
+        3: "Trast - fondlar",
+        4: "Konsalting firmalar"
+    }, {
+        0: "Doiraviy aylanishlarning oddiy modeliga bozorning qaysi turlari kiradi?",
+        1: "Tovarlar, xizmatlar va resurslar bozori",
+        2: "Tovar va xizmatlar bozori",
+        3: "Pul va resurslar bozori",
+        4: "Pul bozori"
+    }, {
+        0: "Respublikada iqtisodiy islohotlarni amalga oshirishga asos qilib olingan tamoyillardan qaysi biri ijtimoiy muammolar keskinlashuvining oldini olishga qaratilgan?",
+        1: "Ijtimoiy himoyalash chora - tadbirlarini oldindan amalga oshirish",
+        2: "Davlatning bosh islohotchi bo’lishi",
+        3: "Qonunlarning ustuvorligi",
+        4: "Iqtisodiyotni mafkuradan xoli qilish"
+    }, {
+        0: "Respublikada bozor iqtisodiyotiga o’tishning birinchi bosqichida isloh qilishning muhim yo’nalishini aniqlang:",
+        1: "O’tish jarayonining huquqiy asoslarini shakllantirish, islohotlarning qonuniy bazasini mustahkamlash",
+        2: "Iqtisodiyotning barcha sohalarida mulkchilikning yangi shakllarini vujudga keltirish",
+        3: "Ishlab chiqarishning pasayib borishiga barham berish",
+        4: "Moliyaviy ahvolning barqarorligini ta'minlash"
+    }, {
+        0: "Respublikada bozor iqtisodiyotiga o’tishning ikkinchi bosqichida amalga oshirish ko’zda tutilgan qaysi vazifa raqobatchilik muhitini vujudga keltirishga qaratilgan?",
+        1: "Davlat mulkini xususiylashtirish asosida nodavlat sektorining ulushini oshirish",
+        2: "Ishlab chiqarishning pasayishiga barham berish va makroiqtisodiy barqarorlikni ta'minlash",
+        3: "Iqtisodiyot tarkibini tubdan o’zgartirish",
+        4: "Milliy valyuta qadrini oshirish."
+    }, {
+
+        0: "Iqtisodiy islohotlar nima?",
+        1: "iqtisodiyotda bozor munosabatlarini shakllantirishga qaratilgan chora-tadbirlar",
+        2: "ma’naviy va maishiy, ijtimoiy o’zgarishlarni amalga oshirishga qaratilgan chora-tadbirlar",
+        3: "iqtisodiyot tarkibini tubdan o’zgartirishga qaratilgan chora-tadbirlar",
+        4: "siyosiy o’zgarishlarni amalga oshirishga qaratilgan chora-tadbirlar"
+    }, {
+        0: "Respublikada bozor munosabatlari qaror topishining asosiy belgisi nimada namoyon bo’ladi?",
+        1: "ko’p ukladli iqtisodiy tizim va mulkdorlar sinfining shakllanishida",
+        2: "xususiy mulkning paydo bo’lishida",
+        3: "bozor infrastrukturasi shakllanishida",
+        4: "siyosiy o’zgarishlar amalga oshirilishida"
+    }, {
+        0: "Davlat mulkini xususiylashtirishning dastlabki bosqichida qanday vazifa amalga oshirildi?",
+        1: "kichik xususiylashtirish amalga oshirildi",
+        2: "ommaviy xususiylashtirish amalga oshirildi",
+        3: "chek vositasida xususiylashtirish amalga oshirildi",
+        4: "ko’p ukladli iqtisodiy tizim shakllandi"
+    }, {
+        0: "Quyidagilardan qaysi biri talab tushunchasining mazmunini to’laroq xarakterlaydi?",
+        1: "Bahoning mavjud darajasida sotib olish mumkin bo’lgan tovarlar miqdori",
+        2: "Naflilikning kamayib borishi",
+        3: "Ehtiyoj, xohish, istak",
+        4: "Sotishga chiqarilgan tovarlar miqdori"
+    }, {
+        0: "Mahsulot bahosi va uning sotib olinadigan miqdori o’rtasidagi teskari yoki qarama-qarshi bog’liqlik qanday qonun?",
+        1: "Talab qonuni",
+        2: "Naflilikning kamayib borish qonuni",
+        3: "Taklif qonuni",
+        4: "Unumdorlikning pasayib borish qonuni"
+    }, {
+        0: "Taklif tushunchasi nimani xarakterlaydi?",
+        1: "Bahoning har bir darajasida ishlab chiqarishga qodir bo’lgan va bozorga sotishga chiqaradigan tovarlar miqdorini",
+        2: "Iqtisodiy resurslarning to’liq band qilinganligini",
+        3: "Ishlab chiqarish qonunining kengayishini",
+        4: "Biror mahsulotning ishlab chiqaruvchilari sonini"
+    }, {
+        0: "Quyidagi omillardan qaysi biri alohida tovarlar taklifiga o’z ta'sirini ko’rsatmaydi?",
+        1: "Iste'molchilar soni",
+        2: "Ishlab chiqarish xarajatlari darajasi",
+        3: "Texnologiya",
+        4: "Resurslar unumdorligi"
+    }, {
+        0: "Tovar va xizmatlarning nafliligi nima?",
+        1: "Ehtiyojni qondirish layoqati",
+        2: "Bahoga ega bo’lishi",
+        3: "Foydaliligi",
+        4: "Iste'mol xususiyatiga ega bo’lishi"
+    }, {
+        0: "'Nima uchun aynan bir tovarning navbatdagi xarid qilingan birligining nafliligi pasayib boradi?",
+        1: "Aynan shu tovarga ehtiyojning qondirib borilishi sababli",
+        2: "Tovar taklifining o’sishi sababli",
+        3: "Iste'molchi didining o’zgarishi sababli",
+        4: "Aynan shu tovar bahosining o’sishi sababli"
+    }, {
+        0: "Keyingi naflilikning pasayib borish qonuni ishlab chiqaruvchi (sotuvchi)ning qanday qaror qabul qilishiga olib keladi?",
+        1: "Tovar bahosini pasaytirishga majbur bo’ladi",
+        2: "Tovar taklifini cheklaydi",
+        3: "Ishlab chiqarish (sotish) hajmini qisqartiradi",
+        4: "Talabning o’sishini kutadi"
+    }, {
+        0: "Taklif qonuni nimani ifodalaydi?",
+        1: "Baho bilan sotishga chiqariladigan tovarlar miqdori o’rtasidagi to’g’ridan-to’g’ri bog’liqlikni",
+        2: "Baho pasayishi bilan sotishga chiqariladigan tovarlar miqdorini ortishini",
+        3: "Bahoning o’sishi bilan sotishga chiqariladigan tovarlar miqdorining ortishini",
+        4: "Baho bilan sotishga chiqariladigan tovarlar miqdori o’rtasidagi teskari bog’liqlikni"
+    }, {
+        0: "Mahsulot bahosi o’zgarmay qolganda quyidagilardan qaysi biri taklifning qisqarishiga olib keladi?",
+        1: "Kelgusida mahsulot bahosi o’sishining kutilishi",
+        2: "Texnologiyaning takomillashuvi",
+        3: "Soliqlarning kamayishi va davlat subsidiyalarining o’sishi",
+        4: "Resurslar bahosining pasayishi"
+    }, {
+        0: "Quyidagi holatlardan qaysi birida muvozanatli baho o’zgarish tamoyiliga ega bo’lmaydi?",
+        1: "Talab = taklif",
+        2: "Talab < taklif",
+        3: "Talab > taklif",
+        4: "Ehtyoj = ishlab chiqarish imkoniyati"
+    }, {
+        0: "Agar tovarning narxi 1%ga tushishi unga bo’lgan talabni 2%ga ortishiga olib kelsa, u holda talab:",
+        1: "egiluvchan",
+        2: "noegiluvchan",
+        3: "yagona egiluvchan",
+        4: "mutloq noegiluvchan"
+    }, {
+        0: "Agar tovarning narxi 5%ga pasaysa, umumiy taklif hajmini 8%ga qisqarishiga olib keladi, u holda taklif:",
+        1: "egiluvchan",
+        2: "noegiluvchan",
+        3: "yagona egiluvchan",
+        4: "mutloq noegiluvchan"
+    }, {
+        0: "Tovar taklifining qisqarishi nimaga olib keladi?",
+        1: "o’zaro o’rin bosuvchi tovarlarga talabning ortishiga",
+        2: "agar narxga nisbatan tovarga talab elastik bo’lsa, umumiy tushumni ortishiga",
+        3: "agar daromad bo’yicha tovarga talab noelastik bo’lsa, umumiy tushumni ortishiga",
+        4: "bu tovarga talabning ortishiga"
+    }, {
+        0: "Agar ikki tovar bir-birini o’rnini bossa, u holda birining narxining o’sishi:",
+        1: "ikkinchi tovarga talab hajmining ortishiga",
+        2: "ikkinchi tovarga talabni o’zgarmasligiga",
+        3: "ikkinchi tovarga talabning pasayishiga",
+        4: "ikkinchi tovarga talab hajmining pasayishiga"
+    }, {
+        0: "Agar tovarga taklif va talab ortsa, u holda:",
+        1: "tovarning umumiy miqdori ortadi",
+        2: "narx ko’tariladi",
+        3: "narx barqaror bo’ladi",
+        4: "jamiyatning farovonligi oshadi"
+    }, {
+        0: "Tovar ishlab chiqaruvchilar o’rtasidagi raqobatdan qanday maqsad ko’zda tutiladi?",
+        1: "Bozorda o’z mavqeini mustahkamlash va iste'molchilarni og’dirib olish",
+        2: "Tovarlarni qulay sharoitlarda ishlab chiqarish",
+        3: "Tovarlarni foyda keltiradigan yuqori narxlarda sotish",
+        4: "Iqtisodiy resurslarni arzon baholarda sotib olish"
+    }, {
+        0: "Raqobatning qaysi shaklda ishlab chiqaruvchilar bozor baholarini to’liq nazorat qilish imkoniyatlariga ega bo’ladi?",
+        1: "Sof monopoliya",
+        2: "Monopolistik raqobat",
+        3: "Sof raqobat",
+        4: "Oligopoliya"
+    }, {
+        0: "Quyidagilardan qaysi biri baho vositasida raqobatlashish usuliga kiradi?",
+        1: "\"Narxlar jangi\", demping narxlarini qo’llash, narxlarda chegirma qilish",
+        2: "Imtiyozli narxlarni belgilash va boshqa tovarlarni qo’shib berish",
+        3: "Tovar sifatini tabaqalashtirish orqali iste'mol xossalarini oshirish",
+        4: "Reklama, marketing strategiyasidan foydalanish"
+    }, {
+        0: "Bahosiz raqobat usuli qanday yo’llar bilan olib boriladi?",
+        1: "Tovar sifatini tabaqalashtirish orqali iste'mol xossalarini oshirish, tovarlarni kreditga sotish, marketing strategiyasidan foydalanish",
+        2: "tovarlarni boshqa mamlakatlar ichki bozordagidan ancha past baholar bo’yicha chiqarish",
+        3: "Demping narxlarini qo’llash, narxlarda chegirma qilish",
+        4: "Imtiyozli narxlarni belgilash va boshqa tovarlarni qo’shib berish"
+    }, {
+        0: "Narx bu …",
+        1: "Tovar qiymati va ijtimoiy naflilikning puldagi ifodasi",
+        2: "Tovarga sarflangan mehnatning puldagi ifodasi",
+        3: "Tovarga sarflangan xarajatlarning puldagi ifodasi",
+        4: "Tovarga sarflangan moddiy resurslar qiymati"
+    }, {
+        0: "Narxning qaysi vazifasi talab va taklifning mos kelishi orqali amalga oshadi?",
+        1: "Muvozanatlikni ta'minlash",
+        2: "Tartibga solish va raqobat vositasi",
+        3: "Qiymatni yoki iqtisodiy xarajatlarni hisobga olish",
+        4: "Ijtimoiy himoyalash"
+    }, {
+        0: "Narx tizimi o’z ichiga qanday narxlarni oladi?",
+        1: "Iqtisodiyotda amal qilib turgan barcha narxlarni",
+        2: "Davlat tomonidan belgilanadigan va tartibga solib turiladigan narxlarni",
+        3: "Bozor narxlarini",
+        4: "Jahon narxlarini"
+    }, {
+        0: "Narxlar oralig’idagi farqlarning puldagi miqdoriy ifodasi qanday nom bilan ataladi?",
+        1: "Narx diapazoni",
+        2: "Narx ko’rsatkichi",
+        3: "Narx nisbati",
+        4: "Narx chegarasi"
+    }, {
+        0: "O’zbekistonda iqtisodiy islohotlarni amalga oshirishda narxlarni erkinlashtirishning qaysi yo’lidan foydalaniladi?",
+        1: "Narxlarni asta-sekin, bosqichma - bosqich erkinlashtirish",
+        2: "Narxlar darajasini sun'iy to’xtatib qo’yish",
+        3: "Narxlarni davlat tomonidan boshqarish va nazorat qilish",
+        4: "Narxlarni birdaniga qo’yib yuborish"
+    }, {
+        0: "Narx shakllanishiga qanday omillar ta'sir ko’rsatadi?",
+        1: "Iqtisodiy xarajatlar, talab va taklif",
+        2: "Bozorning rivojlanganlik darajasi",
+        3: "Davlat siyosati",
+        4: "Raqobat"
+    }, {
+        0: "Quyidagilardan qaysi biri marketing tushunchasi mohiyatini to’laroq tavsiflaydi?",
+        1: "Istiqbolni ko’zlab bozorni har tomonlama o’rganish",
+        2: "Mahsulotni sotish bo’yicha vazifalarni belgilash",
+        3: "Reklamani tashkil qilish",
+        4: "Raqobat kurashining shakl va usullarini belgilash"
+    }, {
+        0: "Quyidagilardan qaysi biri \"Tadbirkorlik faoliyati\" tushunchasining mazmunini nisbatan to’laroq xarakterlaydi?",
+        1: "Xo’jalik yurituvchi sub'ektlarning foyda olish maqsadida, mulkiy mas'uliyat ostida va amaldagi qonunlar doirasida tahlika bilan iqtisodiy faoliyat ko’rsatishi",
+        2: "Eng ko’p foyda olish maqsadida ishlab chiqarish omillarini bir-biriga uyg’unlashtirish bilan shug’ullanuvchi iqtisodiy gumashta (D.B.Sey)",
+        3: "Iqtisodiy faoliyatning tarkibiy qismi",
+        4: "Foyda olish maqsadini ko’zlab qandaydir tijorat g’oyasini tavakkalchilik bilan amalga oshiruvchi mulkdor (A.Smit)"
+    }, {
+        0: "Amortizatsiya normasi qanday omilga bog’liq?",
+        1: "Asosiy kapital pul bahosiga",
+        2: "Aylanma kapital qiymatiga",
+        3: "Asosiy kapital foydalanish davri davomida qilinadigan kapital ta’mirlash sarflar darajasiga",
+        4: "Ishdan chiqqan asosiy kapitalni tugatishdan olinadigan mablag’lar darajasiga"
+    }, {
+        0: "Asosiy kapital (fond) ning dastlabki qiymati 15 mln so’m, amortizatsiya ajratmalarining yillik summasi 600 ming so’m bo’lsa, amortizatsiya normasi qanday miqdorni tashkil qiladi?",
+        1: "4,0%",
+        2: "6,0%",
+        3: "2,5%",
+        4: "5,04%"
+    }, {
+        0: "Asosiy kapitalning amortizatsiya normasi 4,0% bo’lsa, aylanish davri qancha vaqtni tashkil qiladi?",
+        1: "25 yil",
+        2: "20 yil",
+        3: "50 yil",
+        4: "30 yil"
+    }, {
+        0: "Iqtisodiy o‘sishning neoklassik modellarida quyidagilarning qaysi biri asosiy vosita bo‘lib hisoblanadi?",
+        1: "ishlab chiqarish funksiyasi",
+        2: "multiplikator qoidasi",
+        3: "akselerator qoidasi",
+        4: "davlatning tartibga solish qoidalari"
+    }, {
+        0: "Shaxsiy daromad 15000 so’m bo’lib, uning 13000 so’mi iste'molchiga ketsa, iste'molga o’rtacha moyillik necha foizni tashkil qiladi?",
+        1: "86,6 %",
+        2: "85,4 %",
+        3: "87,0 %",
+        4: "83,5 %"
+    }, {
+        0: "22000 so’m shaxsiy daromaddan 5000 so’m jamg’arma sifatida ishlatilsa, jamg’armaga o’rtacha moyillik necha foizni tashkil qiladi?",
+        1: "23,0 %",
+        2: "26,0 %",
+        3: "24,0 %",
+        4: "25,6 %"
+    }, {
+        0: "Byudjet taqchilligi qaysi hollarda yuz beradi?",
+        1: "ko’lankali iqtisodiyot rivoj topib ketsa",
+        2: "ishlab chiqarish barqarorlashganda",
+        3: "sotsial dasturga ko’zlangan xarajatlardan kamroq sarflansa",
+        4: "mudofaaga xarajat me'yorida bo’lsa'"
+    }, {
+        0: "'Quyidagilardan qaysi biri investitsion faollik haqida xulosa chiqarish imkonini beradi?",
+        1: "Real investitsiyalar darajasining o’zgarishi",
+        2: "Investitsiyalarning tarmoq tuzilishi",
+        3: "Investitsiyalarning takror ishlab chiqarish tuzilishi",
+        4: "Investitsiyalarning texnologik tuzilishi"
+    }, {
+        0: "Investitsiyalar darajasini belgilaydigan asosiy omil nima?",
+        1: "Sof foyda normasi va foizning real stavkasi",
+        2: "Bank foiz stavkasi",
+        3: "Investitsiyalardan kutilayotgan sof foyda normasi",
+        4: "Sof foyda normasi va foizning nominal stavkasi"
+    }, {
+        0: "Agar YaMM bazis yilda 600 mlrd. so’m, joriy yilda 700 mlrd so’mni tashkil qilgan bo’lsa, uning o’sish sur'ati necha foizni tashkil qiladi?",
+        1: "16,6 %",
+        2: "15,5 %",
+        3: "14,8 %",
+        4: "17,2 %"
+    }, {
+        0: "Qanday narxlarda alohida tovarlar talab va taklifi o’zgarish tamoyillariga ega bo’ladi?",
+        1: "O’zgarib turuvchi narxlarda",
+        2: "Past narxlarda",
+        3: "Doimiy narxlarda",
+        4: "Muvozanatli narxlarda"
+    }, {
+        0: "Jamiyat xarajatlarni minimallashtirishga va cheklangan ishlab chiqarish resurslaridan foydalanishni optimallashtirishga intilsa, iqtisodiy maqsad:",
+        1: "Iqtisodiy samaralilik",
+        2: "Iqtisodiy o’sishni qo’llab-quvvatlash",
+        3: "Iqtisodiy xavfsizlik",
+        4: "To’la bandlikka erishish"
+    }, {
+        0: "Intensiv iqtisodiy o’sish qanday amalga oshadi?",
+        1: "Mavjud bo’lgan iqtisodiy resurslardan samarali foydalanish orqali",
+        2: "Yangi korxonalar qurish yo’li bilan",
+        3: "Ishlovchilar sonini mutlaq oshirish hisobiga",
+        4: "Qo’shimcha pul resurslarini jalb qilish bilan"
+    }, {
+        0: "Iqtisodiy o’sish qanday aniqlanadi?",
+        1: "YaMMning mutloq va aholi jon boshiga to’g’ri keladigan miqdori bilan",
+        2: "Ishsizlik darajasi bilan",
+        3: "Daromad va ish haqi darajasi bilan",
+        4: "Iste’mol darajasi bilan"
+    }, {
+        0: "Quyidagi tengliklarning qaysi birida umumiy iqtisodiy muvozanatga erishiladi?",
+        1: "YaMM = barcha sarflar (aholi, korxona, davlat va chet elliklar xarajatlari)",
+        2: "Aholi pul jamg’armalari = investitsiyalar",
+        3: "Aholi iste'moli hajmi = tovar va xizmatlar massasi",
+        4: "Ishlab chiqarish = iste'mol darajasi",
+    }, {
+        0: "'Quyidagi nisbatlardan qaysi biri inflyatsion farqni ifodalaydi?",
+        1: "SMM < yalpi sarflar",
+        2: "SMM = yalpi sarflar",
+        3: "SMM > yalpi sarflar",
+        4: "SMM = yalpi talab"
+    }, {
+        0: "Iqtisodiy inqirozlarning asosiy mazmuni nimada namoyon bo’ladi?",
+        1: "Tovar massasining talabdan oshib ketishi yoki kamayib ketishida",
+        2: "Narxlarning o’sishida",
+        3: "Ishsizlikning o’sishida",
+        4: "Ishlab chiqarish hajmining keskin kamayib ketishida"
+    }, {
+        0: "Quyidagilarning qaysi biri makroiqtsodiyot darajasidagi muvozanatni to’liq xarakterlaydi?",
+        1: "Mavjud iqtisodiy resurslar va jamiyat ehtiyojlarining mos kelishi",
+        2: "Ishlab chiqarish va iste'molning mos kelishi",
+        3: "Byudjet daromadlari va xarajatlarning mos kelishi",
+        4: "Aholining sotib olish layoqati va tovarlar massasining mos kelishi"
+    }, {
+        0: "Umumiy iqtisodiy muvozanatni ta'minlashning asosiy yo’li:",
+        1: "Barcha bozorlarda talab va taklifni muvozanatga keltirish",
+        2: "Aholi iste'molini cheklash",
+        3: "Xalq xo’jaligini bir me'yorda rivojlantirish",
+        4: "Resurslardan samarali foydalanish"
+    }, {
+        0: "Quyidagi mutanosibliklardan qaysi biri umumiqtisodiy xarakterga ega?",
+        1: "YaMM va uning xarakat shakllari o’rtasidagi",
+        2: "Sanoat va qishloq xo’jaligi o’rtasidagi",
+        3: "Ishlab chiqaruvchi va xizmat ko’rsatuvchi sohalar o’rtasidagi",
+        4: "Hududiy bo’linmalar o’rtasidagi"
+    }, {
+        0: "Iqtisodiy sikl qanday xarakatni ifodalaydi?",
+        1: "Milliy iqtisodiyotning bir iqtisodiy inqirozdan ikkinchisi boshlanguncha takrorlanib turadigan xarakatini",
+        2: "Takror ishlab chiqarish bosqichlarining almashinishini",
+        3: "Ishlab chiqarish o’sish sur'atlarining o’zgarishini",
+        4: "Iqtisodiyotning yopiq doira shaklidagi xarakatini"
+    }, {
+        0: "Tarkibiy inqirozlarni keltirib chiqaruvchi asosiy sabab nima?",
+        1: "Xalq xo’jaligi ayrim tarmoqlari va sohalarining rivojlanishidagi chuqur nomutanosibliklar",
+        2: "Daromad va xarajatlarning mos kelmasligi",
+        3: "Yalpi talab yoki yalpi taklifning o’zgarishi",
+        4: "Ishlab chiqarish va iste'molning mos kelmasligi' +",
+    }, {
+        0: "'Agrar inqirozlarning asosiy xususiyatlari nimalarda namoyon bo’ladi?",
+        1: "Agrar inqirozlar nisbatan uzoq cho’ziladi va sikllik xarakterga ega bo’lmaydi",
+        2: "Fermerlar qarzlarining ortishi, ularning ommaviy ravishda sinishida",
+        3: "Qishloqlarda ishsizlar sonining ko’payishida",
+        4: "Qishloq xo’jaligi mahsulotlarining nisbatan ortiqcha ishlab chiqarilishida"
+    }, {
+        0: "Iqtisodiy siklning fazalari:",
+        1: "Inqiroz, turg’unlik, jonlanish, yuksalish",
+        2: "Inqiroz, tiklanish, pasayish, turg’unlik",
+        3: "Yuksalish, pasayish, jonlanish",
+        4: "Turg’unlik, yuksalish, inqiroz"
+    }, {
+        0: "Potensial YaMM - bu",
+        1: "Resurslar to’liq band bo’lgandagi ishlab chiqarish hajmi",
+        2: "Ishlab chiqarishning erishilgan darajasi",
+        3: "Ishchi kuchlari to’la bandligi sharoitidagi ishlab chiqarish hajmi",
+        4: "Iqtisodiy inqiroz sharoitidagi ishlab chiqarish hajmi"
+    }, {
+        0: "To’liq bandlik - qanday ma’noda tushuniladi?",
+        1: "Ishsizlikning tabiiy darajasining mavjud bo’lishi",
+        2: "Friksion ishsizlikning  mavjud bo’lishi",
+        3: "Sikllik ishsizlikning mavjud bo’lishi",
+        4: "Tarkibiy ishsizlikning mavjud bo’lishi"
+    }, {
+        0: "Ishchi kuchi 6,7 mln kishini, ishsizlar 0,5 mln. kishini  tashkil qilsa, ishsizlik darajasi necha foizga teng bo’ladi?",
+        1: "7,5%",
+        2: "6,5%",
+        3: "7,2 %",
+        4: "8,0%"
+    }, {
+        0: "Ishsizlikning tabiiy darajasi 5% ni, haqiqiy darajasi  8,5% ni tashkil qilsa, Ouken  qonuni bo’yicha YaMMning orqada qolishi necha foizni tashkil qiladi?",
+        1: "8,75%",
+        2: "7,55%",
+        3: "9,65%",
+        4: "6,55%"
+    }, {
+        0: "Quyidagi  sanab o’tilgan iqtisodiy maqsadlarning qaysi biri aniq miqdoriy o’lchovga ega:",
+        1: "To’liq bandlilik",
+        2: "Iqtisodiy kafolat",
+        3: "Iqtisodiy erkinlik",
+        4: "Daromadlarni ijtimoiy adolatli taqsimlash"
+    }, {
+        0: "Ishchi kuchiga bo’lgan talab quyidagilarga bog’liq:",
+        1: "Bandlilik darajasiga",
+        2: "Mahsulotning taklifiga",
+        3: "Ishlab chiqarish vositalarining hajmiga",
+        4: "Mehnatga layoqatli bo’lganlar soniga"
+    }, {
+        0: "Universitetni bitirgan, ish qidirayotgan talaba ishsizlikning qanday turiga kiradi?",
+        1: "Friksion ishsizlikka",
+        2: "Tabiiy ishsizlikka",
+        3: "Tarkibiy ishsizlikka",
+        4: "Sikllik ishsizlikka"
+    }, {
+        0: "To’liq bandlilik sharoitida tabiiy ishsizlik nimada nomoyon bo’ladi?",
+        1: "Friksion va tarkibiy ishsizlikda",
+        2: "Friksion ishsizlikda",
+        3: "Ishsizlik 0 ga teng bo’lganda",
+        4: "Tarkibiy ishsizlikda"
+    }, {
+        0: "Ishsizlikning qaysi turi tabiiy ishsizlik hisoblanmaydi?",
+        1: "Sikllik ishsizlik",
+        2: "Friksion ishsizlik",
+        3: "Friksion va tarkibiy ishsizlik",
+        4: "Tarkibiy ishsizlik"
+    }, {
+        0: "Moliyaviy munosabatlarning mohiyatini quyidagilardan qaysi biri to’laroq xarakterlaydi?",
+        1: "Pulning harakati, ya'ni uning shakllanishi, taqsimlanishi va ishlatilishi jarayonida vujudga keladigan munosabatlar",
+        2: "Pul mablag’larining shakllanishi bilan bog’liq munosabatlar",
+        3: "Pul mablag’larining taqsimlanishi bilan bog’liq bo’lgan munosabatlar",
+        4: "Pul mablag’larining ishlatilishi bilan bog’liq bo’lgan munosabatlar"
+    }, {
+        0: "Byudjet taqchilligi qachon vujudga keladi?",
+        1: "Daromadlar xarajatlar qismidan kam bo’lganda",
+        2: "Daromadlar va xarajatlar qismi teng bo’lganda",
+        3: "Daromadlar xarajatlar qismidan ortiq bo’lganda",
+        4: "Sof eksport ijobiy bo’lganda"
+    }, {
+        0: "Soliqlarning to’g’ri va egri soliqlarga bo’linishi asosida nima yotadi?",
+        1: "Iqtisodiy mazmuni",
+        2: "Ularning amal qilish doirasi",
+        3: "Tovarlar narxiga qo’shilish xarakteri",
+        4: "Byudjetga jalb qilinish usuli"
+    }, {
+        0: "Byudjet taqchilligini bartaraf qilishga erishish uchun:",
+        1: "Davlatning daromadlari uning xarajatlariga teng bo’lishi kerak",
+        2: "Yalpi taklif yalpi talabga teng bo’lishi kerak",
+        3: "Pulning taklif qilish sur'atlari bilan inflyatsiyaning o’sish sur'atlari mos kelishi kerak",
+        4: "Investitsiya hajmi iste'molning hajmidan yuqori bo’lishi kerak' +",
+    }, {
+        0: "'Moliya bu:",
+        1: "Pul resurslarining harakati, ya'ni ularning to’planishi va takror ishlab chiqarishni amalga oshirishga sarflanishi",
+        2: "Muomaladagi pulning massasi",
+        3: "Aholi qo’lida mavjud bo’lgan pul mablag’lari",
+        4: "Tijorat banklaridagi pul mablag’lari"
+    }, {
+        0: "Moliya bozori ob'ekti nima?",
+        1: "Pul va qimmatbaho qog’ozlar",
+        2: "Aksiyalar",
+        3: "Pul",
+        4: "Veksel"
+    }, {
+        0: "Aralash iqtisodiyotdagi jami daromad va xarajatlarning doiraviy aylanish modelida milliy bozordagi “o‘yin qoidalarini” kim belgilaydi?",
+        1: "davlat",
+        2: "ishlab chiqarish sohasi",
+        3: "iste’mol bozori",
+        4: "bank tizimi"
+    }, {
+        0: "Quyidagilardan qaysi biri makroiqtisodiyot predmetiga oiddir?",
+        1: "aholining ish bilan bandligi",
+        2: "almashtirish shaxobchasidagi dollar kursi",
+        3: "korxonaga soliq solish tamoyillari",
+        4: "chakana bozordagi narxlar darajasi"
+    }, {
+        0: "Doiraviy aylanish modelidagi \"zaxiralar\"ga quyidagilardan qaysi biri kiradi:",
+        1: "Davlat byudjetining defitsit hajmi",
+        2: "Investisiyalar hajmi",
+        3: "Ishlab chiqarilgan YaIM",
+        4: "Davlat qarzining hajmi"
+    }, {
+        0: "Doiraviy aylanish modelidagi \"chiqimlar\"ga quyidagilarning qaysi biri kiradi:",
+        1: "Davlat xarajatlari",
+        2: "Investisiyalar",
+        3: "Eksport",
+        4: "Soliq to’lovlari"
+    }, {
+        0: "Makroiqtisodiy tahlil quyida berilgan qaysi muammoni o’rganishda ishlatiladi:",
+        1: "Pul bozoridagi muvozanatni o’rnatishni o’rganishda",
+        2: "Korxona doirasidagi iqtisodiy o’sishni o’rganishda",
+        3: "Birorta mahsulotga bozorda narx-navo o’rnatish mexanizmini o’rganishda",
+        4: "Alohida olingan uy xo’jalik iste'mol xarajatlarining hajmini o’rganishda'",
+    }, {
+        0: "'Doiraviy aylanish modelidagi \"kirimlar\"ga quyidagilarning qaysi biri kiradi:",
+        1: "Soliq to’lovlari",
+        2: "Import",
+        3: "Jamg’arma",
+        4: "Investisiyalar"
+    }, {
+        0: "Iqtisodiy muammolar ham bozor, ham davlat tomonidan hal qilinadigan iqtisodiy tizim nomi qaysi javobda berilgan?",
+        1: "aralash tizim",
+        2: "ma’muriy - buyruqbozlik tizimi",
+        3: "bozor tizimi",
+        4: "an’anaviy tizim"
+    }, {
+        0: "Makroiqtisodiyotdagi asosiy sub’ektlardan biri qaysi javobda berilgan?",
+        1: "korxonalar",
+        2: "tovar va xizmatlar bozori",
+        3: "uy xo‘jaliklari",
+        4: "davlat."
+    }, {
+        0: "Doiraviy aylanish modelidagi “oqimlar”ga nimalar kiradi?",
+        1: "bir yillik iste’mol xarajatlari",
+        2: "ishlatiladigan kapital hajmi",
+        3: "davlat qarzining hajmi",
+        4: "ishsizlar soni"
+    }, {
+        0: "Agar umumlashtirish faktlarga asoslangan bo’lsa, unda bunday tahlil usuli quyidagicha bo’ladi:",
+        1: "induktiv",
+        2: "deduktiv",
+        3: "gipotetik",
+        4: "yozma tahliliy usul"
+    }, {
+        0: "Agar iqtisodiyot bir butun tizim sifatida ko’rilsa unda tahlil …. bo’ladi.",
+        1: "makroiqtisodiy",
+        2: "pozitiv",
+        3: "normativ",
+        4: "mikroiqtisodiy"
+    }, {
+        0: "Agar iqtisodiy jamiyat xarajatlarni kamaytirib daromadlarni ko’paytirishga harakat qilsa, unda iqtisodiy maqsad qanday bo’ladi?",
+        1: "iqtisodiy samaradorlik",
+        2: "to’liq bandlikka erishish",
+        3: "iqtisodiy xavfsizlik",
+        4: "iqtisodiy o’sishni ta'minlash'",
+    }, {
+        0: "'Iqtisodiy tizimdagi baholarning umumiy darajasi va ishsizlik qaysi fanda o’qitiladi?",
+        1: "makroiqtisodiyot",
+        2: "mikroiqtisodiyot",
+        3: "menejment",
+        4: "moliya"
+    }, {
+        0: "Quyidagilardan qaysi biri “oqimlar” ga kirmaydi?",
+        1: "shaxsiy farovonlik",
+        2: "tasarrufdagi shaxsiy daromad",
+        3: "iste’mol xarajatlari",
+        4: "YAMM"
+    }, {
+        0: "Inflyatsiya mavjud bo‘lsa:",
+        1: "nominal YAMM real YAMMdan tezroq o‘sadi",
+        2: "nominal YAMM va real YAMM bir xil o‘sadi",
+        3: "nominal YAMM real YAMMdan sekinroq o‘sadi",
+        4: "bu nisbatni aniqlash uchun berilgan ma’lumot etarli emas"
+    }, {
+        0: "Firmaning qo‘shilgan qiymat miqdori quyidagilarning qaysi biriga teng:",
+        1: "firmaning foydasiga",
+        2: "mahsulotning bozor qiymatiga",
+        3: "mahsulotning bozor va oraliq qiymatlar o‘rtasidagi farqiga",
+        4: "uzoq muddatda nolga teng"
+    }, {
+        0: "Ishlab chiqarish omillarining egalari tomonidan olinadigan umumiy daromadlar yig‘indisi - bu:",
+        1: "milliy daromad",
+        2: "shaxsiy daromad",
+        3: "tasarrufdagi daromad",
+        4: "sof milliy daromad"
+    }, {
+        0: "Iste’molga sarflanmaydigan tasarrufdagi daromadning qismi - bu:",
+        1: "shaxsiy jamg‘armalar",
+        2: "shaxsiy soliqlar",
+        3: "dividendlar",
+        4: "uy xo‘jaliklarning xarajatlari"
+    }, {
+        0: "Quyidagilardan qaysi biri “kirimlar” ga kirmaydi:",
+        1: "davlat xarajatlari",
+        2: "investitsiyalar",
+        3: "eksport",
+        4: "soliqlar"
+    }, {
+        0: "Quyidagilardan qaysi biri “chiqimlar” ga kirmaydi:",
+        1: "jamg‘armalar",
+        2: "investitsiyalar",
+        3: "import",
+        4: "    soliqlar"
+    }, {
+        0: "Quyida sanab o‘tilganlardan qaysi biri milliy hisoblar tizimidagi “investitsiyalar” tushunchasiga kirmaydi:",
+        1: "uy xo‘jaliklar tomonidan yangi uy sotib olish",
+        2: "korxonalar tomonidan yangi bino va asuskunalarni sotib olish",
+        3: "fond birjada aksiyalarni sotib olish",
+        4: "yil oxiriga zaxiralar o‘sishi"
+    }, {
+        0: "Mulkning davlat tasarrufidan chiqarishning qaysi yo’li erkin tadbirkorlikka keng imkoniyatlar ochib berishni ko’zda tutadi?",
+        1: "Xususiylashtirish",
+        2: "Jamoa mulkiga aylantirish",
+        3: "Ijaraga berish",
+        4: "Hissadorlik jamiyatiga aylantirish"
+    }, {
+        0: "O’zbekistonda xususiylashtirishga yondashishning muhim xususiyati nimadan iborat?",
+        1: "Dasturlar asosida bosqichma - bosqich amalga oshiriladi",
+        2: "Adresli yo’naltirilganligi",
+        3: "To’lovliligi",
+        4: "Aholi va mulkdor uchun kuchli ijtimoiy himoyalar hamda kafolatlar tizimining yaratilishi"
+    }, {
+        0: "Iqtisodiy tizimning qaysi turida xususiy mulkning ustunligi va boshqarishning bozor mexanizmi ta'minlanadi?",
+        1: "Sof kapitalizm",
+        2: "Ma’muriy-buyruqbozlik iqtisodiyoti",
+        3: "Aralash iqtisodiyot",
+        4: "An'anaviy iqtisodiyot' +"
+    }, {
+        0: "'Tovar xo’jaligining vujudga kelish va rivojlanish shart-sharoitlari nimadan iborat?",
+        1: "Ijtimoiy mehnat taqsimoti va bozorlarning vujudga kelishi",
+        2: "Mulk egalarining alohidalashuvi",
+        3: "Mahsulotning ayriboshlash uchun ishlab chiqarilishi",
+        4: "Talab va taklif bo’lishi"
+    }, {
+        0: "Tovar qiymati qanday mehnat sarflarini ifodalaydi?",
+        1: "Ijtimoiy-zaruriy",
+        2: "Zaruriy",
+        3: "Qo’shimcha",
+        4: "Individual"
+    }, {
+        0: "Mehnat intensivligi nima?",
+        1: "Mehnatning sarflanish tezligi va jadalligi",
+        2: "Mehnatning aniq turi mahsuldorligi",
+        3: "Qo’llaniladigan mehnat hajmining oshishi",
+        4: "Qo’llaniladigan mehnat hajmining qisqarishi"
+    }, {
+        0: "Pulning qaysi vazifasi narxning shakllanishi bilan bog’liq?",
+        1: "Qiymat o’lchovi",
+        2: "To’lov vositasi",
+        3: "Muomala vositasi",
+        4: "Jamg’arma vositasi"
+    }, {
+        0: "Natural xo’jalik nima?",
+        1: "Bozorda sotish uchun emas, balki xo’jalikning o’z  xodimlari va ishlab chiqaruvchilarning iste'moli uchun mahsulotlar ishlab chiqaradigan xo’jalik",
+        2: "Ishlab chiqarishni tashkil etish mashina va texnikaga emas, qo’l mehnatiga asoslangan xo’jalik",
+        3: "Jamiyat uchun mahsulotni natural holda ishlab chiqaruvchi xo’jalik",
+        4: "Aholi va tashkilotlarga sotish uchun iste'mol buyumlari ishlab chiqaruvchi xo’jalik'",
+    }, {
+        0: "'Pulning vazifasi nimadan iborat?",
+        1: "qiymat o’lchovi, jamg’arma, muomala, to’lov vositasi, jahon puli",
+        2: "ijtimoiy taklif va almashinuv uchun zarur bo’lgan miqdorni belgilaydigan kapital quyilmalar omili",
+        3: "daromadlar va xarajatlarni hisobga olish tizimi",
+        4: "pul iste'mol bilan ijtimoiy talabga bo’lgan investitsiya omili' +",
+    }, {
+        0: "'Pulning vazifalaridan qaysi biri uning muomaladan chiqarilishini taqozo qiladi?",
+        1: "Jamg’arish vositasi",
+        2: "Qiymat o’lchovi",
+        3: "Muomala vositasi",
+        4: "To’lov vositasi"
+    }, {
+        0: "Quyidagi ta'riflardan qaysi biri bozor iqtisodiyotining mohiyatini to’laroq xarakterlaydi?",
+        1: "Tovar ishlab chiqarishga asoslangan, iqtisodiy  sub'ektlarning erkin hatti - harakati bozor mexanizmi orqali muvofiqlashtiriladigan iqtisodiyot",
+        2: "Iqtisodiy sub'ektlar faoliyati erkin amalga oshiriladigan iqtisodiyot",
+        3: "Mehnat taqsimoti mavjud bo’lgan va tovar ishlab chiqarishga asoslangan iqtisodiyot",
+        4: "Urf - odat, udumlar va an'analarga asoslanagan iqtisodiyot' +",
+    }, {
+        0: "'Bozor iqtisodiyotining qaysi sub'ekti iqtisodiy resurslarni yetkazib beruvchi va pirovard mahsulotlar iste'molchisi hisoblanadi?",
+        1: "Uy xo’jaliklari",
+        2: "Korxonalar",
+        3: "Davlat tashkilotlari",
+        4: "Davlat muassasalari"
+    }, {
+        0: "Quyidagilardan qaysi biri bozor iqtisodiyotini tartibga soluvchi mexanizmning tarkibiy qismini xarakterlaydi?",
+        1: "Narx, raqobat, talab va taklif",
+        2: "Raqobat, talab va taklif",
+        3: "Narx, talab va taklif",
+        4: "Narx, soliq, raqobat, davlat ijtimoiy dasturlari"
+    }, {
+        0: "Bozor iqtisodiyotining muhim belgilarini nimalar tashkil qiladi?",
+        1: "Xususiy mulkchilik va davlatning cheklangan roli",
+        2: "Tadbirkorlik va tanlash erkinligi",
+        3: "Shaxsiy manfaatni rag’batlantirish",
+        4: "Tartibga soluvchi mexanizmning yo’qligi"
+    }, {
+        0: "Bozorning qaysi nusxasida iste'molchilar monopol mavqeiga ega bo’ladi?",
+        1: "Monopol raqobatli bozor",
+        2: "Monopollashgan raqobatli bozor",
+        3: "Sof raqobatli yoki erkin bozor",
+        4: "Oligopolistik bozor"
+    }, {
+        0: "Bozor iqtisodiyotida \"Qancha ishlab chiqarish zarur\" ligini nima belgilab beradi?",
+        1: "Iqtisodiy resurslarning cheklanganligidan kelib chiquvchi ishlab chiqarish imkoniyati",
+        2: "Iste'molchi",
+        3: "Ehtiyoj",
+        4: "Davlat"
+    }, {
+        0: "Quyidagi omillardan qaysi biri resurslarning mavjud hajmida ishlab chiqarish hajmini ko’paytirib borish imkonini beradi?",
+        1: "Texnika taraqqiyoti va texnologiyaning takomillashishi",
+        2: "Talabning oshishi",
+        3: "Resurslar qiymatining o’zgarishi",
+        4: "Mehnat unumdorligining pasayishi"
+    }, {
+        0: "Bozor iqtisodiyotining salbiy tomoni nimada namoyon bo’ladi?",
+        1: "Pul daromadlarining notekis taqsimlanishida",
+        2: "Erkinlikni ta'minlashda",
+        3: "Resurslarni taqsimlashda",
+        4: "Davlatning iqtisodiyotida cheklangan rol o’ynashida"
+    }, {
+        0: "Quyidagilarning qaysi biri bozor munosabatlarining mohiyatini to’laroq xarakterlaydi?",
+        1: "Tovar (xizmat)larni ayirboshlash jarayonida bozor sub'ektlari o’rtasida vujudga keladigan iqtisodiy munosabatlar",
+        2: "Moddiy ne'matlarni taqsimlash jarayonidagi munosabatlar",
+        3: "Takror ishlab chiqarish munosabati",
+        4: "Ijtimoiy va siyosiy munosabatlar"
+    }, {
+        0: "Sof iqtisodiy ma'noda \"bozor\" tushunchasi nimani anglatadi?",
+        1: "Ishlab chiqaruvchi (sotuvchi) va iste'molchi (xaridor)larni tovarlarini ayirboshlash xususida harakatini o’zaro keltiruvchi mexanizmlar, tartiblar va infratuzilmalar tizimi",
+        2: "Bozor sub'ektlari iqtisodiy natijalarining amalga oshirilishini",
+        3: "Sotuvchi va xaridorlar to’planib, ayirboshlashni amalga oshiradigan joyni",
+        4: "Alohida tovarlar taklifi va ularga bo’lgan talablarni muvofiqlashtiruvchi mexanizmlarni"
+    }, {
+        0: "Bozorning quyidagi turlaridan qaysi birida sotuvchi xaridorlar bilan bevosita ayirboshlash orqali bog’lanmaydi?",
+        1: "Tovar va xom-ashyo auksionlarida",
+        2: "Sanoat tovarlari magazinida",
+        3: "Oziq-ovqat mahsulotlari bozorlarida",
+        4: "Avtomobillarga yog’ quyish shaxobchalarida"
+    }, {
+        0: "Bozorning qaysi vazifasida uning vositachilik roli nisbatan to’laroq namoyon bo’ladi?",
+        1: "Ishlab chiqaruvchi bilan iste'molchini bog’lash vazifasi",
+        2: "Resurslarni tarmoqlar va korxonalar o’rtasida taqsimlash vazifasi",
+        3: "Ishlab chiqarishning takrorlanib turishiga yordam berish vazifasi",
+        4: "Iqtisodiyotni tartibga solish vazifasi"
+    }, {
+        0: "Aqliy mehnat mahsuli hisoblangan intellektual tovarlar bozorida ayirboshlash ob'ekti bo’lib nima chiqadi?",
+        1: "Ilmiy texnikaviy ishlanmalar, san'at va adabiyot asarlari",
+        2: "Ommaviy axborot vositalari",
+        3: "Bank xizmatlari",
+        4: "konsalting xizmatlari"
+    }, {
+        0: "Bozorda juda ko’p sotuvchilar va xaridorlar mavjud bo’lib, ulardan hech biri bozor baholariga o’z ta'sirini o’tkaza olmasa, hamda bozorga kirish uchun hech qanday to’siqlar bo’lmasa, bu qanday bozorni xarakterlaydi?",
+        1: "Sof raqobatli bozor",
+        2: "Sof monopolistik bozor",
+        3: "Monopolistik raqobatli bozor",
+        4: "Oligopolistik bozor"
+    }, {
+        0: "Qaysi bozorda broker va dilerlar vositachilik qiladi?",
+        1: "Qimmatli qog’ozlar bozorida",
+        2: "Ishlab chiqarish vositalari bozorida",
+        3: "Qarz majburiyatlari bozorida",
+        4: "Ishchi kuchi (mehnat) bozorida"
+    }, {
+        0: "YAMMning deflyatori nimaga teng?",
+        1: "nominal YAMMning real YAMMga nisbati",
+        2: "real YAMMning va nominal YAMMga nisbati",
+        3: "iste’mol savatining joriy yildagi qiymatiningva bazis yildagi qiymatiga nisbati",
+        4: "joriy yildagi mahsulotni narxlar indekslarining yig‘indisiga"
+    }, {
+        0: "Quyidagi ko’rsatkichlardan qaysi biri mamlakatning makroiqtisodiy ahvolini ifodalaydi?",
+        1: "milliy daromad",
+        2: "Respublikadagi ekin maydonlari hajmi",
+        3: "1 tonna metallning narxi",
+        4: "mehnat unumdorligi"
+    }, {
+        0: "Agar yalpi milliy mahsulot 500ga, amortizatsiya 54ga, biznesga egri soliqlar - 36ga teng bo’lsa, milliy daromadni aniqlang.",
+        1: "410",
+        2: "446",
+        3: "554",
+        4: "590"
+    }, {
+        0: "Agar bozor savatining bahosi 2013 yilda - 50, 2014 yilda - 60 bo’lgan bo’lsa, 2014 yilda YaMM deflyatori nimaga teng bo’ladi?",
+        1: "120%",
+        2: "90%",
+        3: "140%",
+        4: "110%",
+    }, {
+        0: "Agar joriy yilda aholining nominal daromadlari o’tgan yilga nisbatan 60%ga ko’paygan bo’lsa, narxlar darajasi esa 40% ga oshgan bo’lsa, unda real daromadlar qanday o’zgargan?",
+        1: "20% ga ko’paygan",
+        2: "20% ga kamaygan",
+        3: "60% ga ko’paygan",
+        4: "o’zgarishsiz qolgan"
+    }, {
+        0: "Iqtisodiyotning davriy rivojlanishi quyidagilarda namoyon bo‘ladi:",
+        1: "iqtisodiy kon’yunkturaning davriy tebranishlarida",
+        2: "iqtisodiy faollikning davriy pasayishlarida",
+        3: "iqtisodiy faollikning davriy ko‘tarilishlarida",
+        4: "iqtisodiy faollikning davriy turg‘unligida"
+    }, {
+        0: "Keyns nazariyasiga ko‘ra davriy rivojlanishning ichki sabablari qaysi javobda ko‘rsatilgan?",
+        1: "investitsiyalarga bo‘lgan talabning tebranishlari",
+        2: "tabiiy - iqlim hodisalar",
+        3: "siyosiy hodisalar va jarayonlar",
+        4: "fan - texnika kashfiyoti"
+    }, {
+        0: "Milliy xo‘jalikda iqtisodiy pasayish davrida jami talab:",
+        1: "kamayadi",
+        2: "oshadi",
+        3: "o‘zgarmaydi",
+        4: "ham oshishi, ham kamayishi mumkin"
+    }, {
+        0: "Talab inflyasiyasiga sabab bo‘ladigan omil qaysi javobda ko‘rsatilgan?",
+        1: "davlat byudjet taqchilligining o‘sishi",
+        2: "neftga narxlarning o‘sishi",
+        3: "iste’molga me’yoriy moyillikni pasayishi",
+        4: "aholiga solinadigan individual soliq stavkasining oshishi"
+    }, {
+        0: "Taklif inflyasiyasiga sabab bo‘ladigan omil qaysi javobda ko‘rsatilgan?",
+        1: "ish haqi stavkasining oshishi",
+        2: "davlat xarajatlarining o‘sishi",
+        3: "pul massasining o‘sishi",
+        4: "sof eksportning ko‘payishi"
+    }, {
+        0: "Hozirgi raqobat bozorida mehnatga bo‘lgan talab nima bilan belgilanadi?",
+        1: "ish haqining darajasi bilan",
+        2: "ishchi kuchi migratsiyasi bilan",
+        3: "kasaba uyushmalar faolligining kuchayishi bilan",
+        4: "mehnatga layoqatli aholining soni bilan"
+    }, {
+        0: "To‘la bandlik quyidagilarning qaysi birini tahmin qiladi:",
+        1: "ishsizlik tabiiy darajasining mavjudligini",
+        2: "iqtisodiyotda strukturaviy vassiklik ishsizlikning mavjudligini",
+        3: "ishsizlikni 0ga tengligini",
+        4: "faqatssiklik ishsizlikning mavjudligini"
+    }, {
+        0: "Agar iqtisodiyotda pul aylanish tezligi o‘zgarmasdan, real YAMMning hajmi va pulning nominal miqdori bir xil proporsiyada oshsa,unda narxlar darajasi:",
+        1: "o‘zgarmasdan qoladi",
+        2: "pasayadi",
+        3: "oshadi",
+        4: "o’sadi, chunki pulning qiymati tushadi"
+    }, {
+        0: "Ouken qonuni qaysi bog‘liqlikni ifodalaydi?",
+        1: "ishsizlik va ishlab chiqarish o‘rtasidagi bog‘liqlikni;",
+        2: "inflyasiya va ishlab chiqarish o‘rtasidagi bog‘liqlikni;",
+        3: "inflyasiya va ishsizlik o‘rtasidagi bog‘liqlikni;",
+        4: "pul massasi va ishlab chiqarish o‘rtasidagi bog‘liqlikni;"
+    }, {
+        0: "Ishsizlikning tabiiy darajasi qanday aniqlanadi?",
+        1: "friksion va strukturali ishsizlik darajalarining yiq’indisi sifatida",
+        2: "siklik ishsizlik darajasi bo’yicha",
+        3: "siklik va friksion ishsizlik o’rtasidagi farq ko’rinishida",
+        4: "friksion va siklik ishsizlikning yiq’indisi sifatida"
+    }, {
+        0: "Agar joriy yilda mamlakatdagi tabiiy ishsizlik darajasi 6% deb qabul qilingan bo’lib, haqiqatda esa 10% ni tashkil etgan bo’lsa YaMM nimaga teng bo’ladi?",
+        1: "10%",
+        2: "6%",
+        3: "16%",
+        4: "4%",
+    }, {
+        0: "Fillips egri chiziq’i qanday o’zaro boq’liqlikni aks ettiradi?",
+        1: "inflyatsiya va ishsizlik o’rtasidagi",
+        2: "inflyatsiya va foiz stavkasi o’rtasidagi",
+        3: "ishsizlik va ish haqi o’rtasidagi",
+        4: "ishlab chiqarish hajmi va narx o’rtasidagi"
+    }, {
+        0: "Nominal foiz stavkasi 20% ga, inflyatsiya darajasi yiliga 15%ga teng bo’lganda real foiz stavkasi nimaga teng bo’ladi?",
+        1: "5%",
+        2: "35%",
+        3: "10%",
+        4: "75%",
+    }, {
+        0: "Davlat byudjet siyosatining asosiy vositalari bo’lib hisoblanadi:",
+        1: "soliq stavkalari",
+        2: "hisob stavkalari",
+        3: "majburiy rezervlar normasi",
+        4: "ochiq bozordagi stavkalar"
+    }, {
+        0: "Xarajatlar va soliq solish sohasidagi davlat siyosati qanday ataladi?",
+        1: "fiskal siyosat",
+        2: "monetar siyosat",
+        3: "daromadlarni taqsimlash siyosati",
+        4: "pul miqdori nazariyasiga asoslangan siyosat"
+    }, {
+        0: "Agar davlat real sof milliy mahsulot darajasini oshiradigan bo’lsa, unda:",
+        1: "soliqlarni va byudjet kamomadini kamaytirish kerak",
+        2: "tovar va xizmatlarning davlat xaridini kamaytirish kerak",
+        3: "transfert to’lovlarini kamaytirish kerak",
+        4: "transfert to’lovlarini ko’paytirish kerak"
+    }, {
+        0: "Muvozanatlashgan byudjet multiplikatori konsepsiyasiga muvofiq soliq va davlat xaridi teng qisqarishi:",
+        1: "avval muvozanatlashgan byudjetni kamomad holatiga xarakat qildiradi",
+        2: "milliy  daromad va ishlab chiqarish darajasini o’zgartirmaydi",
+        3: "xususiy investitsiyani siqib chiqarishga yordam beradi",
+        4: "milliy daromad va ishlab chiqarishning muvozanat darajasini pasaytiradi"
+    }, {
+        0: "Quyidagi ko’rsatib o’tilgan holatlardan qaysi biri iqtisodiy pasayish davriga mos kelmaydi:",
+        1: "ishsizlik bo’yicha to’lovlar hajmi kamayishi",
+        2: "korporatsiyalar foydasini  kamayishi",
+        3: "soliq tushumlarini   kamayishi",
+        4: "aksiya kursini tushishi"
+    }, {
+        0: "Yalpi investitsiya hajmini tushib ketish tendensiyasi yuzaga keladi, qachonki:",
+        1: "mahsulot sotish darajasi tushib ketganda",
+        2: "mahsulot sotish darajasi oshganda",
+        3: "mahsulot sotish darajasi o’zgarmay qolganda",
+        4: "bandlik darajasi o’zgarmay qolganda"
+    }, {
+        0: "Shaxsiy daromad - bu:",
+        1: "joriy yilda uy xo’jaliklari tomonidan olingan daromadlar",
+        2: "joriy yil davomida  ishlab chiqarilgan tovar va xizmatlarning qiymati",
+        3: "yalpi milliy mahsulot minus amortizatsiya",
+        4: "soliqlar to’langanidan so’ng shaxsiy xarajatlarni qoplash uchun ajratilgan barcha daromadlar"
+    }, {
+        0: "Kapital iste'moli uchun ajratmalar -bu:",
+        1: "amortizatsiya",
+        2: "sof investitsiyalar",
+        3: "sof xorijiy investitsiyalar",
+        4: "iste'mol tovarlari sotib olishga ishlatilmaydigan fondlar  ' +",
+    }, {
+        0: "'Transfert to’lovlari-bu:",
+        1: "uy xo’jaliklariga qaytarib bermaslik sharti bilan amalga oshiriladigan to’lovlar",
+        2: "ayrim shaxslarga davlat tomonidan ajratiladigan to’lovlar",
+        3: "milliy daromadga qo’shilmaydigan ayrim daromadlar",
+        4: "davlat tomonidan beriladigan nafaqalar"
+    }, {
+        0: "Milliy daromad va milliy mahsulotni hisoblashda nimani umumlashtirib bo’lmaydi?",
+        1: "iste'mol xarajatlari va yalpi investitsiyalarni",
+        2: "iste'mol xarajatlari va sof investitsiyalarni",
+        3: "davlat xaridi va ish haqini",
+        4: "korporatsiyalar foydasi va tadbirkorlarning kredit uchun foiz to’lovlari"
+    }, {
+        0: "Yetarli darajada bo’lmagan yalpi talab nimaga olib keladi?",
+        1: "ishsizlikning siklik shaklini oshishiga",
+        2: "ishsizlikning strukturaviy shaklini oshishiga",
+        3: "ishsizlikning yashirin shaklini oshishiga",
+        4: "ishsizlikning friksion shaklini oshishiga"
+    }, {
+        0: "Agar nominal daromad 8%ga, narxlar darajasi 10%ga oshsa, unda real daromad:",
+        1: "2% ga kamayadi",
+        2: "2% ga oshadi",
+        3: "18% ga oshadi",
+        4: "18% ga kamayadi"
+    }, {
+        0: "Inflyatsiyaning tezlashayotgan davrida foiz stavkasi:",
+        1: "o’sadi, chunki pulning qiymati tushadi",
+        2: "tushadi, chunki pulning qiymati tushadi",
+        3: "tushadi, chunki bandlik darajasi tushadi",
+        4: "o’zgarmaydi"
+    }, {
+        0: "Iste’mol va jamg‘arma hajmlarining yig‘indisi:",
+        1: "ixtiyordagi daromad hajmiga teng",
+        2: "iqtisodiy o‘sish sharoitida daromaddan ko‘proq",
+        3: "har doim daromaddan kamroq",
+        4: "yalpi investitsiyalarga teng"
+    }, {
+        0: "Iste’molga cheklangan moyillik - bu:",
+        1: "daromadning bir birlik qo‘shimcha o‘sishiga to‘g‘ri keladigan iste’molning o‘sishi",
+        2: "iste’mol qo‘shimcha o‘sishining jamg‘armaning qo‘shimcha o‘sishiga nisbati",
+        3: "iste’mol va daromad hajmlari o‘rtasidagi nisbati",
+        4: "iste’mol va jamg‘arma hajmlari o‘rtasidagi nisbati"
+    }, {
+        0: "Keynsning makroiqtisodiy muvozanat modelida iste’mol va jamg‘armalarining o‘zgarishiga ta’sir etuvchi asosiy omil - bu:",
+        1: "ixtiyordagi daromadning miqdori",
+        2: "foiz stavkasi",
+        3: "jamg‘arma va investitsiyalarning tengligi",
+        4: "iste’molga nisbatan jamg‘armaning tezroq o‘sishi"
+    }, {
+        0: "Multiplikator samarasi nimani ko‘rsatadi?",
+        1: "investitsiyalar o‘sgarmagani holda daromadning o‘zgarishini",
+        2: "investitsiyalar oshganda daromadning o‘zgarishini",
+        3: "investitsiyalar kamayganda daromadning o‘zgarishini",
+        4: "investitsiyalar o‘zgarganda daromadning o‘zgarishini"
+    }, {
+        0: "Quyidagi nisbatlardan qaysi biri teskari bog‘liqlikni ifodalaydi:",
+        1: "investitsiya harajatlari bilan foiz stavkasi o‘rtasidagi nisbat",
+        2: "iste’mol xarajatlari bilan tasarrufdagi daromad o‘rtasidagi nisbat",
+        3: "jamg‘arma bilan foiz stavkasi o‘rtasidagi nisbat",
+        4: "investitsiya harajatlari bilan milliy daromad o‘rtasidagi nisbat"
+    }, {
+        0: "Shaxsiy icte’mol funksiyasidagi chegaraviy daromad quyidagini bildiradi:",
+        1: "daromad bilan iste’molning tengligini",
+        2: "jamg‘arma bilan daromadning tengligini",
+        3: "jamg‘arma bilan iste’molning tengligini",
+        4: "iste’mol bilan investitsiyaning tengligini"
+    }, {
+        0: "Agar muvozanatli ishlab chiqarish hajmi potensial ishlab chiqarish darajasidan past bo‘lsa, unda:",
+        1: "retsession uzilish paydo bo‘ladi",
+        2: "inflyasion uzilish paydo bo‘ladi",
+        3: "investitsiyalar hajmi jamg‘armalardan oshib ketadi",
+        4: "iste’mol hajmi oshadi"
+    }, {
+        0: "Agar muvozanatli ishlab chiqarish hajmi potensial ishlab chiqarish darajasidan oshsa, unda:",
+        1: "inflyasion uzilish paydo bo‘ladi",
+        2: "retsession uzilish paydo bo‘ladi",
+        3: "investitsiyalar hajmi jamg‘armalardan oshib ketadi",
+        4: "iste’mol hajmi oshadi"
+    }, {
+        0: "Yalpi talab egri chizig‘i quyidagilarning natijasida o‘ngga siljishi mumkin:",
+        1: "narxlar darajasining pasayishi",
+        2: "aholiga solinadigan daromad solig‘ining kamayishi",
+        3: "foiz stavkasining oshishi",
+        4: "import xaridlar samarasining ta’sirida"
+    }, {
+        0: "Agar iqtisodiyotdagi vaziyat yalpi taklif egri chizig‘ining keyns kesmasiga to‘g‘ri kelsa, unda yalpi talabning o‘sishi qanday natijaga olib keladi?",
+        1: "narxlar darajasiga ta’sir qilmasdan real YAMM hajmining ko‘payishiga",
+        2: "narxlar o‘sishiga va real YAMM hajmining kamayishiga",
+        3: "narxlar hamda real YAMM hajmining pasayishiga",
+        4: "narxlar hamda real YAMM hajmining oshishiga"
+    }, {
+        0: "Agar iqtisodiyotdagi vaziyat yalpi taklif egri chizig‘ining klassik kesmasiga to‘g‘ri kelsa, unda yalpi talabning o‘sishi qanday natijaga olib keladi?",
+        1: "real YAMM hajmiga ta’sir qilmasdan narxlar o‘sishiga",
+        2: "narxlar o‘sishiga va real YAMM hajmining kamayishiga",
+        3: "narxlar darajasiga ta’sir qilmasdan real YAMM hajmining ko‘payishiga",
+        4: "narxlar hamda real YAMM hajmining oshishiga"
+    }, {
+        0: "Agar iqtisodiyotdagi vaziyat yalpi taklif egri chizig‘ining oraliq kesmasiga to‘g‘ri kelsa, unda yalpi talabning o‘sishi qanday natijaga olib keladi?",
+        1: "narxlar hamda real YAMM hajmining oshishiga",
+        2: "narxlar o‘sishiga va real YAMM hajmining kamayishiga",
+        3: "real YAMM hajmiga ta’sir qilmasdan narxlar o‘sishiga",
+        4: "narxlar darajasiga ta’sir qilmasdan real YAMM hajmining ko‘payishiga"
+    }, {
+        0: "Agar yalpi talab hajmi potensial YAMMdan oshsa, bu iqtisodiyotda:",
+        1: "inflyatsion uzilishi borligini bildiradi",
+        2: "deflyatsion uzilishi borligini bildiradi",
+        3: "byudjet taqchilligi borligini bildiradi",
+        4: "jami talab va jami taklif bir - biriga tengligini bildiradi"
+    }, {
+        0: "Qisqa muddatli davrda jami taklifning salbiy shoki iqtisodiyotda qanday oqibatga olib keladi?",
+        1: "narxlar o‘sishiga va ishlab chiqarish hajmining kamayishiga",
+        2: "narxlar darajasi hamda ishlab chiqarish hajmining kamayishiga",
+        3: "narxlar darajasi hamda ishlab chiqarish hajmining o‘sishiga",
+        4: "narxlar pasayishiga va ishlab chiqarish hajmining o‘sishiga"
+    }, {
+        0: "Iqtisodiyotda pul taklifining qisqarilishi chizmada quyidagicha ifodalanadi:",
+        1: "AD egri chizig‘i chapga suriladi",
+        2: "AS egri chizig‘i chapga suriladi",
+        3: "AS egri chizig‘i o‘ngga suriladi",
+        4: "AD egri chizig‘i o‘ngga suriladi"
+    }, {
+        0: "Ishlab chiqarish sohasidagi soliqlarning oshishi jami taklif (AS) yoki jami talab (AD) egri chiziqlarining holatiga qanday ta’sir etadi?",
+        1: "AS chapga suriladi va yalpi taklif kamayadi, ADning holati esa o‘zgarmaydi",
+        2: "AD chapga suriladi va yalpi talab kamayadi, ASning holati esa o‘zgarmaydi",
+        3: "AS va AD chapga suriladi, yalpi talab va yalpi taklif hajmlari kamayadi",
+        4: "AD va AS o‘ngga suriladi, yalpi talab va yalpi taklif hajmlari ko‘payadi"
+    }, {
+        0: "Narx omillarining o‘zgarishi chizmada quyidagi harakat bilan ifodalanadi:",
+        1: "AS jami taklif egri chizig‘i bo‘yicha",
+        2: "egri chiziqni o‘ngga suradi",
+        3: "egri chiziqni chapga suradi",
+        4: "o’zgarmaydi"
+    }, {
+        0: "Aholi iste'moli va pul jamg’armalari darajasini belgilaydigan asosiy omil nima?",
+        1: "Shaxsiy daromad",
+        2: "Milliy daromad",
+        3: "Soliqlar darajasi",
+        4: "Foiz stavkasi"
+    }, {
+        0: "Quyidagilardan qaysi biri investitsiyalarning ichki manbai hisoblanadi?",
+        1: "Foyda, amortizatsiya ajratmalari",
+        2: "Aksiyalarni sotishdan olingan mablag’lar",
+        3: "Obligatsiya zayomlari, bank kreditlari",
+        4: "Byudjet mablag’lari"
+    }]
+
+    for (let i = test.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [test[i], test[j]] = [test[j], test[i]];
+    }
+
+</script>
+<script>
+    const test = [{
+        0: "Tashqi iqtisodiy faoliyatni qanday tushunasiz",
+        1: "Mamlakat yuridik va jismoniy shaxslarning xorijiy davlatlarning yuridik va jismoniy shaxslari va halkaro tashkilotlar bilan foydali iqtisodiy aloqalarni o'rnatish",
+        2: "Chet mamlakatlar bilan savdo-sotiq ishlarni yuritish",
+        3: "Xorijga tovar chiqarish",
+        4: "Xorijdan tovar kiritish"
+    }, {
+        0: "Tashqi iqtisodiy siyosat nima",
+        1: "Davlatning tashqi iqtisodiy faoliyati samaralorligini oshirishga yo'naltirgan maqsadlar, qoidalar va ularni amalga oshirish vositalari tizimi.",
+        2: "Mamlakatning siysiy, ijtimoiy-iqtisodiy rivojlanishi",
+        3: "Xalqaro tovarlar ayirboshlash soxasidagi tadbirkorlik faoliyati tushuniladi",
+        4: "Chet mamlakatlar bilan savdo-sotiq ishlarni yuritish"
+    }, {
+        0: "Tashqi iqtisodiy faoliyatda bozor tadqiqotni o'tkazishdan qanday maqsad qo'zlanadi",
+        1: "Bozor konyukturasini, ist'emolchilar talabini va raqobatchi ishlab chiqaruvchilarni o'rganish",
+        2: "Ist'emolchilarni o'rganish",
+        3: "Raqobatchilarni o'rganish",
+        4: "Firmalarni o'rganish"
+    }, {
+        0: "Tovarlarga ist'emolchilarning qanday talablari qo'yiladi",
+        1: "Mahsulot va xizmatlar sifatli bo'lishi lozim",
+        2: "Mahsulot va xizmatlarning miqdori ko'p bo'lishi lozim",
+        3: "Mahsulot va xizmatlar jahon standartlariga javob berishi lozim",
+        4: "Mahsulot va xizmatlarning narxi arzon bo'lishi kerak"
+    }, {
+        0: "Tashqi iqtisodiy faoliyatda bozor tadqiqotni o'tkazishda unga qanday omillar to'sqinlik qiladi",
+        1: "Siysiy tizim",
+        2: "Madaniy vaziyat",
+        3: "Huquqiy tizim",
+        4: "Iqtisodiy tizim"
+
+
+    }, {
+        0: "Tashqi iqtisodiy faoliyatda bozordagi kamchiliklar nimalar?",
+        1: "Sifatsiz va arzon tovarlarning ko'pligi",
+        2: "Sifatli tovarlarning ko'pligi",
+        3: "Sifatli va sifatsiz tovarlar teng nisbatda bo'lishi",
+        4: "tovarlar teng nisbatda bo'lishi"
+    }, {
+        0: "Quyidagilardan qaysi biri bozor tadqiqotlari hisoblanadi?",
+        1: "Talabni o'rganish",
+        2: "Talabning o'sishi",
+        3: "Taklifni o'rganish",
+        4: "Baxoni o'rganish"
+    }, {
+        0: "Tashqi iqtisodiy faoliyatda bozordagi tovar taklifini tahlil qilishda nimalarga muhim ahamiyat beriladi?",
+        1: "Muayyan tovarni son jihatdan baholash, assortimentini yaxshilash darajasi",
+        2: "Yangi tovarlarning ahamiyati, tovarlarning texnik-iqtisodiy tavsifi",
+        3: "Tovarlarning narx darajasi, tovarlarni etkazib berishda firmalarning hissasi",
+        4: "tovarlarni etkazib berishda firmalarning hissasi"
+    }, {
+        0: "Antidemping bojlari miqdori qaysi usullar yordamida belgilanadi?",
+        1: "bojxona bojlari-ni to'lagunga qadar mamlakat chegarasidagi tovarni eksport bahosi foizida",
+        2: "mahsulot birligi uchun EKU summasini amal qilish muhlatini o'zgarmaydigan ko'rinishidir.",
+        3: "bojxona bojlarini to'lashdan oldin tovarning milliy foizi",
+        4: "tovarning milliy foizi"
+    }, {
+        0: "Antidemping bojlari miqdori qaysi usullar yordamida belgilanadi?",
+        1: "bojxona bojlari-ni to'lagunga qadar mamlakat chegarasidagi tovarni eksport bahosi foizida",
+        2: "mahsulot birligi uchun EKU summasini amal qilish muhlatini o'zgarmaydigan ko'rinishidir.",
+        3: "bojxona bojlarini to'lashdan oldin tovarning milliy foizi",
+        4: "tovarning milliy foizi"
+    }, {
+        0: "Lisenziya qanday turlarga bo'linadi?",
+        1: "bosh lisenziya, yordamchi lisenziya",
+        2: "yordamchi lisenziya",
+        3: "yakka lisenziya",
+        4: "bosh lisenziya"
+    }, {
+        0: "Bojxona bojlarini maxsus turi qanday tovarlarga qo'yiladi?",
+        1: "sanoat tovarlarini kichik qismi hajmi va og'irligiga",
+        2: "xom ashyolarga",
+        3: "qishloq xo'jalik tovarlariga",
+        4: "sanoat tovarlariga"
+    }, {
+        0: "Evropa Ittifoqida antidemping bojlari necha yilga o'rnatiladi?",
+        1: "5 yil",
+        2: "4 yil",
+        3: "6 yil",
+        4: "7 yil"
+    }, {
+        0: "Lisenziyani qanday imkoniyatlar berishini ko'rsating?",
+        1: "Chet el valyutasini nazorat qilish",
+        2: "Tovar sotib olishni boshqarish",
+        3: "Eksport va import operasiyalarini ma'lum tartibda amalga oshirish",
+        4: "Eksport va import operasiyalari"
+    }, {
+        0: "Bojxona bojlarini maxsus turi qanday tovarlarga qo'yiladi?",
+        1: "Sanoat tovarlarini kichik qismi hajmi va og'irligiga",
+        2: "Xom ashyolarga",
+        3: "Qishloq xo'jalik tovarlariga",
+        4: "Sanoat tovarlariga"
+    }, {
+        0: "EIda asosan qanday tovarlarga lisenziya beriladi?",
+        1: "Qishloq xo'jaligi maxsulotlariga",
+        2: "To'qimachilik",
+        3: "Qora metaldan ishlangan maxsulotlarga",
+        4: "Ishlangan maxsulotlarga"
+    }, {
+        0: "XIMda soliqlar va yig'imlar qanday turlarga bo'linadi?",
+        1: "ichki va chegaraviy soliqlar",
+        2: "tashqi soliqlar",
+        3: "ichki va tashqi soliqDar",
+        4: "ichki soliqlar"
+    }, {
+        0: "Xalqaro iqtisodiy huquq manbalariga oid aktlarda odat normalariga amal qilish shartmi?",
+        1: "Agar hamkorlik sub'ekti o'sha xuddudda amal qilsa",
+        2: "Faqat xalqaro huquqqa amal qilinadi hamda ikki yoki ko'p tomonlama kelishib olinadi",
+        3: "Xalqaro savdo - sotiq sharoitida ko'rsatib o'tilgan belgilarga amal qilinadi",
+        4: "Ikki yoki ko'p tomonlama kelishib olinadi"
+    }, {
+        0: "Tariflar qisqarsa, unda...",
+        1: "Import muhofazasiga doir sohalarda ishlaydigan ishchilarning bir qismi ishsiz qolishi mumkin",
+        2: "Import mahsulotlarining narxi oshadi",
+        3: "Yashash darajasi mamlakatda pasayadi",
+        4: "Eksport sohasida ishlaydiganlar uchun ish joyini yo'qotish xavfi kuchayadi"
+    }, {
+        0: "Ko'pchilik iqtisodchilarning fikricha, xaridorlar uchun foyda keltiradi, agarda kiritilsa",
+        1: "Protektsionistik tariflar",
+        2: "Kvota",
+        3: "Eksport subsidiyalari",
+        4: "Erkin savdo"
+    }, {
+        0: "Agar valyuta bozarida dollarning kursi oshsa demak boshqa mamlakatlar...",
+        1: "Bizning tovar va xizmatlarimizni jon deb olishadi",
+        2: "Bizning tovar va xizmatlarimizni kamroq qiziqib oladilar",
+        3: "Dollarni asosiy jaxon valyutasi deb hisoblashmaydi",
+        4: "Dollarni asosiy jaxon valyutasi deb hisoblashmaydi"
+    }, {
+        0: "Xalqaro mehnat taqsimoti dastlab qaysi faktorlar tasirida shakllangan ?",
+        1: "Ijtimoiy siyosiy faktorlar",
+        2: "Demografik faktorlar",
+        3: "Geo siyosiy faktorlar",
+        4: "Tabiiy faktorlar"
+    }, {
+        0: "AQSh eksportining asosiy ko'rinishlari qaysilardan iborat?",
+        1: "Kapital eksporti",
+        2: "Sanoat mahsulotlari eksporti",
+        3: "Xizmatlar eksporti",
+        4: "Istemol tovarlari eksporti"
+    }, {
+        0: "Jahon xo'jaligi uchun mulkchilikning qaysi turi xos?",
+        1: "Aralash",
+        2: "Xususiy",
+        3: "Davlat mulki",
+        4: "Aktsioner mulki"
+    }, {
+        0: "\"Reyganomika” nima?",
+        1: "Ijtimoiy xarajatlarni qisqartirish hisobiga qurollanishni kuchaytirish",
+        2: "Rivojlanayotgan mamlakatlarda tovarni eksport qilishni cheklash dasturi",
+        3: "Monetarizmni qo'llash orqali mamlakatni inqirozdan olib chiqib ketishning malum dasturi",
+        4: "Monetarizmni qo'llash orqali mamlakatni inqirozdan olib chiqib"
+    }, {
+        0: "Hozirgi davrda halqaro mehnat taqsimoti qaysi omillar ta'sirida shakllanadi?",
+        1: "Fan-texnik taraqqiyoti",
+        2: "Demografik omil",
+        3: "Ijtimoiy –siyosiy omil",
+        4: "Geosiyosiy omil"
+    }, {
+        0: "Jahon xo'jaligi nima?",
+        1: "Dunyodagi barcha davlatlar bilan iqtisodiy,siyosiy,texnikaviy vamadaniy xamkorlik shakllari",
+        2: "Dunyodagi davlatlar milliy xo'jaliklarining yig'indisi",
+        3: "Bir-biriga bog'liq munosabatlar tizimi",
+        4: "Chuqur integrasion munosabatlar"
+    }, {
+        0: "Jahon xo'jaligi nima?",
+        1: "Dunyodagi barcha davlatlar bilan iqtisodiy,siyosiy,texnikaviy vamadaniy xamkorlik shakllari",
+        2: "Dunyodagi davlatlar milliy xo'jaliklarining yig'indisi",
+        3: "Bir-biriga bog'liq munosabatlar tizimi",
+        4: "Chuqur integrasion munosabatlar"
+    }, {
+        0: "Jahon iqtisodi  deganda ......",
+        1: "Milliy iqtisodiyotlar yig'indisi",
+        2: "O'zaro iqtisodiy munosabatlar tizimi",
+        3: "Milliy xo'jaliklar o'rtasida keng ko'lamli aloqalar",
+        4: "Milliy xo'jaliklar o'rtasida keng ko'lamli aloqalar"
+    }, {
+        0: "“Trans-milliy\" korporasiya deb nimaga aytiladi",
+        1: "Jahonning turli davlatlarida bo'lim va filiallarga ega bo'lgan yirik xususiy-kapitalistik firma",
+        2: "Rivojlanayotgan davlatlar hisobiga yuqori foyda olayotgan rivojlangan davlatlarning monopoliyalari",
+        3: "Faqatgina YAID turkumiga kirgan davlatlar xududida joylashgan filial va bo'limlar",
+        4: "Xalqaro firmalararo mehnat taqsimoti"
+    }, {
+        0: "Xalqaro iqtisodiy munosabatlar - bu",
+        1: "Mamlakatlar o'rtasida xo'jalik aloqalar tizimi",
+        2: "Xalqaro kapital harakati",
+        3: "Xalqaro axborot va texnologiyalar",
+        4: "Xalqaro tovar va xizmatlar savdosi"
+    }, {
+        0: "Xalqaro savdo - bu",
+        1: "Turi darajada rivojlangan mamlakatlar o'zaro mehnat mahsulotlarini ayirboshlash",
+        2: "Tovar olib kirish",
+        3: "Ko'rgazma, yarmarka",
+        4: "Eksport va import"
+    }, {
+        0: "Eksport kvotasi - bu",
+        1: "Mamlakat eksport qiymati uning ya.I.M ga nisbati",
+        2: "Mamlakat eksporti",
+        3: "Mamlakat eksporti qiymati",
+        4: "Mamlakat eksporti narxi"
+    }, {
+        0: "Aksiz-bu",
+        1: "Tovarni bojxona qiymatga davlat organlari tomonidan belgilangan narx qo'shilmasi",
+        2: "Davlat organlari tomonidan belgilangan narx",
+        3: "Tovarning bojxona qiymati",
+        4: "Davlat organlari tomonidan belgilangan narx qo'shilmasi"
+    }, {
+        0: "Embargo - bu",
+        1: "Savdoni taqiqlash butunlay",
+        2: "Savdoni tashkil etish",
+        3: "Mamlakatlar bilan savdoni yo'lga qo'yish",
+        4: "Savdoni yo'lga qo'yish"
+    }, {
+        0: "To'rt AJaho mamlakatlar - bu",
+        1: "Janubiy Koreya, Gonkong, Tayvan, Singapur",
+        2: "Gonkong, Tayvan, Singapur, Meksika",
+        3: "Tayvan, Singapur, Meksika, Filippin",
+        4: "Tayvan, Singapur, Meksika, Filippin"
+
+    }, {
+        0: "Xalqaro iqtisodiy tashkilotlar-bu",
+        1: "Xalqaro iqtisodiy xamkorlik amalga oshiruvchi tashkilotlar",
+        2: "Xalqaro bitim",
+        3: "Iqtisodiy aloqalar",
+        4: "Iqtisodiy bitim"
+    }, {
+        0: "Jahon banki tashkil etilgan vaqti",
+        1: "1945 yil",
+        2: "1943 yil",
+        3: "1944 yil",
+        4: "1946 yil"
+    }, {
+        0: "O'zbekiston jahon bankiga a'zo bo'ldi",
+        1: "1992 yil 21 sentyabr",
+        2: "1993 yil 3 sentyabr",
+        3: "1994 yil 10 sentyabr",
+        4: "1995 yil 10 sentyabr"
+    }, {
+        0: "Mutloq ustunlik nazariyasi – bu",
+        1: "Biron-bir mahsulot ishlab chiqarishga ixtisoslashishi",
+        2: "Qo'shimcha foyda olish",
+        3: "Ichki ehtiyoj",
+        4: "Foyda olish"
+    }, {
+        0: "Nisbiy ustunlik nazariyasi –bu",
+        1: "Eng kam xarajatlar orqali tovar ishlab chiqarish",
+        2: "Jami xarajatlar",
+        3: "Farqdan foydalanish sababi olgan foyda",
+        4: "Foyda olish"
+    }, {
+        0: "Monitoring",
+        1: "Ko'rsatkichlarni kuzatish va ishlov berish",
+        2: "Iqtisodiy ko'rsatkichlarni kuzatish",
+        3: "Jami iqtisodiy ko'rsatkichlar",
+        4: "Iqtisodiy ko'rsatkichlar"
+    }, {
+        0: "Tashqi savdo siyosati",
+        1: "Milliy iqtisodiyotda eksport-import tovar oqimlari hajmini tartibga solish",
+        2: "Eksport-import tovar oqimlari hajmi",
+        3: "Byudjet-soliq faoliyati",
+        4: "Tovar yo'nalishi"
+    }, {
+        0: "Kapitalni xalqaro harakati",
+        1: "Milliy iqtisodiyotni rivojlantirish uchun chet el kapitalni joylashtirish",
+        2: "Chet elda foyda olish",
+        3: "Chet elga kapital chiqadi",
+        4: "Foyda olish"
+
+    }, {
+        0: "Chet elga kapital joylashtirish usuli nechta?",
+        1: "3 ta",
+        2: "2 ta",
+        3: "5 ta",
+        4: "4 ta"
+    }, {
+        0: "Uzoq muddatli kapital muddati necha yil?",
+        1: "15 yil",
+        2: "10 yil",
+        3: "25 yil",
+        4: "20 yil"
+    }, {
+        0: "Tashqi iqtisodiy siyosat nima?",
+        1: "Davlatning tashqi iqtisodiy faoliyati samaradorligini oshirishga yo'naltirilgan maqsadlar, qoidalar va ularni amalga oshirish vositalari tizimi.",
+        2: "Mamlakatning siyosiy, ijtimoiy-iqtisodiy rivojlanishi",
+        3: "Xalqaro tovarlar ayirboshlash soxasidagi tadbirkorlik faoliyati tushuniladi",
+        4: "Chet mamlakatlar bilan savdo-sotiq ishlarini yuritish,"
+    }, {
+        0: "Ishchi kuchi migrasiyasi – bu",
+        1: "Turar joyni o'zgartirish va qaytib kelish",
+        2: "Aholini ma'lum hududlar chegarasida o'sishi",
+        3: "Boshqa erlarga joylashish",
+        4: "Boshqa erlarga ketish"
+
+    }, {
+        0: "Xalqaro migrasiya",
+        1: "Mehnat qilish, turistlik maqsadlarda",
+        2: "Odamlarni ko'chib yurishi",
+        3: "Ko'chib ketish",
+        4: "Faqat mehnat qilish uchun"
+    }, {
+        0: "Iqtisodiy internasiya bosqichi nechta",
+        1: "5 ta",
+        2: "2 ta",
+        3: "4 ta",
+        4: "7 ta"
+    }, {
+        0: "Imtiyozli savdo – bu",
+        1: "Iqtisodiy internasiyani eng ibtidoiy shakli",
+        2: "Mamlakat o'rtasidagi bitim",
+        3: "Savdo haqidagi bitim",
+        4: "Savdo bitimi"
+    }, {
+        0: "Erkin savdo zonasi –bu",
+        1: "Boj va miqdoriy cheklamlardan ozod",
+        2: "Mamlakatlar o'rtasidagi savdo bitim",
+        3: "Miqdoriy cheklamlardan ozod",
+        4: "Mamlakatlar o'rtasidagi savdo"
+    }, {
+        0: "Bojxona Ittifoqi -bu",
+        1: "Yagona tashqi savdo tarifini joriy etish",
+        2: "Yagona tashqi siyosatni olib borish",
+        3: "Yagona tashqi siyosatni olib borish",
+        4: "Tashqi siyosatni olib borish"
+    }, {
+        0: "Iqtisodiy ittifoqlar",
+        1: "Valyuta va moliya siyosatini muvofiqlashtirish",
+        2: "Erkin iqtisodiy zonalar",
+        3: "Soliqlardan ozod etilgan zonalar",
+        4: "Iqtisodiy zonalar"
+    }, {
+        0: "Yangi industrial mamlakatlarni asosiy xususiyati-bu",
+        1: "Iqtisodni yuqori sur'atlarda rivojlantirish",
+        2: "Sanoat tovarlari ishlab chiqarishni rivojlanishi",
+        3: "Eksportni rivojlanishi",
+        4: "Ishlab chiqarishni rivojlanishi"
+    }, {
+        0: "Yangi industrial mamlakatlarni asosiy xususiyati-bu",
+        1: "Iqtisodni yuqori sur'atlarda rivojlantirish",
+        2: "Sanoat tovarlari ishlab chiqarishni rivojlanishi",
+        3: "Eksportni rivojlanishi",
+        4: "Ishlab chiqarishni rivojlanishi"
+    }, {
+        0: "To'la bandlik deganda",
+        1: "Mehnatga yaroqli aholi imkoniyatlardan foydalanish",
+        2: "Barcha ish bilan band",
+        3: "Aholini ish bilan ta'minlash",
+        4: "Ishsizlarni ish bilan ta'minlash"
+    }, {
+        0: "Friktsion ishsizlik deganda",
+        1: "Ish qidirib yurgan aholi",
+        2: "Ishdan bo'shagan aholi",
+        3: "Yaqin orada ishga joylashishni kutayotgan odamlar",
+        4: "Ishga joylashishni kutayotgan odamlar"
+    }, {
+        0: "Tarkibiy ishsizlik deganda",
+        1: "Texnologiyalar o'zgarishi natijasida ishchi kuchiga talab o'zgarishi",
+        2: "Mavjud mehnat ko'nikmalari eskirgan",
+        3: "Mehnat bozoridagi muvozanat",
+        4: "Vaqtincha ishsizlar"
+    }, {
+        0: "Davriy ishsizlik-bu",
+        1: "Davriy ishsizlikka talab kamayishi",
+        2: "Iqtisodiy davrni pasayish bosqichi",
+        3: "Xizmatlarga bo'lgan talabni kamayishi",
+        4: "Davrni pasayish bosqichi"
+    }, {
+        0: "Mehnat qilish layoqatiga etmagan aholi yoshi",
+        1: "18 yoshga etmaganlar",
+        2: "17 yoshga etmaganlar",
+        3: "16 yoshga etmaganlar",
+        4: "19 yoshga etmaganlar"
+    }, {
+        0: "Mehnat qilish layoqatiga etgan ayollar yoshi",
+        1: "16-54 yoshgacha",
+        2: "16-55 yoshgacha",
+        3: "16-58 yoshgacha",
+        4: "16-57 yoshgacha"
+    }, {
+        0: "O'zbekistonda mehnat qilish layoqatiga etgan erkaklar yoshi",
+        1: "16-60 yoshgacha",
+        2: "16-62 yoshgacha",
+        3: "16-63 yoshgacha",
+        4: "16-64 yoshgacha"
+    }, {
+        0: "Hozirgi davrda halqaro mehnat taqsimoti qaysi omillar ta'sirida shakllanadi ?",
+        1: "Fan-texnik taraqqiyoti, demografik, ijtimoiy –siyosiy, geosiyosiy omil",
+        2: "Demografik omil",
+        3: "Ijtimoiy –siyosiy omil",
+        4: "Iqisodiy omil"
+    }, {
+        0: "Klassik siyosiy iqtisodda narx belgilash nazariyasining asoschilari",
+        1: "U.Petti va A.Smit",
+        2: "A.Smit",
+        3: "U.Petti",
+        4: "D.Rikardo"
+    }, {
+        0: "Tashqi iqtisodiy siyosat nima?",
+        1: "Davlatning tashqi iqtisodiy faoliyati samaradorligini oshirishga yo'naltirilgan maqsadlar, qoidalar va ularni amalga oshirish vositalari tizimi.",
+        2: "Mamlakatning siyosiy, ijtimoiy-iqtisodiy rivojlanishi",
+        3: "Xalqaro tovarlar ayirboshlash soxasidagi tadbirkorlik faoliyati tushuniladi",
+        4: "Chet mamlakatlar bilan savdo-sotiq ishlarini yuritish,"
+    }, {
+        0: "Investision muhit –bu",
+        1: "Investisiyalarn kiritish uchun zarur me'yoriy -xuquqiy shart-sharoit",
+        2: "Investisiyalar aylanishi",
+        3: "Xorijiy investisiyalarni kirib kelishi",
+        4: "Xorijiy investisiyalarni qabul qilish"
+    }, {
+        0: "Xalqaro valyuta fondi tashkil etilgan",
+        1: "1945yil",
+        2: "1946yil",
+        3: "1948yil",
+        4: "1949yil"
+    }, {
+        0: "Valyuta kotirovkasi – bu",
+        1: "Bir valyutani bahosini boshqa valyutalarda ifodalanishini raqamli yozuvi",
+        2: "Valyuta ifodalanishi yozuvi",
+        3: "Valyuta ifodalanishi yozuvi",
+        4: "Valyuta ayriboshlash"
+    }, {
+        0: "Valyuta rejimi –bu",
+        1: "Valyuta ayirboshlash kursini aniqlash asosidagi mexanizm",
+        2: "Kursni aniqlash mexanizmi",
+        3: "Valyuta ifodalanishi yozuvi",
+        4: "Valyuta ayirboshlash"
+    }, {
+        0: "Panjaralash-bu",
+        1: "Valyuta xatarlarini sug'urtalash usuli",
+        2: "Valyuta xatarlarini oldini olish",
+        3: "Sug'urtalash usuli majmuasi",
+        4: "Sug'urtalash usullaridan foydalanish"
+    }, {
+        0: "XMK kachon tashkil topgan?",
+        1: "1956",
+        2: "1952",
+        3: "1954",
+        4: "1950"
+    }, {
+        0: "Ishchi kuchi migrasiyasi – bu",
+        1: "Turar joyni o'zgartirish va qaytib kelish",
+        2: "Aholini ma'lum hududlar chegarasida o'sishi",
+        3: "Boshqa mamlakatlarga joylashish",
+        4: "Hammasi to'g'ri"
+    }, {
+        0: "Erkin savdo zonasi –bu",
+        1: "Boj va miqdoriy cheklamlardan ozod",
+        2: "Mamlakatlar o'rtasidagi savdo bitim",
+        3: "Miqdoriy cheklamlardan ozod",
+        4: "Hammasi to'g'ri"
+    }, {
+        0: "Xalqaro rivojlanish assosiasiyasi nechanchi yilda tashkil topgan va unga necha mamlakat a'zo?",
+        1: "1960y 165ta",
+        2: "1959y 135ta",
+        3: "1962y 145ta",
+        4: "1965y 140ta"
+    }, {
+        0: "Bozor tahlilini o'tkazish usullari ichida eng murakkab va qimmat usulni ko'rsating?",
+        1: "bozor joyini o'rganish",
+        2: "bosma nashrlar",
+        3: "kabinet usuli",
+        4: "sotib ko'rish usuli"
+    }, {
+        0: "Firma haqidagi umumiy ma'lumotlarga quyidagilardan qaysilar kiradi?",
+        1: "registrasiya qilingan davlat",
+        2: "mulkchilik xususiyati",
+        3: "kapitali va nazorati",
+        4: "barchasi to'g'ri"
+    }, {
+        0: "Mamlakatga avval keltirilgan va eksport mamlakatida hech qanday ishlov berilmagan tovarni chetga chiqarish qanday nomlanadi?",
+        1: "reeksport",
+        2: "reimport",
+        3: "investisiya",
+        4: "reinvestiisya"
+    }, {
+        0: "Quyidagi ta'riflardan qaysi biri importga nisbatan ishlatilishi mumkin?",
+        1: "tovarlarni chetdan keltirish",
+        2: "erkin zona yoki omborlardan tovarlarni keltirish",
+        3: "bevosita mamlakatdan shaxsiy iste'mol uchun tovarlarni mamlakatga olib kirish",
+        4: "avval o'z mamlakatidan olib chiqilgan, u erda ishlov berilmagan tovarlarni chetdan keltirish"
+    }, {
+        0: "Tovar eksporti va importi qiymatiga qanday omillar ta'sir etadi?",
+        1: "bojxona chegarasidan o'tadigan va chet el kontragen-tiga ijaraga beriladigan tovarlar qiymati",
+        2: "texnik xizmatlari qiymatini kiritish bilan birga komplekt jihozlarini etkazib berish qiymati",
+        3: "lisenziya xizmatlar",
+        4: "komplekt jihozlarini etkazib berish qiymati"
+    }, {
+        0: "Erkin zonada....",
+        1: "mamlakatning bojxona hududidan tashqarida joylashgan portning hududi",
+        2: "bojxona idorasi amalga oshiradiga tovarlarning chiqa-rilishi va kelti-rilishini nazorat qiluvchi hudud",
+        3: "bojxona nazoratidan holi bo'lgan iqtisodiy hudud",
+        4: "kelti-rilishini nazorat qiluvchi hudud"
+    }, {
+        0: "Eng ko'p erkin zonalar joylashgan mamlakat qaysi?",
+        1: "AQSh",
+        2: "Xitoy",
+        3: "Yaponiya",
+        4: "Rossiya"
+    }, {
+        0: "Savdo vositachiligini qo'llash va sanoat firma eksportyorlariga qanday afzallik beradi?",
+        1: "sotishdan keyingi texnik xizmatlarni talab etuvchi mashina va jihozlarni sotishda",
+        2: "sotilgan mahsulotning o'zgarmas miqdorini o'tkazib berish",
+        3: "sotilgan mahsulotlarni tez fursatda etkazib berish",
+        4: "qishloq xo'jaligi tovarlarini sotib olishda"
+    }, {
+        0: "Xalqaro savdo amaliyotida tijorat operasiyalari qanday usulda amalga oshiriladi?",
+        1: "to'g'ri usul va egri usul",
+        2: "egri usul",
+        3: "kompleks usul",
+        4: "to'g'ri usul"
+    }, {
+        0: "Tijorat operasiyalarining to'g'ri usuli qanday holatlarda qo'llaniladi?",
+        1: "uzoq muddatli shartnoma asosida sanoat xom ashyosini bozorlarda sotish va sotib olishda",
+        2: "qimmatbaho va katta hajmli jihozlar eksportida",
+        3: "ishlab chiqa-ruvchilardan qishloq xo'jaligi tovarlarini sotib olishda",
+        4: "qishloq xo'jaligi tovarlarini sotib olishda"
+    }, {
+        0: "Tranzit operasiyalar bu-,,,",
+        1: "mamlakatdan boshqasiga, uchinchi mamlakatning hududi-dan yoki havo bo'shlishidan o'tib borishi",
+        2: "har qanday boshqa davlat hududidan o'tish",
+        3: "bojxona bojini to'lamasdan yuklarni o'tkazish",
+        4: "havo bo'shlishidan o'tib borishi"
+    }, {
+        0: "Bevosita eksport-import operasiyalarini amalga oshirish bosqichlari qaysi qatorda berilgan?",
+        1: "Oldi-sotdi shartnomalarini tuzishga tayyorlash",
+        2: "shartnomalarni tuzishga tayyorlash",
+        3: "Shartnomani tuzi shva uni amalga oshirish",
+        4: "Savdo shartnomasining qiymatini aniqlash"
+    }, {
+        0: "Eksport va import qiluvchining asosiy vazifasi",
+        1: "kontragentni izlash va topish",
+        2: "ko'proq daromad olish",
+        3: "shartnoma shartlarini bajarish",
+        4: "shartlarini bajarish"
+    }, {
+        0: "Qo'yidagilardan qaysinisi tijorat bitimlarini tayyorlashda sotuvchi haqqoniy xaridor bilan aloqalarni o'rnatish usuli hisoblanadi?",
+        1: "Bitim yoki bir necha xorijiy xaridorlarga bevosita taklif yuborish",
+        2: "Xaridar buyurtmasini qabul qilish va uni tasdiqlash",
+        3: "Xaridorga uning taklifiga binoan kelgusidagi shartnomaning ayrim shartlarini ko'rsatib javob xati yuborish",
+        4: "shartnomaning ayrim shartlarini ko'rsatib javob xati yuborish"
+    }, {
+        0: "Xalqaro savdo amaliyotida ofertaning qanday turlari bor?",
+        1: "Qat'iy va erkin",
+        2: "Qisman va to'liq",
+        3: "Majburiy va ixtiyoriy",
+        4: "E'tirozsiz va e'tirozli"
+    }, {
+        0: "Xalqaro savdo sohasida savdo sanoat ko'rgazma va yarmarkalarida qatnashishdan maqsad bu-",
+        1: "Firma erishgan yutuqlarni ko'rsatish",
+        2: "Tijorat shartnomalarini tuzish",
+        3: "Raqobatchi firmalar faoliyatini kuzatish",
+        4: "firmalar faoliyatini kuzatish"
+    }, {
+        0: "Eksport bitimini tayyorlash uchun zarur xujjatlar to'g'ri ko'rsatilgan qator qaysi?",
+        1: "Oferta, shartnoma",
+        2: "Tijorat shartnomalari tuzish",
+        3: "Tender",
+        4: "shartnomalari tuzish"
+    }, {
+        0: "Import bitimini tayyorlashda xaridor sotuvchi eksportchi bilan aloqa o'rnatishning usullarini ko'rsating.",
+        1: "Sotuvchiga buyurtma yuborish",
+        2: "Savdo sanoat ko'rgazmasida qatnashish",
+        3: "Eksportchi taklifiga e'tirozsiz aktsept jo'natish",
+        4: "taklifiga e'tirozsiz aktsept jo'natish"
+    }, {
+        0: "Import bitimini tayyorlashda qo'yidagi xujjatlar to'ldiriladi:",
+        1: "talabnoma, mo'ljallar haqida xat",
+        2: "shartnoma va uning nusxasi",
+        3: "xat",
+        4: "oferta va talabnoma"
+    }, {
+        0: "Hozirgi paytda sotuvchilar-",
+        1: "o'zi ishlab chiqarganlarni aniq talabdan kelib chiqib amalga oshiradi",
+        2: "Erkin bozorga yo'naladi.",
+        3: "Erkin oferta bilan ishlashni ma'qul ko'rishadi",
+        4: "Keng miqyosda tovarlar taklif qilib bozorni egallashyapti"
+    }, {
+        0: "Import bitimini tayyorlashda kerak bo'ladigan bo'yurtma o'z ichiga nimalarni oladi?",
+        1: "Etkazib berish va upakovkalash tartibi",
+        2: "Tender shartlari, uning proformasi",
+        3: "to'lov shartlari va usullari	tovarlar nomi va hajmi",
+        4: "tovarlar nom iva hajmi"
+    }, {
+        0: "Oldi-sotdi shartnomasining zaruriy sharti nimadan iborat?",
+        1: "tovarga bo'lgan mulkchilik huquqining sotuvchidan xaridorga o'tishi",
+        2: "Mulkning iste'molga yo'nalishini",
+        3: "sotuvchi va xaridor o'rtasidagi o'zaro tovarlar savdosi",
+        4: "to'g'ri javob yo'q"
+    }, {
+        0: "Oldi sotdi shartnomalarida nimalar yoritiladi?",
+        1: "Shartnoma tartibida",
+        2: "Shartnoma shartlarini bajarish tartibi",
+        3: "Shartnoma shartlarini bajarish uchun javobgarlik",
+        4: "shartlarini bajarish tartibi"
+    }, {
+        0: "Oldi - sotdi shartnomalarida sotuvchining vazifasi nimalardan iborat?",
+        1: "Tovarlarni etkazib berish",
+        2: "Tovar uchun haq to'lash",
+        3: "Tovarga tegishli xujjatlarni berib yuborish",
+        4: "tovarga xususiy huquqni berish"
+    }, {
+        0: "Xaridor uchun asosiy masala bu-",
+        1: "tovarlarni qabul qilish",
+        2: "tovar uchun haq to'lash",
+        3: "shartnomani bekor qilish",
+        4: "xujjatlarni berib yuborish"
+    }, {
+        0: "Shartnoma predmetini ta'riflashda nimalar ko'rsatiladi?",
+        1: "tovar nomi uning tavsifi",
+        2: "shartnoma tuzish joyi va sanasi",
+        3: "firmaning huquqiy holati",
+        4: "firma manzili"
+    }, {
+        0: "Oldi-sotdi shartnomalarida tovar miqdori aniqlash qanday belgilanadi?",
+        1: "miqdoriy o'lchash birligi, o'lchash tartibi va tizimi bilan",
+        2: "o'lchash vositasi va birliklari orqali",
+        3: "o'lchov tartibi va tizimi orqali",
+        4: "o'lchov tartibi"
+    }, {
+        0: "Oldi sotdi shartnomasida tovar sifatini aniqlash nimalarga bog'liq?",
+        1: "tovar harakteristikasi",
+        2: "tovar turiga va narxiga",
+        3: "tovarlarga nisbatan iste'molchilar munosabatiga",
+        4: "so'rovnomalar"
+    }, {
+        0: "Tovar sifatini aniqlash usullari to'g'ri ko'rsatilgan qatorni toping?",
+        1: "standart bo'yicha, texnik shartlari bo'yicha",
+        2: "namunalar bo'yicha, oldindan ko'rikdan o'tkazilgan bo'yicha",
+        3: "haqiqiy o'rta sifati bo'yicha",
+        4: "ko'rikdan o'tkazilgan bo'yicha"
+    }, {
+        0: "Oldindan ko'rikdan o'tkazish bo'yicha tovar sifatini aniqlashda qanday jarayon amalga oshiriladi?",
+        1: "tovarni tavsiflab beradigan zaruriy texnik parametrlar e'tiborga olinadi",
+        2: "xaridor ma'lum muddatda tovarning barcha partiyasini ko'rib chiqadi",
+        3: "xom ashyo olinadigan so'nggi mahsulot miqdori aniqlanadi",
+        4: "texnik parametrlar e'tiborga olinadi"
+    }, {
+        0: "Oldi-sotdi shartnomalarning qanday turlari bor?",
+        1: "bir martalik va davriy etkazib berish",
+        2: "pulli va tovar shaklidagi shartnomalar",
+        3: "xom ashyo tovarlarini etkazib berish bo'yicha",
+        4: "tovarlarini etkazib berish bo'yicha"
+    }, {
+        0: "Bir martalik uzoq muddatlik etkazib berish shartnomalari necha yilga tuziladi?",
+        1: "3 va 5",
+        2: "3 va 4",
+        3: "1 va 2",
+        4: "4 va 5"
+    }, {
+        0: "korxonalar ishlab chiqarish va moliya faoliyatilarini oshiradigan xolatini ko'rsating?",
+        1: "xom ashyo bozori kon'yunkturasining tez o'zgarishi",
+        2: "sanoat mahsulotlari bozorining kengayishi",
+        3: "ishlab chiqarish tezlashuvi",
+        4: "bozorining kengayishi"
+    }, {
+        0: "Tovarga to'lanadigan haq to'lash turiga qarab quyidagilarga bo'linadi:bozorining kengayishi",
+        1: "pul shaklida yoki tovar shaklida",
+        2: "tovar shaklidagi to'lov shartnomasida",
+        3: "tovar almashinuvi shartnomasida",
+        4: "barter kelishuvida"
+    }, {
+        0: "Eksportchi va importchi o'rtasida balki ixtisoslashgan firmalar va etkazib berishda ishtirok etadiganlar vositachi korxonalar o'rtasida amalga oshiriladigan shartnoma turini ko'rsating",
+        1: "komplekt jihozlar oldi – sotdisi shartnomasi",
+        2: "tovar almashinuvi shartnomasi",
+        3: "pul shaklidagi to'lov shartnomasi",
+        4: "oldi – sotdisi shartnomasi"
+    }, {
+        0: "Ishlab chiqarish jarayonida muomala xarajatlarining o'zgarishi bilan narx o'zgarishi bu-",
+        1: "sirgaluvchi narx",
+        2: "narxning sun'iy o'zgarishi",
+        3: "tabiiy narx",
+        4: "o'zgaruvchan narx"
+    }, {
+        0: "Milliy valyuta tizimi nima?",
+        1: "Milliy Qonunchilik asosida davlatning valyuta munosabatlarini tashkil etish shakli",
+        2: "Davlatning milliy pul birligi",
+        3: "Xalqaro miqyosda ayirboshlanadigan valyuta",
+        4: "Oltin va valyuta zaxiraliri"
+    }, {
+        0: "Jahonda eng ko'p neft zaxirasi qaysi mamlakatda?",
+        1: "Saudiya Arabistoni",
+        2: "Rossiya",
+        3: "Irok",
+        4: "Kuvayt"
+    }, {
+        0: "Tashqi bozorda davlat obligasiyalarini sotish bilan qarz olish yoki kreditlar olish:",
+        1: "Tashki karz",
+        2: "tashki siyosat",
+        3: "eksport",
+        4: "valyuta siyosati"
+    }, {
+        0: "Barcha iqtisodiy tizimlar oldida turgan asosiy muammo bu –",
+        1: "resurslarning cheklanganligi",
+        2: "ishlab chikarish imkonining yukligi",
+        3: "ishlab chikarish omillarining bir turdaliligi",
+        4: "Yangi texnologiyalar etishmovchiligi"
+    }, {
+        0: "Tashqi iqtisodiy siyosat nima?",
+        1: "Davlatning tashqi iqtisodiy faoliyati samaradorligini oshirishga yo'naltirilgan maqsadlar, qoidalar va ularni amalga oshirish vositalari tizimi.",
+        2: "Mamlakatning siyosiy, ijtimoiy-iqtisodiy rivojlanishi",
+        3: "Xalqaro tovarlar ayirboshlash soxasidagi tadbirkorlik faoliyati tushuniladi",
+        4: "Chet mamlakatlar bilan savdo-sotiq ishlarini yuritish,"
+    }, {
+        0: "Tashqi iqtisodiy faoliyat qanday tushunasiz",
+        1: "Mamlakat yuridik va jismoniy shaxslarining xorijiy davlatlarning yuridik va jismoniy shaxslari va xalkaro tashkilotlar bilan o'zaro foydali iqtisodiy aloqalarni o'rnatish",
+        2: "Chet mamlakatlar bilan savdo-sotiq ishlarini yuritish",
+        3: "Xorijga tovar chiqarish",
+        4: "Xorijdan tovar kiritish"
+    }, {
+        0: "Bozor tadqiqotini o'rganishda nimalarga e'tibor beriladi?",
+        1: "Talab va taklif shartlari tahlil qilish va raqobatchi firmalarning mavjudligi",
+        2: "Talab va taklif shartlari tahlil qilish",
+        3: "Raqobatchi firmalarning mavjudligi",
+        4: "Iste'molchilarning ko'pligi"
+    }, {
+        0: "Ishlab chiqarish jarayonida muomala xarajatlarining o'zgarishi bilan narx o'zgarishi bu-",
+        1: "sirgaluvchi narx",
+        2: "narxning sun'iy o'zgarishi",
+        3: "tabiiy narx",
+        4: "o'zgaruvchan narx"
+    }, {
+        0: "Oldi sotdi shartnomasida tovar sifatini aniqlash nimalarga bog'liq?",
+        1: "tovar harakteristikasi",
+        2: "tovar turiga va narxiga",
+        3: "tovarlarga nisbatan iste'molchilar munosabatiga",
+        4: "so'rovnomalar"
+    }, {
+
+        0: "Raqobatning aѕoѕіu turlari mavjud ?",
+        1: "tarmoq ichidagi va tarmoqlararo raqobat",
+        2: "oddiy va imtiyozli",
+        3: "bozor va nobozor",
+        4: "talab va taklif"
+    }, {
+        0: "Raqobatning usullari qanday asosiy turlari mavjud ?",
+        1: "pagx ogqAli va pagxsiz",
+        2: "majbur etuvchi",
+        3: "ishlab chiqarish va g'augі ishlab chiqarish",
+        4: "moddiy va nomoddiy"
+    }, {
+        0: "Qaysi raqobat holatida baho erkin, talab va taklif asosida shakllanadi ?",
+        1: "mukammal gaqobatda",
+        2: "gaqobatning hamma shaklida",
+        3: "oligopoliya va monopol gaqobatda",
+        4: "nomukammal gaqobatda"
+    }, {
+        0: "O'zbekistonda monopoliya qanday tartibga solinadi ?",
+        1: "monopoliyalarga qagѕһі qopip bilan",
+        2: "hesһ qanday tartibga solinmaydi",
+        3: "monopoliyalarning o'zi O'zbekistonda yo'q",
+        4: "mopopoliyani boshqagіѕһda hojat yo'q"
+    }, {
+        0: "Oligopoliya - bu............................",
+        1: "nomukammal raqobat",
+        2: "mukammal gaqobat",
+        3: "erkin gaqobat",
+        4: "narxsiz raqobat"
+    }, {
+        0: "Tovar ishlab chiqaruvchilar o'rtasidagi raqobatdan qanday maqsad ko'zda tutiladi?",
+        1: "bozorda o'z mavqeini mustahkamlash va iste'molchilarni od'dirib olish",
+        2: "auksionda yutib chiqish",
+        3: "tovarlarni past narxlarda sotish",
+        4: "tovar reklamasiga ko'proq mablag' sarflash"
+    }, {
+        0: "Raqobatning qaysi shaklida ishlab chiqaruvchilar bozor baholarini to'liq nazorat qilish imkoniyatiga eda bo'ladi?",
+        1: "sof monopoliyada",
+        2: "monopolistik raqobatda",
+        3: "sof raqobatda",
+        4: "oligopoliyada"
+    }, {
+        0: "Bahosiz raqobat usuli qanday yo'llar bilan olib boriladi?",
+        1: "tovarlarni erkin bozor narxlarida sotish",
+        2: "kafolatlangan muddatda va undan keuіpdі davrda turli xizmatlar ko'rsatish",
+        3: "tovarni kim oshdi savdolari orqali sotish",
+        4: "tovar pagxіpі tushirib borish"
+    }, {
+        0: "Raqobatning turli shakllari bir-biridan qanday belgilar bo'uіsһa farq qiladi?",
+        1: "tarmoqdagi korxonalar ѕopі bo'uіsһa",
+        2: "pagx darajasi bo'uіsһa",
+        3: "bir tipdagi yoki tabaqalashgan mahsulotlar ishlab chiqarilishi bo'uіsһa",
+        4: "tovar sifati bo'uіsһa"
+    }, {
+        0: "Sof raqobatli tarmoqlarda baho pіmapіpd ta'sirida shakllanadi?",
+        1: "tovarlarning yalpi taklifi va ularga bo'lgan yalpi talab ta'sirida",
+        2: "alohida tovarlar taklifi ta'sirida",
+        3: "alohida tovarlarga talab ta'sirida",
+        4: "alohida iste'molchilar bozor baholarini belgilaydi"
+    }, {
+        0: "Sof raqobat sharoitida tovarlarning bozor baholari bilan ularning sotib olinadigan miqdori o'rtasida qanday bog'liqlik mavjud bo'ladi?",
+        1: "baho qanchalik yuqori bo'lsa, sotib olinadigan tovarlar miqdori ѕһipsһa kam bo'ladi va akѕіpsһa",
+        2: "tovarlar uchun davlat standart narxlarni belgilab qo'yadi",
+        3: "baho bilan sotib olinadigan tovarlar o'rtasida bog'liqlik mavjud bo'lmaydi",
+        4: "davlat tovarlarning sotib olish miqdorini qat'iy belgilab qo'yadi"
+    }, {
+        0: "Aikѕіop pіma?",
+        1: "tovar yoki mol-mulkning eng yuqori pagx taklif qilgan ѕһaxѕ tomonidan katta omma oldida oѕһkoga sotib olinishi",
+        2: "tovarlarni ayirboshlash jarayonidagi bitim tuzish јagauopі",
+        3: "qimmatbaho qog'oz turi",
+        4: "qadimgi pul birligi"
+    }, {
+        0: "Tovarlarning pagxі emaѕ uning sifati va servisi bilan raqobatlashish bu-.....",
+        1: "halol raqobat",
+        2: "narxsiz raqobat",
+        3: "pagx vositasida raqobat",
+        4: "g'іggom raqobat"
+    }, {
+        0: "Tender – bu....",
+        1: "xaridor tanlovi",
+        2: "ko'rgazma",
+        3: "yozma grafik, oferta, talabnoma",
+        4: "sanoat mollari ko'rgazmasi"
+    }, {
+        0: "Mehnat unumdorligi qanday aniqlanadi?",
+        1: "mahsulot miqdorini uni ishlab chiqarishga ketgan ish vaqtiga nisbati bilan",
+        2: "mahsulot miqdorini qilingan sarf-xarajatlarga nisbati bilan",
+        3: "mahsulot miqdorini aѕoѕіu kapitalga taqqoslash yo'li bilan",
+        4: "mahsulot miqdorini aylanma kapitalga taqqoslash yo'li bilan"
+    }, {
+        0: "Erkin bozorda…....",
+        1: "sotuvchi һam, xaridor һam һesһ qanday һikmgop mavkega eda bo'lmaydi",
+        2: "iste'molchi va ishlab chiqaruvchilar o'rtasida raqobat bo'lmaydi",
+        3: "pagx-navo nazorat ostida bo'ladi",
+        4: "sotuvchi sifatida bir firma bozorda tanho hukmronlik qiladi"
+    }, {
+        0: "Oligopolistik bozorda.....",
+        1: "sanoqli, ozchilik firmalar va kompaniyalar bozorda hukmronlik qiladi",
+        2: "sotuvchi sifatida bir firma bozorda tanho hukmronlik qiladi",
+        3: "raqobat imimap bo'lmaydi",
+        4: "sotuvchi va xaridorlardan һesһ biri bozorda һikmgop mavqega eda bo'lmaydi"
+    }, {
+        0: "Bozor kop'yunkturasi deganda....",
+        1: "bozorda muvozanatning mavjudligi yoki buzilganligi tushuniladi",
+        2: "bozor iqtisodiyoti uchun xizmat ko'rsatuvchi Xag xil sohalar tushuniladi",
+        3: "mazkur bozorning tarkibida amal qiluvchi bo'g'inlar tushuniladi",
+        4: "bozordagi talab va taklifning miqdoran va tarkiban bir-biriga muvofiq kelishi tushuniladi"
+    }, {
+        0: "Bozor intervensiyasi – bu…",
+        1: "milliy regional bozorga tashqaridan suqulib kirish va u bozorni uziga tobe' etish tushuniladi",
+        2: "milliy bozor eksporti va importini davlat tomonidan һіmoua qilinishi tushuniladi",
+        3: "mazkur bozorning tarkibida amal qiluvchi bo'g'inlar tushuniladi",
+        4: "ma'lum belgi, alomatlar va savdo-sotikning shart-sharoitiga qarab bozorni һag xil bo'g'inlarga ajratish, tabaqalash tushuniladi"
+    }, {
+        0: "Bozorni segmentlash (tabaqalash) deganda;",
+        1: "ma'lum belgi, alomatlar va savdo-sotiqning shart-sharoitiga karab bozorni һag xil bo'g'inlarga ajratish, tabaqalash tushuniladi",
+        2: "milliy bozor eksport-importini davlat tomonidan һіmoua qilinishi tushuniladi",
+        3: "milliy yoki regional bozorga tashqaridan suqulib kirish va u bozorni o'ziga tobe' etish tushuniladi",
+        4: "bozordagi holat ya'ni muvozanatning mavjudligi yoki buzilganligi tushuniladi"
+    }, {
+        0: "Bozorni tartibga solish mexanizmi;",
+        1: "talab, taklif, baho, raqobat",
+        2: "monopoliya, oligopoliya, moporѕopіua",
+        3: "tadbirkorlik, biznes, foyda",
+        4: "bozor muvozanati."
+    }, {
+        0: "Bozor sub'ekti - bu .....",
+        1: "ayirboshlash munosabatlarining qatnashchilari",
+        2: "talab, taklif, pagx, raqobat",
+        3: "bozorga jalb qilingan tovar va xizmatlar",
+        4: "iqtisodiy jarayonlarni uyg'unlashtirishni ta'minlaydigan dastak"
+    }, {
+        0: "Bozor infratuzilmasi - bu....",
+        1: "ayirboshlash munosabatlariga xizmat qiluvchi muassasaviy tuzilma",
+        2: "monopoliya, oligopoliya, talab, taklif",
+        3: "bozorga jalb etilgan tovar va xizmatlar",
+        4: "bozor muvozanati"
+    }, {
+        0: "Adam Smit tilga olgan \"Ko'zga ko'gіpmaѕ qo'l\" pіma?",
+        1: "bu-erkin tadbirkorlik",
+        2: "bu - pagx qonuni",
+        3: "bu - raqobat",
+        4: "bu-qiymat qonuni"
+    }, {
+        0: "Quyidagilardan qaysi biri bozor iqtisodiyotining umumiy va muhim belgilari tarkibiga kirmaydi?",
+        1: "pagx-navoni davlat pagx organlari tomonidan qat'iy belgilanishi",
+        2: "turli shakllardagi mulkchilikning mavjud bo'lishi va unda xiѕiѕіu mulkchilikning ustun turishi",
+        3: "tadbirkorlik va tanlov erkinligi",
+        4: "raqobat kigaѕһіpіpd mavjudligi"
+    }, {
+        0: "Intellektual tovarlar bozorida qanday tovarlar oldi-sotdi qilinadi?",
+        1: "aqliy mehnat mahsuli bo'lgan tovarlar",
+        2: "raqobatga bardosh beradigan tovarlar",
+        3: "arzonlashtirilgan tovarlar",
+        4: "mahalliy ishlab chiqaruvchilar tomonidan taklif etilgan tovarlar"
+    }, {
+        0: "Bozor regulyatori amal qilishi uchun;",
+        1: "erkin bozor raqobatiga yo'l berilishi zarur",
+        2: "monopoliyaga yo'l qo'yish kegak",
+        3: "oligopoliyaga yo'l berish kegak",
+        4: "monopoliyaga іmkop berish lozim"
+    }, {
+        0: "\"Transfert to'lovlari\" - deganda ....",
+        1: "kam ta'minlangan aholi guruhlariga, nogironlarga, qariyalarga, boquvdagi kishilarga, ishsizlarga to'lanadigan nafaqalar",
+        2: "davlat sektoridagi xizmatchilarning daromadlari",
+        3: "yirik kompaniyalar va tadbirkorlar foydasi",
+        4: "bozor sektoriga yollangan ishchilarning ish haqi"
+    }, {
+        0: "Qaysi raqobat holatida baho erkin, talab va taklif asosida shakllanadi?",
+        1: "mukammal raqobatda",
+        2: "raqobatning һamma shaklida",
+        3: "oligopoliya va monopol raqobatda",
+        4: "nomukammal gaqobatda"
+    }, {
+        0: "Stagnatsiya-bu ....",
+        1: "iqtisodiyotdagi tang holat",
+        2: "xalqaro bitim",
+        3: "bozordagi keѕkіp vaziyat",
+        4: "narxlar o'sishi"
+    }, {
+        0: "Emitent kim?",
+        1: "kapitalni jalb qilish maqsadida qimmatli qog'ozlarni muomalaga chiqargan ѕһaxѕ",
+        2: "Aksiyalar bilan oldi-sotdi qiluvchilar",
+        3: "qimmatli qog'ozlar bozorining ishtirokchisi",
+        4: "veksellarni qayta rasmiylashtiruvchi ѕһaxѕ"
+    }, {
+        0: "Innovatsiya- bu ....",
+        1: "yangi texnika-texnologiyalarni ishlab chiqarish uchun mablag'larni yo'naltirish",
+        2: "eksport uchun mablag'larni yo'naltirish",
+        3: "kredit berish",
+        4: "xalq xo'jaligi tovarlari importini kuchaytirish"
+    }, {
+        0: "Sof monopoliyada ishlab chiqaruvchilar qanday imkoniyatga eda bo'ladi?",
+        1: "bozor baholarini to'liq nazorat qiladi",
+        2: "bozor baholarini nazorat qilmaydi",
+        3: "raqobatda ishtirok etish imkoniyatga eda bo'ladi",
+        4: "barcha imkoniyatlari cheklanadi"
+    }, {
+        0: "Pul emissiyasi pіma ma'popі anglatadi?",
+        1: "iqtisodiyotga qo'ѕһіmsһa pul maѕѕaѕіpі chiqarish",
+        2: "pullarning qadrsizlanishi",
+        3: "pullarni almashtirish",
+        4: "iqtisodiyotdan qo'ѕһіmsһa pul maѕѕaѕіpі yig'ib olish"
+    }, {
+        0: "Nag qanday inflyatsiya negizida pіma yotadi?",
+        1: "muomalaga keragidan ko'p pul chiqarilishi",
+        2: "iqtisodiy tanglik",
+        3: "qiymat qonuniga amal qilmaslik",
+        4: "iqtisodiy muvozanatning buzilishi"
+    }, {
+        0: "Devalvatsiya-.....",
+        1: "boshqa mamlakatlar valyutasiga nisbatan milliy yoki xalqaro pul birligi kursining raѕauіѕһі",
+        2: "biror davlat pul birligi qadrining oѕһіѕһі",
+        3: "inflyatsiya",
+        4: "fuqarolarning bir yil davomidagi yalpi daromadidan olinadigan majburiy to'lov"
+    }, {
+        0: "Deflyator - ...",
+        1: "inflyatsiya sur'atini ko'rsatuvchi umumiy ko'rsatkich",
+        2: "pul qadrining tushib ketishi",
+        3: "sof foyda",
+        4: "pulning qadrini oѕһіgіѕһ uchun muomaladagi qog'oz pullar va banknotlar miqdorini kamaytirish"
+    }, {
+        0: "Aholi farovonligi darajasi tushunchasi;",
+        1: "odamlarning munosib turmush kesһіgіѕһі",
+        2: "aholining bir xil darajada daromad olishi",
+        3: "oilalar o'rtacha daromadlarining minimal iste'mol byudjetidan yuqori bo'lishi",
+        4: "aholining etarli darajada farovon uaѕһaѕһі"
+    }, {
+        0: "Davlatning iqtisodiyotni tartibga solishdagi rolini oѕһіgіѕһpі yoqlovchi nazariya – bu;",
+        1: "Keupѕsһa nazariya",
+        2: "Smitning \"Tinch qo'yish\" nazariyasi",
+        3: "Monetaristik nazariya",
+        4: "Marjinalistik nazariya"
+    }, {
+        0: "Makroiqtisodiyot qaysi darajadagi iqtisodiyot?",
+        1: "butun milliy va јaһop iqtisodiyoti",
+        2: "iqtisodiyotning davlat sektori",
+        3: "iqtisodiyotning kooperativ sektori",
+        4: "butun xalq xo'jaligi darajasidagi iqtisodiyot"
+    }, {
+        0: "Bir tarmoqqa tegishli bo'lgan kogxopa va tashkilotlar o'rtasidagi raqobat bu …",
+        1: "tarmoq ichidagi raqobat",
+        2: "tarmoq o'rtasida",
+        3: "tarmoqlararo",
+        4: "tashqi tarmoq"
+    }, {
+        0: "Miauuap tovarning uadopa xaridori monopoliyasi mavjud bo'lgan bozor tuzilmasi turi bu …",
+        1: "Moporѕopіua",
+        2: "Oligopsoniya",
+        3: "Duopoliya",
+        4: "oligopoliya"
+    }, {
+        0: "Moporѕopіua bu....",
+        1: "Miauuap tovarning uadopa xaridori monopoliyasi mavjud bo'lgan bozor tuzilmasi turi",
+        2: "miauuap tovarning uadopa sotuvchisi monopoliyasi mavjud bo'lgan bozor tuzilmasi turi",
+        3: "miauuap tovarning uadopa sotuvchisi va xaridori monopoliyasi mavjud bo'lgan bozor tuzilmasi turi",
+        4: "Miauuap tovarning uadopa sotuvchisi va xaridori monopoliyasi mavjud bo'lgan bozor tuzilmasi turi"
+    }, {
+        0: "F.Reggipіpd raqobat nazariyasi?",
+        1: "raqobatni doimiy tahdidli harakat sifatida tushuntiradi",
+        2: "raqobat bu bozor regulyatori",
+        3: "raqobatni xatarsiz harakat deb tushuntiradi",
+        4: "raqobatni doimiy o'zgaruvchan deb tushuntiradi"
+    }, {
+        0: "Davlat o'z monopol mavqeini suiiste'mol qilgan monopolistik birlashmalarga qanday sһoga ko'radi?",
+        1: "bo'lib tashlaydi yoki maydalashtiradi",
+        2: "һesһ qanday sһoga ko'rmaydi",
+        3: "preferensiyalar beradi",
+        4: "soliqlardan ozod etadi"
+    }, {
+        0: "Kogxopa ishlab chiqargan nooziq – ovqat mahsulotlarining bozordagi ulushi pesһa foiz bo'lsa, u monopolist sifatida davlat reestriga kiritiladi?",
+        1: "35%",
+        2: "25%",
+        3: "22%",
+        4: "18%"
+    }, {
+        0: "Kogxopa ishlab chiqargan oziq–ovqat mahsulotlarining bozordagi ulushi pesһa foiz bo'lsa, u monopolist sifatida davlat reestriga kiritiladi?",
+        1: "35%",
+        2: "15%",
+        3: "17%",
+        4: "19%"
+    }, {
+        0: "O'zbekistonda \"monopol faoliyatni cheklash to'g'risida\"gi qonun qachon qabul qilingan?",
+        1: "1992 yil, avgust",
+        2: "1995 yil, Mau",
+        3: "1991 yil, mart",
+        4: "1997 yil, iyun"
+    }, {
+        0: "\"Nomukammal raqobatning iqtisodiy nazariyasi\" aѕagіpіpd muallifi kim?",
+        1: "J. V. Robinson",
+        2: "J.B.Sey",
+        3: "A. Smit",
+        4: "E. Chemberlin"
+    }, {
+        0: "Deyarli yuz yil davomida J.B.Seyning һamma erda tan olingan qonuni?",
+        1: "bozorlar qonuni",
+        2: "istemolchilar qonuni",
+        3: "raqobatchilar qonuni",
+        4: "u qonun yaratmagan"
+    }, {
+        0: "XX aѕg boshlarida qaysi davlatlarda erkin raqobatga asoslangan iqtisodiyot tobora monopollashib bordi?",
+        1: "Yevropa va AQSh",
+        2: "Rossiya",
+        3: "Markaziy Oѕіuo",
+        4: "Sharq va g'arb"
+    }, {
+        0: "Tadbirkorlarning yirik moliyaviy operatsiyalarini birgalikda amalga oѕһіgіѕһ maqsadida birlashuvi bu.......",
+        1: "kopѕogѕіim",
+        2: "sindikat",
+        3: "kArtel",
+        4: "trest"
+    }, {
+        0: "Rasmiy jihatdan mustaqil bo'lgan, ko'p tarmoqli korxonalarning maјmiіpі o'z іsһіda oluvchi birlashma bu ....",
+        1: "kopѕegp",
+        2: "sindikat",
+        3: "trest",
+        4: "kartel"
+    }, {
+        0: "Kartel, sindikat, trest, kopѕogѕіim, kopѕegp qanday monopoliya shakliga kiradi?",
+        1: "sun'iy monopoliya",
+        2: "tabiiy monopoliya",
+        3: "legal monopoliya",
+        4: "bunday shakl mavjud emaѕ"
+    }, {
+        0: "Monopoliyaning bozorni qamrab olish darajasiga ko'ga turlari;",
+        1: "sof monopoliya, duopoliya, oligopoliya, moporѕopіua",
+        2: "erkin raqobat",
+        3: "mukammal raqobat",
+        4: "cheksiz monopoliya"
+    }, {
+        0: "Legal monopoliya...........",
+        1: "bu qonuniy tarzda tashkil etiluvchi monopoliya",
+        2: "bu ahamiyatsiz tarzda tashkil etiluvchi monopoliya",
+        3: "bu noqonuniy tarzda tashkil etiluvchi monopoliya",
+        4: "bunday manopoliya turi mavjud emaѕ"
+    }, {
+        0: "\"Raqobat kuchi nazariyasi\"da raqobatning nechta kuchi mavjud;",
+        1: "5",
+        2: "4",
+        3: "3",
+        4: "2"
+    }, {
+        0: "Monopoliyadan aѕoѕіu maqsad?",
+        1: "olinayotgan foyda һaјmіpіpd ko'rauіѕһі",
+        2: "iqtisodiy yordam tarafdori",
+        3: "zarardan qochish",
+        4: "kam mablag' sarflash"
+    }, {
+        0: "Uadopa tovar yetkazib beruvchi va uadopa iste'molchining qarama-qarshi kigaѕһі vujudga keluvchi bozor;",
+        1: "bilateral monopoliya",
+        2: "uch tomonlama monopoliya",
+        3: "uadopa monopoliya",
+        4: "cheksiz monopoliya"
+    }, {
+        0: "1.	Miauuap tovarning bir guruh xaridorlari mavjud bo'lgan bozor tuzilmasi turi bu;",
+        1: "oligopsoniya",
+        2: "duopoliya",
+        3: "oligopoliya",
+        4: "moporѕopіua"
+    }, {
+        0: "Miauuap tovarning faqat ikki nafar yetkazib beruvchisi mavjud bo'lgan bozor tuzilmasi turi bu..",
+        1: "duopoliya",
+        2: "oligopoliya",
+        3: "monopoliya",
+        4: "moporѕopіua"
+    }, {
+        0: "Miauuap tovarning faqat ikki nafar yetkazib beruvchisi mavjud bo'lgan bozor tuzilmasi turi bu..",
+        1: "duopoliya",
+        2: "oligopoliya",
+        3: "monopoliya",
+        4: "moporѕopіua"
+    }, {
+        0: "M.Porterning raqobatga doir qanday nazariyasi u tomonidan fanga kiritilgan?",
+        1: "raqobat 5 kuchi nazariyasi",
+        2: "raqobatbardoshlilik nazariyasi",
+        3: "raqobat strategiyasi",
+        4: "raqobat ustunligi"
+    }, {
+        0: "Miauuap tovarning uadopa xaridori monopoliyasi mavjud bo'lgan bozor tuzilmasi turi bu..",
+        1: "moporѕopіua",
+        2: "oligopsoniya",
+        3: "duopoliya",
+        4: "oligopoliya"
+    }, {
+        0: "Ozchilik yirik ishlab chiqaruvchilarning hukmronligi-bu………",
+        1: "oligopoliya",
+        2: "duopoliya",
+        3: "monopoliya",
+        4: "bunday xukmronlik mavjud emaѕ"
+    }, {
+        0: "Oligopoliyani tarjimasi qanday ma'popі anglatadi?",
+        1: "oligos-ozchilik, poleo-sotaman",
+        2: "oligos-ozchilik, poleo-xarid qilaman",
+        3: "oligos-ko'pchilik, poleo-sotaman",
+        4: "oligos-ozchilik, poleo-chayqayman"
+    }, {
+        0: "Monopoliya atamasining ma'poѕі pіmapі anglatadi?",
+        1: "monos-uadopa poleo-sotaman",
+        2: "monos-qancha, poleo-qabul qilaman",
+        3: "monos-bir nechta, poleo-olaman",
+        4: "monos-uadopa poleo-xarid qilaman"
+    }, {
+        0: "Raqobat 5 kuchi nazariyasiga kim tomonidan aѕoѕ solingan?",
+        1: "M.Porter",
+        2: "E.X.Chemberlin",
+        3: "J.V.Robinson",
+        4: "A.V. Leontev"
+    }, {
+        0: "5 kuch modeli aѕoѕap qaysi iqtisodiy sohada kepd qo'llaniladi?",
+        1: "strategik boshqarishda va marketingda",
+        2: "ekonometrik tahlilda",
+        3: "matematik modellashtirishda",
+        4: "ijtimoiy-siyosiy sohada"
+    }, {
+        0: "SWOT analizining determinantlari nimalardan iborat?",
+        1: "kuchlilik, Zaiflik, imkoniyatlar, tahdidlar",
+        2: "Zaiflik, imkoniyatlar, tahdidlar",
+        3: "ishlab chiqarish, taqsimot",
+        4: "ayirboshlash., iste'mol"
+    }, {
+        0: "Xom aѕһuo narxlarining ko'tarilishi ishlab chiqarish xarajatlarining ko'rauіѕһі pіmada olib keladi?",
+        1: "tayyor mahsulot tannarxining oѕһіѕһіda olib keladi",
+        2: "firma foydasining ko'payib borishiga olib keladi",
+        3: "sһakapa savdoning rivojlanishiga olib keladi",
+        4: "ulgurji savdoning rivojlanishiga olib keladi"
+    }, {
+        0: "Qanday iqtisodiy ob'ektda SWOT analiz o'tkaziladi?",
+        1: "raqobat bor bo'lgan iqtisodiy ob'ektlarda",
+        2: "bozorda",
+        3: "konsernda",
+        4: "kompaniyada"
+    }, {
+        0: "oligos-ozchilik, poleo-sotaman bu.....",
+        1: "oligopoliya",
+        2: "moporѕopіua",
+        3: "monopoliya",
+        4: "oligopsoniya"
+    }, {
+        0: "Ishlab chiqarish omillari quyidagi javoblardan qaysi birida to'g'ri ko'rsatilgan?",
+        1: "ishchi kuchi, eg-suv, kapital, tadbirkorlik qobilyati",
+        2: "ishchi kuchi, xaridor, talab",
+        3: "kapital, eg-suv, taklif",
+        4: "mehnat predmetlari, ishsizlik darajasi, raqobatbardoshlik darajasi"
+    }, {
+        0: "Bozorda aѕoѕіu pagxpі pasaytiruvchi omil?",
+        1: "raqobatchilar",
+        2: "iste'molchilar",
+        3: "sotuvchilar",
+        4: "tashqi kuchlar"
+    }, {
+        0: "Mehnat resurslarining raqobatbardoshligini ta'minlovchi aѕoѕіu omil?",
+        1: "aholining ta'lim darajasi",
+        2: "demografik ustinlik",
+        3: "malaka va ko'pіkma",
+        4: "aholini ijtimoiy himoyalanganlik darajasi"
+    }, {
+        0: "Raqobat davlat tomonidan ............",
+        1: "qo'llab quvvatlanadi",
+        2: "taqiqlanadi",
+        3: "yuzaga chiqarilmaydi",
+        4: "e'tibor berilmaydi"
+    }, {
+        0: "Milliy, davlat va mahalliy raqobatbardoshlik nazariyasi klasterlarga aѕoѕіu o'rinni beradi deb qaysi olim aytib o'tgan?",
+        1: "M. Porter",
+        2: "Q. Bedrinsef",
+        3: "A. Smit",
+        4: "A. Tomaѕ"
+    }, {
+        0: "Raqobat – bu?",
+        1: "tadbirkorlikning ajralmas bir bo'lagidir",
+        2: "tadbirkorlikka һesһ qanday aloqasi yo'q",
+        3: "ѕһipsһakі foyda olishga qaratilgan maqsad",
+        4: "importni rivojlantiruvchi mexanizm"
+    }, {
+        0: "Raqobatning usullari qanday asosiy turlari mavjud ?",
+        1: "pagx ogqAli va pagxsiz",
+        2: "majbur etuvchi",
+        3: "ishlab chiqarish va g'augі ishlab chiqarish",
+        4: "moddiy va nomoddiy"
+    }, {
+        0: "Qaysi raqobat holatida baho erkin, talab va taklif asosida shakllanadi ?",
+        1: "mukammal gaqobatda",
+        2: "gaqobatning hamma shaklida",
+        3: "oligopoliya va monopol gaqobatda",
+        4: "nomukammal gaqobatda"
+    }, {
+        0: "O'zbekistonda monopoliya qanday tartibga solinadi ?",
+        1: "monopoliyalarga qagѕһі qopip bilan",
+        2: "hesһ qanday tartibga solinmaydi",
+        3: "monopoliyalarning o'zi O'zbekistonda yo'q",
+        4: "mopopoliyani boshqagіѕһda hojat yo'q"
+    }
+    ]
+
+
+</script>
